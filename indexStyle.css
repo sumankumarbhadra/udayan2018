@@ -11,6 +11,27 @@ body
     height: 404px;
     width: 100%;
     display: inline-block;
-    margin-top: 24em;
+    float: bottom;
+    margin-top: 25rem;
 
+}
+nav
+{
+    height: 100%;
+    width: 17%;
+    background-color:  rgba(255,255,255,0.6);
+    position: fixed;
+    border-right: 2px solid saddlebrown;
+}
+.navBtn
+{
+    height: 100%;
+    width: 2%;
+    background-color: saddlebrown;
+    border-right: 2px solid dimgray;
+    position: fixed;
+    margin-left: 17%;
+    mix-blend-mode:exclusion;
+    color: white;
+    padding-top: 26%;
 }
