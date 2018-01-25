@@ -3,10 +3,11 @@ body
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    background-image: url("assets/images/blue-sky-wallpapers-15.jpg");
 }
 #soil
 {
-    background: url("assets/images/Soil-clipart-3.png") no-repeat;
+    background: url("assets/images/background-19861_1280.jpg") no-repeat;
     background-size: cover;
     height: 404px;
     width: 100%;
@@ -27,11 +28,11 @@ nav
 {
     height: 100%;
     width: 2%;
-    background-color: saddlebrown;
+    background-color: rgba(31, 31, 31, 0.8);
     border-right: 2px solid dimgray;
     position: fixed;
     margin-left: 17%;
-    mix-blend-mode:exclusion;
-    color: white;
-    padding-top: 26%;
+    /*mix-blend-mode:difference;*/
+    color: red;
+    padding-top: 22%;
 }
