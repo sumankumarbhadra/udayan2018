@@ -6,7 +6,8 @@ body
 }
 #soil
 {
-    background-image: url("assets/images/Soil-clipart-3.png");
+    background: url("assets/images/Soil-clipart-3.png") no-repeat;
+    background-size: cover;
     height: 404px;
     width: 100%;
     display: inline-block;
