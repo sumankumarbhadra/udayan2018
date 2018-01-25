@@ -1,4 +1,15 @@
 body
 {
     margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+#soil
+{
+    background-image: url("assets/images/Soil-clipart-3.png");
+    height: 404px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 24em;
+
 }
