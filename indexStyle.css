@@ -3,9 +3,10 @@ body
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background-image: url("assets/images/blue-sky-wallpapers-15.jpg");
+    background: url("assets/images/1.jpg") no-repeat;
+    background-size: cover;
 }
-#soil
+#grass
 {
     background: url("assets/images/background-19861_1280.jpg") no-repeat;
     background-size: cover;
