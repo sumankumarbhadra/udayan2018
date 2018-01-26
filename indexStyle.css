@@ -3,26 +3,30 @@ body
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background: url("assets/images/soil.jpg") repeat;
+    /*background: url("assets/images/soil.jpg") repeat;
     background-size: cover;
-    background-size: 100% 50%;
+    background-size: 100% 50%;*/
+    background: url("assets/images/bg1.png");
+    background-size: 80%;
 }
 article
 {
-     background: url("assets/images/bg1.png");
-    background-size: 85% 50%;
-
+     /*background: url("assets/images/bg1.png");
+    background-size: cover;
+    background-size: 85% 50%;*/
 }
 #grass
 {
-    background: url("assets/images/background-19861_1280.jpg") no-repeat;
+    background-color: rgba(0,0,0,0.0);
+
+    /*background: url("assets/images/background-19861_1280.jpg") no-repeat;
     background-size: cover;
     height: 404px;
     min-width: 100%;
     display: inline-block;
     float: bottom;
     margin-top: 25rem;
-    overflow: auto;
+    overflow: auto;*/
 
 }
 #navMenu
@@ -50,18 +54,20 @@ nav ul li
 {
     height: 100%;
     min-width: 2%;
-    background-color: rgba(31, 31, 31, 0.8);
+    background: linear-gradient(to bottom, rgba(76,76,76,0.4) 0%,rgba(89,89,89,0.4) 12%,rgba(102,102,102,0.4) 25%,rgba(71,71,71,0.4) 39%,rgba(44,44,44,0.4) 50%,rgba(0,0,0,0.4) 51%,rgba(17,17,17,0.4) 60%,rgba(43,43,43,0.4) 76%,rgba(28,28,28,0.4) 91%,rgba(19,19,19,0.4) 100%);
     border-right: 2px solid dimgray;
     position: fixed;
     margin-left: 17%;
     /*mix-blend-mode:difference;*/
-    color: red;
+    color: #d7dc07;
     padding-top: 22%;
+    padding-left: 2px;
     z-index: 2;
     transition: all 0.6s;
 }
 .navBtn i{
     transition: all 0.6s;
+
 }
 .hideMenuNav{
     width: 0%;
@@ -115,10 +121,10 @@ nav ul li
 /* Container properties */
 #scene {
     width: 100%;
-    height: 400px;
+    height: 100%;
     position: fixed;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.0);
     z-index: 1;
 
 }
