@@ -3,16 +3,16 @@ body
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background: url("assets/images/bg1.png") repeat;
+    background: url("assets/images/soil.jpg") repeat;
     background-size: cover;
     background-size: 100% 50%;
 }
 article
 {
-    /* background: url("assets/images/bg1.png");
-    background-size: cover;
-    */
-} 
+     background: url("assets/images/bg1.png");
+    background-size: 85% 50%;
+
+}
 #grass
 {
     background: url("assets/images/background-19861_1280.jpg") no-repeat;
@@ -142,22 +142,22 @@ nav ul li
 
 .large
 {
-    /*width 130px*/
-    top: 40px;
+
+    top: 20px;
     left: -140px;
     animation-duration: 80s;
 }
 .small
 {
-    /*width 70px*/
+
     top: 10px;
     left: -80px;
     animation-duration: 60s;
 }
 .medium
 {
-    /*width 100px*/
-    top: 80px;
+
+    top: 50px;
     left: -110px;
     animation-duration: 90s;
 }
