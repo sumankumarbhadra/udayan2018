@@ -79,10 +79,12 @@ article
 {
 
     position: fixed;
-    margin-left: 42%;
+    /*margin-left: 42%;*/
     font-size: 5em;
     z-index: 2;
-
+    width: 100%;
+    text-align: center;
+    top: 35px;
 }
 .DBS
 {
