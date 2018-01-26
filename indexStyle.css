@@ -105,11 +105,18 @@ article
     cursor: pointer;
 }
 
-.lid
+#greenLid
 {
     position: absolute;
     margin-top: 87%;
     margin-left: 0;
+
+}
+#blueLid
+{
+    position: absolute;
+    margin-top: 87%;
+    margin-left: 104px;
 
 }
 
