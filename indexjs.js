@@ -53,3 +53,10 @@ function navHandelClick() {
 }
 
 /*Nav menu end*/
+
+// mouse courser
+$('html').mousemove(function(e)
+ {
+   $('#muscor').css("left",e.pageX + "px");
+   $('#muscor').css("top",e.pageY + "px");
+ });

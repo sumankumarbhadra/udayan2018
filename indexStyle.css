@@ -89,6 +89,7 @@ article
     margin-left: 29%;
     overflow: auto;
     z-index: 2;
+    bottom: 32px;
 }
 .dustbin
 {
@@ -306,3 +307,10 @@ article
   }
 
 }
+
+/* mouse courser */
+#muscor{
+    height:100px;
+    width:100px;
+    position:absolute;
+  }
