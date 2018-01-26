@@ -100,9 +100,18 @@ article
     display: inline-block;
     z-index: 2;
     cursor: pointer;
+    position: relative;
 }
-
-
+.dustbinlid{
+      position: absolute;
+    width: 100%;
+    top: -10px;
+    z-index: -1;
+}
+.dustbin:hover .dustbinlid{
+      transform: rotate(-25deg);
+      transform-origin: 0% 50%;
+    }
 
 
 
