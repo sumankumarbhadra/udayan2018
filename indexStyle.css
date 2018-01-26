@@ -37,6 +37,12 @@ nav
     color: red;
     padding-top: 22%;
 }
+.hideMenuNav{
+    display: none;
+}
+.hideMenuDiv{
+    margin-left: 0%;
+}
 #udayanLogo
 {
 
