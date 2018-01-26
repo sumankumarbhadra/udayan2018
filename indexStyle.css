@@ -28,7 +28,7 @@ nav
 .navBtn
 {
     height: 100%;
-    width: 2%;
+    min-width: 2%;
     background-color: rgba(31, 31, 31, 0.8);
     border-right: 2px solid dimgray;
     position: fixed;
@@ -51,7 +51,12 @@ nav
     font-size: 5em;
 
 }
-
+.DBS
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 .dustbin
 {
     position: fixed;
@@ -62,4 +67,8 @@ nav
 #blueDB
 {
     margin-left:35% ;
+}
+#yellowDB
+{
+    margin-left: 45% ;
 }
