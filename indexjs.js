@@ -21,17 +21,6 @@ rotateBladeRight($p2, speed)
 rotateBladeLeft($p4, speed)
 rotateBladeRight($p3, speed)
 
-//Hover 
-TweenMax.to($drone, 5, {delay:$delay, y:"-300px", ease:Linear.easeInOut, repeat:-1, yoyo:true});
-
-//Shadow
-// TweenMax.to(shadow, 5, {delay: $delay, scaleX:".2", x:"40%", opacity:".01", ease:Linear.easeInOut, repeat:-1, yoyo:true});
-
-//Lights
-TweenMax.to(light1, .5, {opacity:".7", ease:Power2.easeNone, repeat:-1, yoyo:true});
-
-TweenMax.to(light2, .5, {opacity:".7", ease:Power2.easeNone, repeat:-1, yoyo:true});
-
 function rotateBladeLeft(blade, speed) {
 var spin = "230px";
 TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1, yoyo:true});
