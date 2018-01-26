@@ -89,7 +89,6 @@ article
     margin-left: 29%;
     overflow: auto;
     z-index: 2;
-    bottom: 32px;
 }
 .dustbin
 {
@@ -207,10 +206,12 @@ article
 {
     margin-left: 65% ;
 }*/
+/*
 #brownDB
-{
-    margin-left: 0% ;
-}
+ {
+     margin-left: 0% ;
+ }
+*/
 
 
 
