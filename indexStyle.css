@@ -25,6 +25,16 @@ nav
     position: fixed;
     border-right: 2px solid saddlebrown;
 }
+nav ul
+{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li
+{
+    padding: 15px;
+    border: 1px solid floralwhite;
+}
 .navBtn
 {
     height: 100%;
@@ -64,6 +74,11 @@ nav
     margin-top: 20%;
 
 }
+
+
+
+
+/*Dustbin position fix*/
 #blueDB
 {
     margin-left:35% ;
