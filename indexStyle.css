@@ -6,7 +6,7 @@ body
     /*background: url("assets/images/soil.jpg") repeat;
     background-size: cover;
     background-size: 100% 50%;*/
-    background: url("assets/images/bg1.png");
+    background: url("assets/images/bg1.png") repeat-x;
     background-size: 80%;
 }
 article
@@ -14,20 +14,6 @@ article
      /*background: url("assets/images/bg1.png");
     background-size: cover;
     background-size: 85% 50%;*/
-}
-#grass
-{
-    background-color: rgba(0,0,0,0.0);
-
-    /*background: url("assets/images/background-19861_1280.jpg") no-repeat;
-    background-size: cover;
-    height: 404px;
-    min-width: 100%;
-    display: inline-block;
-    float: bottom;
-    margin-top: 25rem;
-    overflow: auto;*/
-
 }
 
 
@@ -93,15 +79,16 @@ article
     position: fixed;
     margin-left: 23%;
     display: flex;
-    overflow: hidden;
+    overflow: auto;
     z-index: 2;
 }
 .dustbin
 {
-    margin-top: 22rem;
+    margin-top: 28.7rem;
     display: inline-block;
     z-index: 2;
     cursor: pointer;
+    padding-left: 20px;
 }
 
 
@@ -250,8 +237,8 @@ article
         animation:fly 0.1s infinite;
     }
     @keyframes fly{
-      0%{transform: rotateY(0deg);},
-      50%{transform: rotateY(180deg);},
+      0%{transform: rotateY(0deg);}
+      50%{transform: rotateY(180deg);}
       100%{transform: rotateY(360deg);}
     }
     #wing2{
