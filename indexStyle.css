@@ -78,27 +78,24 @@ article
 {
 
     position: fixed;
-    margin-left: 40%;
+    margin-left: 42%;
     font-size: 5em;
     z-index: 2;
 
 }
 .DBS
 {
-    max-width: 100%;
     position: fixed;
-    margin-left: 23%;
-    display: flex;
+    margin-left: 29%;
     overflow: auto;
     z-index: 2;
 }
 .dustbin
 {
-    margin-top: 53%;
+    margin-top: 89%;
     display: inline-block;
     z-index: 2;
     cursor: pointer;
-    padding-left: 20px;
 }
 
 
@@ -208,11 +205,11 @@ article
 #redDB
 {
     margin-left: 65% ;
-}
+}*/
 #brownDB
 {
-    margin-left: 75% ;
-}*/
+    margin-left: 0% ;
+}
 
 
 
