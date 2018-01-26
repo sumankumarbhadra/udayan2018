@@ -7,9 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-
-
+   
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootsnav.css" rel="stylesheet">
@@ -19,9 +17,8 @@
     <link href="css/lightcase.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet">
     <link href="css/jquery.multiscroll.css" rel="stylesheet">
-
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -137,14 +134,7 @@
     <!-- ./Preloader -->
 
     <!-- navbar -->
-  <nav id="navMenu" class="nav">
-            <ul>
-                <li class="menuElement">Home</li>
-                <li class="menuElement">Home</li>
-                <li class="menuElement">Home</li>
-            </ul>
-    </nav>
-     <div id="navDivBtn" class="navBtn"><i id="navBtnIcn" class="fas fa-angle-double-left fa-2x"></i></div>
+
 
     <!-- / navbar -->
 
@@ -289,12 +279,14 @@
     </script>
     <!-- navbar js-->
     <script>
+    	var navWidth;
+		var navFlag = true;
     	$(document).ready(function(){
 		    //onclick function for menu nav
 		    $(".navBtn").click(function(){
 		        //cgange icon and hide nav
-		        $("#navMenu").toggleClass("hideMenuNav");
-		        $("#navDivBtn").toggleClass("hideMenuDiv");
+		      
+		        navWidth = document.getElementById("navMenu").width;
 		        $("#navBtnIcn").toggleClass("fa-angle-double-left fa-angle-double-right");
 		    });
 		});
