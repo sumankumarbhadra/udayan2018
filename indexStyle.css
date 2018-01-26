@@ -6,8 +6,18 @@ body
     /*background: url("assets/images/soil.jpg") repeat;
     background-size: cover;
     background-size: 100% 50%;*/
-    background: url("assets/images/bg1.png") repeat-x;
-    background-size: 80%;
+    /*background: url("assets/images/bg1.png") repeat-x;
+    background-size: 85%;
+    min-width: available;
+    min-height: available;
+    position: fixed;*/
+}
+.backgroundImg
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
 }
 article
 {
@@ -84,7 +94,7 @@ article
 }
 .dustbin
 {
-    margin-top: 28.7rem;
+    margin-top: 53%;
     display: inline-block;
     z-index: 2;
     cursor: pointer;
