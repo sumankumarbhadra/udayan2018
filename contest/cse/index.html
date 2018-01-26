@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootsnav.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/lightcase.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/jquery.multiscroll.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* style for floating img*/
+        html {width:100vw;height:100vh;perspective:1000px;}
+        body{}
+        .img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/531144/nature-forest-trees-fog.jpeg");
+          background-size: 100%;
+          background-position: -110px 0; 
+          border-radius: 2px;
+          box-shadow: 0px 12px 40px rgba(0,0,0,0.5);
+        }
+
+        #csmimg {
+          border: 0px;
+          border-radius: 3px;
+          outline: none;
+          background: transparent;
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 300;
+          position: fixed;
+          padding: 7px;
+          width: 500px;
+          top: 5px;
+          left: calc(50vw - 250px);
+          text-align: center;
+          opacity: 0.7;
+          box-shadow: 0px 5px 10px rgba(0,0,0,0);
+          transition: opacity 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #csmimg:hover {
+          background: rgba(255,255,255,0.35);
+          box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+        }
+
+        #csmimg:focus {
+          background: rgba(255,255,255,0.75);
+          box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+        }
+
+        @media screen and (max-height: 420px) {
+          html {
+            transform: scale(0.65);
+            margin-top: 0px;
+          }
+          
+          #csmimg {
+            top: -90px;
+            transform: scale(1.3);
+          }
+        }
+		nav
+		{
+		    height: 100%;
+		    width: 17%;
+		    background-color:  rgba(255,255,255,0.6);
+		    position: fixed;
+		    border-right: 2px solid saddlebrown;
+		    overflow: hidden;
+		    z-index: 2;
+		}
+		nav ul
+		{
+		    padding: 0px;
+		    margin: 0px;
+		}
+		nav ul li
+		{
+		    padding: 15px;
+		    border: 1px solid floralwhite;
+		}
+		.navBtn
+		{
+		    height: 100%;
+		    min-width: 2%;
+		    background-color: rgba(31, 31, 31, 0.8);
+		    border-right: 2px solid dimgray;
+		    position: fixed;
+		    margin-left: 17%;
+		    /*mix-blend-mode:difference;*/
+		    color: red;
+		    padding-top: 22%;
+		    z-index: 2;
+		}
+		.hideMenuNav{
+		    width: 0%;
+		}
+		.hideMenuDiv{
+		    margin-left: 0%;
+		}
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+   
+    <!-- ./Preloader -->
+
+    <!-- navbar -->
+  <nav id="navMenu" class="nav">
+            <ul>
+                <li class="menuElement">Home</li>
+                <li class="menuElement">Home</li>
+                <li class="menuElement">Home</li>
+            </ul>
+    </nav>
+     <div id="navDivBtn" class="navBtn"><i id="navBtnIcn" class="fas fa-angle-double-left fa-2x"></i></div>
+
+    <!-- / navbar -->
+
+    <!-- slidre section -->
+    <div id="section-0" class="clearfix">
+        <div id="multiscroll">
+            <div class="ms-left">
+                <div class="ms-section ms-1">
+                    <div class="ms-padding">
+                        <h5 class="subtitle">Programming Club</h5>
+                        <h1 class="black-color">Code test</h1>
+                        <div class="h-20"></div>
+                        <p>Contest Details<br>1st Prize: 3000<br>2ndPrize:2000 </p>
+                        <div class="h-30"></div>
+                        <a href="#" class="btn btn-success" style="font-size: 15px">Register</a>
+                    </div>
+                </div>
+                <div class="ms-section ms-2">
+                    <div class="ms-padding">
+                        <h5 class="subtitle">Mobility Club</h5>
+                        <h1 class="black-color">Contest 2</h1>
+                        <div class="h-20"></div>
+                        <p>Contest Details </p>
+                        <div class="h-30"></div>
+                        <a href="#" class="btn btn-success" style="font-size: 15px">Register</a>
+                    </div>
+                </div>
+                <div class="ms-section ms-3">
+                    <div class="ms-padding">
+                        <h5 class="subtitle">IoE Club</h5>
+                        <h1 class="black-color">Contest 3</h1>
+                        <div class="h-20"></div>
+                        <p>Contest Details </p>
+                        <div class="h-30"></div>
+                        <a href="#" class="btn btn-success" style="font-size: 15px">Register</a>
+                    </div>
+                </div>
+              
+               <div class="ms-section ms-4">
+                    <div class="ms-padding">
+                        <h5 class="subtitle">Data Science Club</h5>
+                        <h1 class="black-color">Contest 4</h1>
+                        <div class="h-20"></div>
+                        <p>Contest Details </p>
+                        <div class="h-30"></div>
+                        <a href="#" class="btn btn-success" style="font-size: 15px">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-right">
+                <div class="ms-section ms-1" style="background: url(img/);">
+                    <div class="img"></div>
+                </div>
+                <div class="ms-section ms-2" style="background: url(img/);">
+                    <div class="img"></div>
+                </div>
+                <div class="ms-section ms-3" style="background: url(img/);">
+                    <div class="img"></div>
+                </div>
+                <div class="ms-section ms-4" style="background: url(img/);">
+                    <div class="img"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end slidre section -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+    <!-- multi scroll script -->
+    <script>
+        $(document).ready(function() {
+            $('#multiscroll').multiscroll({
+                navigation: true,
+                navigationPosition: 'right',
+                loopTop: true,
+                loopBottom: true
+            });
+        });
+
+    </script>
+    <script>
+        $(window).mousemove(function(e){
+          var lft = e.pageX / 35 + 85;
+          var tp = e.pageY / 35;
+          $('.img').css({"background-position": '-'+lft+'px -'+tp+'px'});
+
+
+          var pagewidth = $(window).width();
+          var pwcalc = pagewidth/2;
+          var calcX = e.pageX - pwcalc;
+          var fclcX = calcX / 45;
+          
+          var pageheight = $(window).height();
+          var phcalc = pageheight/2;
+          var calcY = e.pageY - phcalc;
+          var fclcY = calcY / 60;
+          var rtX = fclcY *= -1;
+
+          var lft2 = e.pageX / 45;
+          var tp2 = e.pageY / 35;
+          var lft21 = lft2 *= -1;
+          var tp21 = tp2 *= -1;
+          
+          $('.img').css({"transform":"translate(calc("+lft21+"px + 20px),"+tp21+"px) rotateY("+fclcX+"deg) rotateX("+fclcY+"deg)"});
+        });
+
+        $(window).mousemove(function(e){
+          var pgwdt = $(window).width();
+          var pgwclc = pgwdt/2;
+          var clcX = e.pageX - pgwclc;
+          var fclcfX = clcX / 50;
+          var fclcfXrev = fclcfX *= -1;
+          
+          var pght = $(window).height();
+          var pghclc = pght/2;
+          var clcY = e.pageY - pghclc;
+          var fclcfY = clcY / 50 - 12;
+          var fclcfYrev = fclcfY *= -1;
+          
+          $('.img').css({"box-shadow":+fclcfXrev+"px "+fclcfYrev+"px 40px rgba(0,0,0,0.5)"});
+        });
+
+        $("#csmimg").keyup(function() {
+          $(".img").css("background-image", "url('" + $("#csmimg").val() + "')");
+        });
+
+
+    </script>
+    <!-- navbar js-->
+    <script>
+    	$(document).ready(function(){
+		    //onclick function for menu nav
+		    $(".navBtn").click(function(){
+		        //cgange icon and hide nav
+		        $("#navMenu").toggleClass("hideMenuNav");
+		        $("#navDivBtn").toggleClass("hideMenuDiv");
+		        $("#navBtnIcn").toggleClass("fa-angle-double-left fa-angle-double-right");
+		    });
+		});
+    </script>
+</body>
+
+</html>
