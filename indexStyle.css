@@ -24,6 +24,7 @@ nav
     background-color:  rgba(255,255,255,0.6);
     position: fixed;
     border-right: 2px solid saddlebrown;
+    overflow: hidden;
 }
 nav ul
 {
