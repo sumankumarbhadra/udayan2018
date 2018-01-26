@@ -11,7 +11,9 @@ body
     min-width: available;
     min-height: available;
     position: fixed;*/
-    cursor: none;
+}
+*{
+    cursor: url(assets/images/falcate.png),auto;
 }
 .backgroundImg
 {
@@ -312,12 +314,3 @@ article
   }
 
 }
-
-/* mouse courser */
-#muscor{
-    height: 3em;
-    width: 3em;
-    position: fixed;
-    z-index: 6;
-    cursor: none;
-  }
