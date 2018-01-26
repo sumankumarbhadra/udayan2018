@@ -3,9 +3,13 @@ body
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    background: url("assets/images/soil.jpg") repeat;
+    background-size: cover;
+}
+article
+{
     background: url("assets/images/1.jpg") no-repeat;
     background-size: cover;
-    min-width: 80%;
 }
 #grass
 {
@@ -70,7 +74,7 @@ nav ul li
     position: fixed;
     margin-left: 23%;
     display: flex;
-    overflow: auto;
+    overflow:auto;
 }
 .dustbin
 {
