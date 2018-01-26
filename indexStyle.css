@@ -29,6 +29,10 @@ article
     overflow: auto;*/
 
 }
+
+
+
+/*Nav menu start*/
 #navMenu
 {
     height: 100%;
@@ -40,12 +44,12 @@ article
     z-index: 2;
     transition: all 0.6s;
 }
-nav ul
+#navContainer
 {
     padding: 0px;
     margin: 0px;
 }
-nav ul li
+.menuElement
 {
     padding: 15px;
     border: 1px solid floralwhite;
@@ -65,16 +69,15 @@ nav ul li
     z-index: 2;
     transition: all 0.6s;
 }
-.navBtn i{
+.navBtn #navBtnIcn{
     transition: all 0.6s;
 
 }
-.hideMenuNav{
-    width: 0%;
-}
-.hideMenuDiv{
-    margin-left: 0%;
-}
+/*nav menu end*/
+
+
+
+
 #udayanLogo
 {
 

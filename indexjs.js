@@ -30,7 +30,7 @@ TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1,
 }
 });
 
-
+/*Nav menu start*/
 var navWidth;
 var navFlag = true;
 function init() {
@@ -51,3 +51,5 @@ function navHandelClick() {
         return navFlag = true;
     }
 }
+
+/*Nav menu end*/
