@@ -311,7 +311,8 @@ article
 
 /* mouse courser */
 #muscor{
-    height:100px;
-    width:100px;
-    position:absolute;
+    height: 2em;
+    width: 2em;
+    position: fixed;
+    z-index: 6;
   }
