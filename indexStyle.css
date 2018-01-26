@@ -312,8 +312,9 @@ article
 
 /* mouse courser */
 #muscor{
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
     position: fixed;
     z-index: 6;
+    cursor: none;
   }
