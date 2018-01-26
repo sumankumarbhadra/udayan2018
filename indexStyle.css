@@ -206,5 +206,7 @@ nav ul li
 .dronetown {
     width:10%;
     margin-left:50%;
+    float: left;
+    position: fixed;
   }
   
