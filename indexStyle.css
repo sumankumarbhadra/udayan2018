@@ -25,7 +25,7 @@ article
     overflow: auto;
 
 }
-nav
+#navMenu
 {
     height: 100%;
     width: 17%;
@@ -34,6 +34,7 @@ nav
     border-right: 2px solid saddlebrown;
     overflow: hidden;
     z-index: 2;
+    transition: all 0.6s;
 }
 nav ul
 {
@@ -57,6 +58,10 @@ nav ul li
     color: red;
     padding-top: 22%;
     z-index: 2;
+    transition: all 0.6s;
+}
+.navBtn i{
+    transition: all 0.6s;
 }
 .hideMenuNav{
     width: 0%;
@@ -214,7 +219,7 @@ nav ul li
     margin-left:0%;
     float: right;
     position: fixed;
-    z-index: 3;
+    z-index: 2;
       
     }
   #Quadrocopter_and_Camera {

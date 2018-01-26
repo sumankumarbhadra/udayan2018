@@ -1,7 +1,5 @@
 //function for document on ready event
-$(document).ready(function(){    
-var navWidth;
-var navFlag = true;
+$(document).ready(function(){
 //drone
 var $p1 = $("#l-prop1");
 var $p2 = $("#l-prop2");
@@ -31,3 +29,25 @@ var spin = "-35px";
 TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1, yoyo:true});
 }
 });
+
+
+var navWidth;
+var navFlag = true;
+function init() {
+    document.getElementById("navDivBtn").addEventListener("click", navHandelClick)
+}
+
+function navHandelClick() {
+    navWidth = document.getElementById("navMenu");
+    if(navFlag === true){
+        navWidth.style.width = "0";
+        document.getElementById("navDivBtn").style.marginLeft="0%";
+        document.getElementById("navBtnIcn").style.transform="rotate(180deg)";
+        return navFlag = false;
+    }else if(navFlag === false){
+        navWidth.style.width = "17%";
+        document.getElementById("navDivBtn").style.marginLeft="17%";
+        document.getElementById("navBtnIcn").style.transform="rotate(360deg)";
+        return navFlag = true;
+    }
+}
