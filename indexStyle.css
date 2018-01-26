@@ -102,6 +102,13 @@ article
     cursor: pointer;
 }
 
+.lid
+{
+    position: absolute;
+    margin-top: 87%;
+    margin-left: 0;
+
+}
 
 
 
