@@ -11,6 +11,7 @@ body
     min-width: available;
     min-height: available;
     position: fixed;*/
+    cursor: none;
 }
 .backgroundImg
 {
