@@ -5,16 +5,18 @@ body
     overflow: hidden;
     background: url("assets/images/1.jpg") no-repeat;
     background-size: cover;
+    min-width: 80%;
 }
 #grass
 {
     background: url("assets/images/background-19861_1280.jpg") no-repeat;
     background-size: cover;
     height: 404px;
-    width: 100%;
+    min-width: 100%;
     display: inline-block;
     float: bottom;
     margin-top: 25rem;
+    overflow: auto;
 
 }
 nav
@@ -64,15 +66,16 @@ nav ul li
 }
 .DBS
 {
+    max-width: 100%;
+    position: fixed;
+    margin-left: 23%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    overflow: auto;
 }
 .dustbin
 {
-    position: fixed;
-    margin-left: 25%;
-    margin-top: 20%;
+    margin-top: 22rem;
+    display: inline-block;
 
 }
 
@@ -80,7 +83,7 @@ nav ul li
 
 
 /*Dustbin position fix*/
-#blueDB
+/*#blueDB
 {
     margin-left:35% ;
 }
@@ -99,4 +102,4 @@ nav ul li
 #brownDB
 {
     margin-left: 75% ;
-}
+}*/
