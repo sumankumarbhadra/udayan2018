@@ -38,7 +38,7 @@ nav
     padding-top: 22%;
 }
 .hideMenuNav{
-    display: none;
+    width: 0%;
 }
 .hideMenuDiv{
     margin-left: 0%;
