@@ -130,16 +130,16 @@ article
 
 .blades {
     position: absolute;
-    top: 116px;
-    left: 196px;
+    top: 139px;
+    left: 236px;
     animation: bladeSpin 10s ease-in-out infinite;
 }
 
 .stand {
 
     position: absolute;
-    top: 170px;
-    left: 250px;
+    top: 197px;
+    left: 290px;
     z-index: 1;
 }
 
