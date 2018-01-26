@@ -1,5 +1,5 @@
 //function for document on ready event
-$(document).ready(function(){
+$(document).ready(function(){    
 var navWidth;
 var navFlag = true;
 //drone
