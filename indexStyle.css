@@ -50,7 +50,8 @@ article
     position: fixed;
     overflow: hidden;
     z-index: 2;
-    transition: all 0.6s;
+    transition: all 1.5s;
+    transition-delay: 0.6s;
     box-shadow: -20px 0px 0px 0px grey;
 }
 #navContainer
@@ -75,11 +76,13 @@ article
     padding-top: 22%;
     padding-left: 2px;
     z-index: 2;
-    transition: all 0.6s;
+    transition: all 1.5s;
+    transition-delay: 0.6s;
     box-shadow: 1px -1px 12px 0px grey;
 }
 .navBtn #navBtnIcn{
-    transition: all 0.6s;
+    transition: all 1.5s;
+    transition-delay: 0.6s;
 
 }
 /*nav menu end*/
