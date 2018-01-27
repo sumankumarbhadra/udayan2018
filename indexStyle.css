@@ -325,11 +325,11 @@ article
     opacity: 1;
   }
   15.2% {
-    transform: translateY(180px) translateX(600px);
+    transform: translateY(280px) translateX(600px);
     opacity: 1;
   }
   22.3% {
-    transform: translateX(600px) translateY(190px);
+    transform: translateX(600px) translateY(290px);
     opacity: 1;
   }
   30.4% {
@@ -337,11 +337,11 @@ article
     opacity: 1;
   }
   35.5% {
-    transform: translateX(150px) translateY(230px);
+    transform: translateX(150px) translateY(300px);
     opacity: 1;
   }
   50.6% {
-    transform: translateX(950px) translateY(230px);
+    transform: translateX(950px) translateY(300px);
 
     opacity: 1;
   }
