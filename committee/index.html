@@ -4,6 +4,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+	<link href="../fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
+	 <script src="../indexjs.js"></script>
+    <link rel="stylesheet" href="../indexStyle.css">
 	<style>
 	/* ---- reset ---- */ 
 		body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
@@ -47,7 +50,18 @@
 	  } );
 	  </script>											
 </head>
-<body>
+<body onload="init();">
+	<!--Nav start-->
+        <nav id="navMenu" class="nav">
+            <ul id="navContainer">
+                <a href="#"><li class="menuElement">Home</li></a>
+                <a href="./Committee/index.html"><li class="menuElement">Committee</li></a>
+                <a href="./contest/cse/index.html"><li class="menuElement">Contest - CSE/IT</li></a>
+            </ul>
+        </nav>
+
+        <div id="navDivBtn" class="navBtn"><i id="navBtnIcn" class="fas fa-angle-double-left fa-2x"></i></div>
+<!--Nav end-->
 	<div id="particles-js">
 		<div id="draggable"> Branch name</div>
 		<div id="draggable1" class="mem1">Team Member 1</div>
