@@ -29,13 +29,23 @@
 			font-weight: bold;
 			z-index: 1;
 			transition: 1s ease;
+			box-shadow: 2px 5px 20px 5px rgba(27, 27, 27, 0.75);
+
 		}
 		line{
 			stroke:#5026f9;
 			stroke-width:5px;
 			transition: 1s ease;
-		}
+			box-shadow: 2px 5px 20px 5px rgba(27, 27, 27, 0.75);
 
+		}
+		video{
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			z-index: -1;
+			object-fit: fill;
+		}
 	</style>
 	
 
@@ -62,7 +72,11 @@
 
         <div id="navDivBtn" class="navBtn"><i id="navBtnIcn" class="fas fa-angle-double-left fa-2x"></i></div>
 <!--Nav end-->
-	<div id="particles-js">
+<video autoplay muted loop id="myVideo">
+  <source src="techfest.mp4" type="video/mp4">
+</video>
+	<div >
+
 		<div id="draggable"> Branch name</div>
 		<div id="draggable1" class="mem1">Team Member 1</div>
 		<div id="draggable2" class="mem2">Team Member 2</div>
