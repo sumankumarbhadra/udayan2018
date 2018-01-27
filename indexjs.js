@@ -34,7 +34,8 @@ TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1,
 var navWidth;
 var navFlag = true;
 function init() {
-    document.getElementById("navDivBtn").addEventListener("click", navHandelClick)
+    document.getElementById("navDivBtn").addEventListener("click", navHandelClick);
+    navHandelClick();//auto close menu on loading page
 }
 
 function navHandelClick() {
