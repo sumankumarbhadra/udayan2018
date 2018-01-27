@@ -16,6 +16,15 @@ body
 *{
     cursor: url(assets/images/cursor2.png),auto ;
 }
+a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+      font-size: 23px;
+}
+a:hover{
+  color:#23527c;
+}
 .backgroundImg
 {
     width: 100%;

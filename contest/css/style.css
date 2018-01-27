@@ -4577,3 +4577,51 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a.btn {
         margin-bottom: 0;
     }
 }
+/*Nav menu start*/
+#navMenu
+{
+    height: 100%;
+    width: 0%;
+    background-color:  rgba(255,255,255,0.6);
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    transition: all 0.6s;
+    box-shadow: -20px 0px 0px 0px grey;
+}
+#navContainer
+{
+    padding: 0px;
+    margin: 0px;
+}
+.menuElement
+{
+    padding: 15px;
+    border: 1px solid floralwhite;
+}
+.navBtn
+{
+    height: 100%;
+    min-width: 2%;
+    background: linear-gradient(to bottom, rgba(76,76,76,0.4) 0%,rgba(89,89,89,0.4) 12%,rgba(102,102,102,0.4) 25%,rgba(71,71,71,0.4) 39%,rgba(44,44,44,0.4) 50%,rgba(0,0,0,0.4) 51%,rgba(17,17,17,0.4) 60%,rgba(43,43,43,0.4) 76%,rgba(28,28,28,0.4) 91%,rgba(19,19,19,0.4) 100%);
+    position: fixed;
+    margin-left: 0%;
+    /*mix-blend-mode:difference;*/
+    color: #d7dc07;
+    padding-top: 22%;
+    padding-left: 2px;
+    z-index: 2;
+    transition: all 0.6s;
+    box-shadow: 1px -1px 12px 0px grey;
+}
+.navBtn #navBtnIcn{
+    transition: all 0.6s;
+    transform: rotate(180deg);
+}
+ul>a{
+  text-decoration: none;
+  color: black;
+      font-size: 23px;
+}
+/*nav menu end*/
+
