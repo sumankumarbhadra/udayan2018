@@ -103,7 +103,7 @@ article
 {
     position: fixed;
     margin-left: 29%;
-    overflow: auto;
+    overflow:paged-x;
     z-index: 2;
     bottom: 32px;
 
