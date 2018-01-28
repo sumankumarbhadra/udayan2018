@@ -164,6 +164,21 @@ article
     text-align: center;
 }
 
+#afteriFrame
+{
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: white;
+}
+
+
+
+
+
+
 #afterContainerGreen
 {
     top: 67%;

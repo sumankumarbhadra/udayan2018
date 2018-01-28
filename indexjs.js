@@ -73,7 +73,7 @@ $(document).ready(function(){
 
 /*After container*/
 
-/*Test function  -- !important Call function openAfterCon(value);
+/* --- !important Call function openAfterCon(value); ---
 where value :
 value = 1 green bin
 value = 2 Blue bin
@@ -83,10 +83,11 @@ value = 5 Red bin
 value = 6 Deep green bin
   */
 
+//Use this function as test function
 /*var value;
 function getMouse(){
 
-    value = 6;
+    value = 4;
     openAfterCon(value);
 }*/
 
@@ -104,6 +105,7 @@ function openAfterCon(value) {
 
             function scaleGreen() {
                 document.getElementById("afterContainerGreen").style.transform = "scale(90)";
+                document.getElementById("afteriFrame").style.display = "block";
             }
         } else if (value === 2) {
             document.querySelector(".afterContainer").style.display = "inline-block";
@@ -114,6 +116,7 @@ function openAfterCon(value) {
 
             function scaleBlue() {
                 document.getElementById("afterContainerBlue").style.transform = "scale(90)";
+                document.getElementById("afteriFrame").style.display = "block";
             }
 
         }else if (value === 3) {
@@ -121,10 +124,11 @@ function openAfterCon(value) {
             document.getElementById("afterContainerYellow").style.transform = "rotateX(0)";
             document.getElementById("afterContainerYellow").style.left = "50%";
             document.getElementById("afterContainerYellow").style.top = "50%";
-            setTimeout(scaleBlue, 2000);
+            setTimeout(scaleYellow, 2000);
 
-            function scaleBlue() {
+            function scaleYellow() {
                 document.getElementById("afterContainerYellow").style.transform = "scale(90)";
+                document.getElementById("afteriFrame").style.display = "block";
             }
 
         }else if (value === 4) {
@@ -132,10 +136,11 @@ function openAfterCon(value) {
             document.getElementById("afterContainerGray").style.transform = "rotateX(0)";
             document.getElementById("afterContainerGray").style.left = "50%";
             document.getElementById("afterContainerGray").style.top = "50%";
-            setTimeout(scaleBlue, 2000);
+            setTimeout(scaleGray, 2000);
 
-            function scaleBlue() {
+            function scaleGray() {
                 document.getElementById("afterContainerGray").style.transform = "scale(90)";
+                document.getElementById("afteriFrame").style.display = "block";
             }
 
         }else if (value === 5) {
@@ -143,10 +148,11 @@ function openAfterCon(value) {
             document.getElementById("afterContainerRed").style.transform = "rotateX(0)";
             document.getElementById("afterContainerRed").style.left = "50%";
             document.getElementById("afterContainerRed").style.top = "50%";
-            setTimeout(scaleBlue, 2000);
+            setTimeout(scaleRed, 2000);
 
-            function scaleBlue() {
+            function scaleRed() {
                 document.getElementById("afterContainerRed").style.transform = "scale(90)";
+                document.getElementById("afteriFrame").style.display = "block";
             }
 
         }else if (value === 6) {
@@ -154,10 +160,11 @@ function openAfterCon(value) {
             document.getElementById("afterContainerDGreen").style.transform = "rotateX(0)";
             document.getElementById("afterContainerDGreen").style.left = "50%";
             document.getElementById("afterContainerDGreen").style.top = "50%";
-            setTimeout(scaleBlue, 2000);
+            setTimeout(scaleDGreen, 2000);
 
-            function scaleBlue() {
+            function scaleDGreen() {
                 document.getElementById("afterContainerDGreen").style.transform = "scale(90)";
+                document.getElementById("afteriFrame").style.display = "block";
             }
 
         }
