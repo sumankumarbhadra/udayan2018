@@ -103,41 +103,42 @@
             <div id="dockWrapper">
             <ul class="osx-dock">
               <li class="active trash" id="greenDB">
-                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Batteries/Asset1.png" /></a>
+                <a href="#" id="anchor" title=""><img class="dockplace1 trashitem" id="garbage1" src="./assets/temporary/Garbage/Batteries/Asset1.png" /></a>
+              </li>
+              <li class="active trash" id="greenDB">
+                <a href="#" title=""><img class="dockplace3 trashitem" id="garbage2" src="./assets/temporary/Garbage/Plastic/Asset18.png" /></a>
               </li>
               <li class="active trash">
-                <a href="#" title=""><img class="dockplace3" src="./assets/temporary/Garbage/Plastic/Asset18.png" /></a>
+                <a href="#" title=""><img class="dockplace1 trashitem" id="garbage3" src="./assets/temporary/Garbage/Organic/Asset10.png" /></a>
               </li>
               <li class="active trash">
-                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Organic/Asset10.png" /></a>
+                <a href="#" title=""><img class="dockplace2 trashitem" id="garbage4" src="./assets/temporary/Garbage/Paper/Asset13.png" /></a>
               </li>
               <li class="active trash">
-                <a href="#" title=""><img class="dockplace2" src="./assets/temporary/Garbage/Paper/Asset13.png" /></a>
-              </li>
-              <li class="active trash">
-                <a href="#" title=""><img class="dockplace3" src="./assets/temporary/Garbage/Metal/Asset14.png" /></a>
+                <a href="#" title=""><img class="dockplace3 trashitem" id="garbage5" src="./assets/temporary/Garbage/Metal/Asset14.png" /></a>
               </li>
                 </li>
                 <li class="active trash">
-                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Plastic/Asset20.png" /></a>
+                <a href="#" title=""><img class="dockplace1 trashitem" id="garbage6" src="./assets/temporary/Garbage/Plastic/Asset20.png" /></a>
                 </li>
                 <li class="active trash">
-                <a href="#" title=""><img class="dockplace2" src="./assets/temporary/Garbage/Paper/Asset11.png" /></a>
+                <a href="#" title=""><img class="dockplace2 trashitem" id="garbage7"  src="./assets/temporary/Garbage/Paper/Asset11.png" /></a>
                 </li>
                 <li class="active trash">
-                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Organic/Asset6.png" /></a>
+                <a href="#" title=""><img class="dockplace1 trashitem" id="garbage8"  src="./assets/temporary/Garbage/Organic/Asset6.png" /></a>
                 </li>
                 <li class="active trash">
-                <a href="#" title=""><img class="dockplace3" src="./assets/temporary/Garbage/Plastic/Asset20.png" /></a>
+                <a href="#" title=""><img class="dockplace3 trashitem" id="garbage9"  src="./assets/temporary/Garbage/Plastic/Asset20.png" /></a>
                 </li>
                 <li class="active trash">
-                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Batteries/Asset3.png" /></a>
+                <a href="#" title=""><img class="dockplace1 trashitem" id="garbage10"  src="./assets/temporary/Garbage/Batteries/Asset3.png" /></a>
                 </li>
 
             </ul>
               </div>
             </div>
-
+        <!-- test code for cursor change drag -->
+        <img src="" id="blankimg" hidden="true" style="z-index: 4; width: 100px; height: 100px; position: absolute;">
     <script>
         var clicked=0;
         var trashid;
@@ -158,6 +159,25 @@
             alert("Select a trash first");
         }
     });
+    </script>
+    <script> //grabing code
+    $(".trashitem").click(function(){
+       //alert($(this).prop("src"));
+        imgid=$(this).prop("id");
+        imgsrc=$(this).prop("src");
+      $("body").mousemove(function( event ) {
+        
+      $("#"+imgid).css("display","none");
+      $("#blankimg").attr("src",imgsrc);
+      $("#dockContainer").css("z-index","1");
+      $("*").css("cursor","url(./assets/temporary/cursor.cur),auto");
+      $("#blankimg").css("margin-left",(event.pageX));
+      $("#blankimg").css("margin-top",(event.pageY-500));
+      $("#blankimg").removeAttr("hidden");
+      $("body").css("cursor","grabbing");
+    });   
+    });
+    
     </script>
 </body>
 </html>
