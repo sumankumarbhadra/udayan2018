@@ -90,7 +90,7 @@
     </style>
 </head>
 
-<body onload="init();">
+<body onload="init();begin();">
 
     <!-- Preloader -->
    
@@ -113,7 +113,7 @@
     <div id="section-0" class="clearfix">
         <div id="multiscroll">
             <div class="ms-left">
-                <div class="ms-section ms-1">
+                <div class="ms-section ms-1" id="1">
                     <div class="ms-padding">
                         <h5 class="subtitle">Programming Club</h5>
                         <h1 class="black-color">Code Jumbling</h1>
@@ -144,7 +144,7 @@
                     </div>
                 </div>
               
-               <div class="ms-section ms-4">
+               <div class="ms-section ms-4" id="davinci">
                     <div class="ms-padding">
                         <h5 class="subtitle">Data Science Club</h5>
                         <h1 class="black-color">Da Vinci Code</h1>
@@ -193,15 +193,14 @@
                         <h5 class="subtitle">Data Science Club</h5>
                         <h1 class="black-color">Web Villa</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details <br>st prize-: 1500<br>2nd prize-: 1000
-</p>
+                        <p>Contest Details <br>st prize-: 1500<br>2nd prize-: 1000</p>
                         <div class="h-30"></div>
                         <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
             </div>
             <div class="ms-right">
-                <div class="ms-section ms-1" style="background: url(img/);">
+                <div class="ms-section ms-1" id="1" style="background: url(img/);">
                     <div class="img"></div>
                 </div>
                 <div class="ms-section ms-2" style="background: url(img/);">
@@ -210,7 +209,7 @@
                 <div class="ms-section ms-3" style="background: url(img/);">
                     <div class="img"></div>
                 </div>
-                <div class="ms-section ms-4" style="background: url(img/);">
+                <div class="ms-section ms-4" id="davinciimg" style="background: url(img/);">
                     <div class="img"></div>
                 </div>
                 <div class="ms-section ms-5" style="background: url(img/);">
@@ -331,6 +330,31 @@ function navHandelClick() {
 }
 
 /*Nav menu end*/
+    </script>
+    <script>
+      function begin(){
+    var params = location.search.substr(location.search.indexOf("?")+1);
+    var sval = "";
+    var sname= "id";
+    params = params.split("&");
+      // split param and value into individual pieces
+      for (var i=0; i<params.length; i++)
+         {
+           temp = params[i].split("=");
+           if ( [temp[0]] == sname ) { sval = temp[1]; }
+         }
+      scrollto(sval);}
+     // alert(sval);
+      //scroll
+   function scrollto(eventid){
+    var pos=$('#'+eventid).position().top;
+    var left=pos*-1;
+    var leftpos=$('#'+eventid+'img').position().top;
+    var right=leftpos*-1;
+    $('.ms-left').css("top",left);
+
+    $('.ms-right').css("top",right);
+   }
     </script>
 </body>
 

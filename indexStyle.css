@@ -106,10 +106,10 @@ article
 .DBS
 {
     position: fixed;
-    margin-left: 29%;
+    margin-left: 33%;
     overflow:paged-x;
     z-index: 2;
-    bottom: 32px;
+    bottom: 88px;
 
 }
 .dustbin
@@ -148,18 +148,6 @@ article
 
 }
 
-#lamp
-{
-
-    position: fixed;
-    font-size: 5em;
-    z-index: 1;
-    width: 100%;
-    text-align: center;
-    bottom: 17px;
-    left: 315px;
-}
-
 
 
 
@@ -189,16 +177,16 @@ article
 
 .blades {
     position: absolute;
-    top: 139px;
-    left: 236px;
+    top: 260px;
+    left: 246px;
     animation: bladeSpin 10s ease-in-out infinite;
 }
 
 .stand {
 
     position: absolute;
-    top: 197px;
-    left: 290px;
+    top: 317px;
+    left: 300px;
     z-index: 1;
 }
 
@@ -214,6 +202,7 @@ article
       top: 10px;
       left: -300px;
       background-size: 100%;
+      opacity: 0.8;
       animation: float 40s cubic-bezier(0, 0, 0.62, 0.6) infinite;
 }
 .small
@@ -222,6 +211,7 @@ article
       top: 60px;
       right: -250px;
       background-size: 100%;
+      opacity: 0.8;
       animation: floatr 40s cubic-bezier(0, 0, 0.62, 0.6) infinite;
 }
 .medium
@@ -230,6 +220,7 @@ article
     top: 130px;
     left: -220px;
     background-size: 100%;
+    opacity: 0.8;
     animation: float 60s cubic-bezier(0, 0, 0.62, 0.6) infinite;
 }
 
@@ -237,6 +228,7 @@ article
       top: 180px;
       right: -200px;
       background-size: 100%;
+      opacity: 0.8;
       animation: floatr 90s cubic-bezier(0, 0, 0.62, 0.6) infinite;
     }
 /* Blades animation */
@@ -293,8 +285,8 @@ article
     position: absolute;
     -webkit-animation: animate 80s linear infinite normal running 0s none;
   opacity: 0;
-    height: 60px;
-    width: 150px;
+    height: 57px;
+    width: 130px;
     z-index: 2;
 
   }
