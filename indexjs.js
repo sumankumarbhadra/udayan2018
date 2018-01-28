@@ -35,7 +35,7 @@ var navWidth;
 var navFlag = true;
 function init() {
     document.getElementById("navDivBtn").addEventListener("click", navHandelClick);
-    setTimeout(navHandelClick, 4000);//auto close menu on loading page
+    setTimeout(navHandelClick, 1200);//auto close menu on loading page
 }
 
 function navHandelClick() {
