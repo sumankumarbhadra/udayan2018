@@ -121,6 +121,7 @@ article
       position: absolute;
     width: 100%;
    top: -10px;
+    transition: all 0.3s;
    z-index: -1;
 }
 .dustbin:hover .dustbinlid{
