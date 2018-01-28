@@ -103,7 +103,7 @@
             <div id="dockWrapper">
             <ul class="osx-dock">
               <li class="active trash" id="greenDB">
-                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Batteries/Asset1.png" /></a>
+                <a href="#" title=""><img class="dockplace1" id="1" src="./assets/temporary/Garbage/Batteries/Asset1.png" /></a>
               </li>
               <li class="active trash">
                 <a href="#" title=""><img class="dockplace3" src="./assets/temporary/Garbage/Plastic/Asset18.png" /></a>
@@ -137,7 +137,8 @@
             </ul>
               </div>
             </div>
-
+        <!-- test code for cursor change drag -->
+        <img src="" id="blankimg" hidden="true" style="z-index: 4; width: 100px; height: 100px; position: absolute;">
     <script>
         var clicked=0;
         var trashid;
@@ -158,6 +159,21 @@
             alert("Select a trash first");
         }
     });
+    </script>
+    <script> //grabing code
+    $("#1").click(function(){
+      $("body").mousemove(function( event ) {
+      $("#1").css("display","none");
+      $("#blankimg").attr("src",$("#1").attr("src"));
+      $("#dockContainer").css("z-index","1");
+      $("*").css("cursor","url(./assets/temporary/cursor.cur),auto");
+      $("#blankimg").css("margin-left",(event.pageX));
+      $("#blankimg").css("margin-top",(event.pageY-500));
+      $("#blankimg").removeAttr("hidden");
+      $("body").css("cursor","grabbing");
+    });   
+    });
+    
     </script>
 </body>
 </html>

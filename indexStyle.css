@@ -416,7 +416,7 @@ ul.osx-dock {
     display: inline-block;
     height: 130px;
     padding: 0 40px 0 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0 0 0 40px;
 }
 
