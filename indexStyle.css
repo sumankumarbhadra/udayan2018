@@ -121,6 +121,8 @@ article
     position: relative;
 }
 
+
+
 .dustbinlid{
       position: absolute;
     width: 100%;
@@ -153,7 +155,6 @@ article
     position: fixed;
     background-color: rgba(0,0,0,0.6);
     color: white;
-    padding-right: 35px;
     z-index: 5;
     padding: 10px;
     border-radius: 50%;
