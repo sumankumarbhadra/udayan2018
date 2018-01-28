@@ -106,10 +106,10 @@ article
 .DBS
 {
     position: fixed;
-    margin-left: 29%;
+    margin-left: 33%;
     overflow:paged-x;
     z-index: 2;
-    bottom: 32px;
+    bottom: 88px;
 
 }
 .dustbin
@@ -146,18 +146,6 @@ article
     margin-top: 87%;
     margin-left: 104px;
 
-}
-
-#lamp
-{
-
-    position: fixed;
-    font-size: 5em;
-    z-index: 1;
-    width: 100%;
-    text-align: center;
-    bottom: 17px;
-    left: 315px;
 }
 
 
