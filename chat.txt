@@ -1,0 +1,6 @@
+<script>
+    var clicked=0;
+$('.dustbin').click(function(){
+   alert($(this).attr('id'));
+});
+</script>
