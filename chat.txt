@@ -1,6 +1,1 @@
-<script>
-    var clicked=0;
-$('.dustbin').click(function(){
-   alert($(this).attr('id'));
-});
-</script>
+https://jsbin.com/zojuwu/edit?html,js,output
