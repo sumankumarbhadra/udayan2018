@@ -106,6 +106,66 @@
     </article>
 
 
+<!-- dock -->
+         <div id="dockContainer">
+            <div id="dockWrapper">
+            <ul class="osx-dock">
+              <li class="active trash" id="greenDB">
+                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Batteries/Asset1.png" /></a>
+              </li>
+              <li class="active trash">
+                <a href="#" title=""><img class="dockplace3" src="./assets/temporary/Garbage/Plastic/Asset18.png" /></a>
+              </li>
+              <li class="active trash">
+                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Organic/Asset10.png" /></a>
+              </li>
+              <li class="active trash">
+                <a href="#" title=""><img class="dockplace2" src="./assets/temporary/Garbage/Paper/Asset13.png" /></a>
+              </li>
+              <li class="active trash">
+                <a href="#" title=""><img class="dockplace3" src="./assets/temporary/Garbage/Metal/Asset14.png" /></a>
+              </li>
+                </li>
+                <li class="active trash">
+                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Plastic/Asset20.png" /></a>
+                </li>
+                <li class="active trash">
+                <a href="#" title=""><img class="dockplace2" src="./assets/temporary/Garbage/Paper/Asset11.png" /></a>
+                </li>
+                <li class="active trash">
+                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Organic/Asset6.png" /></a>
+                </li>
+                <li class="active trash">
+                <a href="#" title=""><img class="dockplace3" src="./assets/temporary/Garbage/Plastic/Asset20.png" /></a>
+                </li>
+                <li class="active trash">
+                <a href="#" title=""><img class="dockplace1" src="./assets/temporary/Garbage/Batteries/Asset3.png" /></a>
+                </li>
 
+            </ul>
+              </div>
+            </div>
+
+    <script>
+        var clicked=0;
+        var trashid;
+        $('.trash').click(function(){
+            trashid=$(this).attr('id');
+            clicked=1;
+        });
+
+    $('.dustbin').click(function(){
+        if(clicked && $(this).attr('id')){
+            if($(this).attr('id')==trashid){
+                alert("done");
+                clicked=0;
+            }else{
+                alert("wrong bin");
+            }
+        }else{
+            alert("Select a trash first");
+        }
+    });
+    </script>
 </body>
 </html>

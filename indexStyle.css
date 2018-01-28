@@ -382,36 +382,140 @@ article
 
 
 /* dock2 - bottom */
-#dock2 {
-  width: 100%;
-  bottom: 0px;
-  height: 50px;
-  position: absolute;
-  left: 0px;
-  z-index: 10;
+#osxdock-page {
+    color: #fff;
+    padding-bottom: 2em;
+    margin-bottom: -2em;
 }
-#dock2 .dock-container2 {
-  position: absolute;
-  height: 50px;
-  padding-left: 20px;
+
+#osxdock-page h1,#osxdock-page h2 {
+    color: #fff;
 }
-#dock2 a.dock-item2 {
-  display: block;
-  font: bold 12px Arial, Helvetica, sans-serif;
-  width: 40px;
-  color: #000;
-  bottom: 0px;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
+
+
+div.cap {
+    display: block;
+    height: 100px;
+    width: 40px;
 }
-#dock2 .dock-item2 span {
-  display: none;
-  padding-left: 20px;
-  color: White;
+
+div.cap.left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
-#dock2 .dock-item2 img {
-  border: none;
-  margin: 5px 10px 0px;
-  width: 100%;
+
+div.cap.right {
+    background-position: right bottom;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+ul.osx-dock {
+    display: inline-block;
+    height: 130px;
+    padding: 0 40px 0 0;
+    overflow: hidden;
+    margin: 0 0 0 40px;
+}
+
+ul.osx-dock li {
+    display: block;
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 60px 0 4px 0;
+    -webkit-transition: 0.15s linear;
+    -webkit-transition-property: -webkit-transform margin;
+    text-align: center;
+}
+
+ul.osx-dock li a {
+    display: block;
+    height: 50px;
+    padding: 0 1px;
+    -webkit-transition: 0.15s linear;
+    -webkit-transition-property: -webkit-transform margin;
+    margin: 0;
+}
+
+ul.osx-dock li a img {
+    width: 48px;
+}
+
+ul.osx-dock li:hover {
+    margin-left: 9px;
+    margin-right: 9px;
+    z-index: 200;
+}
+
+ul.osx-dock li:hover a {
+    -webkit-transform-origin: center bottom;
+    -webkit-transform: scale(1.5);
+}
+
+ul.osx-dock li.nearby {
+    margin-left: 6px;
+    margin-right: 6px;
+    z-index: 100;
+}
+
+ul.osx-dock li.nearby a {
+    -webkit-transform-origin: center bottom;
+    -webkit-transform: scale(1.25);
+}
+
+ul.osx-dock li span {
+    background: rgba(0,0,0,0.75);
+    position: absolute;
+    bottom: 80px;
+    margin: 0 auto;
+    display: none;
+    width: auto;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 6px;
+    -webkit-border-radius: 6px;
+    color: #fff;
+}
+
+ul.osx-dock li:hover span {
+    display: block;
+}
+
+div#dockContainer {
+    position: fixed;
+    bottom: 3%;
+    height: 120px;
+    padding: 50px 0 0;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    width: 100%;
+    line-height: 1;
+    z-index: 100;
+}
+
+div#dockWrapper {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+}
+
+#dockContainer,#dockContainer * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.dockplace1{
+    margin-top: 1em;
+}
+.dockplace2{
+    margin-top: 1.5em;
+}
+.dockplace3{
+    margin-top: 2em;
 }
