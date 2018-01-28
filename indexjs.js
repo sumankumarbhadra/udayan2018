@@ -87,7 +87,7 @@ value = 6 Deep green bin
 /*var value;
 function getMouse(){
 
-    value = 4;
+    value = 1;
     openAfterCon(value);
 }*/
 
@@ -95,6 +95,8 @@ function getMouse(){
 function openAfterCon(value) {
     if (value === 0) {
         document.querySelector(".afterContainer").style.display = "hidden";
+        document.getElementById("afteriFrame").style.width = "0%";
+        document.getElementById("afteriFrame").style.height = "0%";
     } else {
         if (value === 1) {
             document.querySelector(".afterContainer").style.display = "inline-block";
@@ -106,6 +108,9 @@ function openAfterCon(value) {
             function scaleGreen() {
                 document.getElementById("afterContainerGreen").style.transform = "scale(90)";
                 document.getElementById("afteriFrame").style.display = "block";
+                document.getElementById("afteriFrame").style.width = "100%";
+                document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
         } else if (value === 2) {
             document.querySelector(".afterContainer").style.display = "inline-block";
@@ -117,6 +122,8 @@ function openAfterCon(value) {
             function scaleBlue() {
                 document.getElementById("afterContainerBlue").style.transform = "scale(90)";
                 document.getElementById("afteriFrame").style.display = "block";
+                document.getElementById("afteriFrame").style.width = "100%";
+                document.getElementById("afteriFrame").style.height = "100%";
             }
 
         }else if (value === 3) {
@@ -129,6 +136,8 @@ function openAfterCon(value) {
             function scaleYellow() {
                 document.getElementById("afterContainerYellow").style.transform = "scale(90)";
                 document.getElementById("afteriFrame").style.display = "block";
+                document.getElementById("afteriFrame").style.width = "100%";
+                document.getElementById("afteriFrame").style.height = "100%";
             }
 
         }else if (value === 4) {
@@ -141,6 +150,8 @@ function openAfterCon(value) {
             function scaleGray() {
                 document.getElementById("afterContainerGray").style.transform = "scale(90)";
                 document.getElementById("afteriFrame").style.display = "block";
+                document.getElementById("afteriFrame").style.width = "100%";
+                document.getElementById("afteriFrame").style.height = "100%";
             }
 
         }else if (value === 5) {
@@ -153,6 +164,8 @@ function openAfterCon(value) {
             function scaleRed() {
                 document.getElementById("afterContainerRed").style.transform = "scale(90)";
                 document.getElementById("afteriFrame").style.display = "block";
+                document.getElementById("afteriFrame").style.width = "100%";
+                document.getElementById("afteriFrame").style.height = "100%";
             }
 
         }else if (value === 6) {
@@ -165,6 +178,8 @@ function openAfterCon(value) {
             function scaleDGreen() {
                 document.getElementById("afterContainerDGreen").style.transform = "scale(90)";
                 document.getElementById("afteriFrame").style.display = "block";
+                document.getElementById("afteriFrame").style.width = "100%";
+                document.getElementById("afteriFrame").style.height = "100%";
             }
 
         }
