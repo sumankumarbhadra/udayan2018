@@ -69,22 +69,97 @@ $(document).ready(function(){
    });
 });
 
+/*After Container Start*/
 
 /*After container*/
-var value;
+
+/*Test function  -- !important Call function openAfterCon(value);
+where value :
+value = 1 green bin
+value = 2 Blue bin
+value = 3 Yellow bin
+value = 4 Gray bin
+value = 5 Red bin
+value = 6 Deep green bin
+  */
+
+/*var value;
 function getMouse(){
 
-    value = 2;
+    value = 6;
     openAfterCon(value);
-}
-function openAfterCon(value) {
-    if(value === 1){
-        document.getElementById("afterContainerGreen").style.transform= "rotateX(0)";
-    }else if(value === 2 )
-    {
-        document.getElementById("afterContainerBlue").style.transform= "rotateX(0)";
-        document.getElementById("afterContainerBlue").style.left="50%";
-        document.getElementById("afterContainerBlue").style.top="50%";
+}*/
 
+
+function openAfterCon(value) {
+    if (value === 0) {
+        document.querySelector(".afterContainer").style.display = "hidden";
+    } else {
+        if (value === 1) {
+            document.querySelector(".afterContainer").style.display = "inline-block";
+            document.getElementById("afterContainerGreen").style.transform = "rotateX(0)";
+            document.getElementById("afterContainerGreen").style.left = "50%";
+            document.getElementById("afterContainerGreen").style.top = "50%";
+            setTimeout(scaleGreen, 2000);
+
+            function scaleGreen() {
+                document.getElementById("afterContainerGreen").style.transform = "scale(90)";
+            }
+        } else if (value === 2) {
+            document.querySelector(".afterContainer").style.display = "inline-block";
+            document.getElementById("afterContainerBlue").style.transform = "rotateX(0)";
+            document.getElementById("afterContainerBlue").style.left = "50%";
+            document.getElementById("afterContainerBlue").style.top = "50%";
+            setTimeout(scaleBlue, 2000);
+
+            function scaleBlue() {
+                document.getElementById("afterContainerBlue").style.transform = "scale(90)";
+            }
+
+        }else if (value === 3) {
+            document.querySelector(".afterContainer").style.display = "inline-block";
+            document.getElementById("afterContainerYellow").style.transform = "rotateX(0)";
+            document.getElementById("afterContainerYellow").style.left = "50%";
+            document.getElementById("afterContainerYellow").style.top = "50%";
+            setTimeout(scaleBlue, 2000);
+
+            function scaleBlue() {
+                document.getElementById("afterContainerYellow").style.transform = "scale(90)";
+            }
+
+        }else if (value === 4) {
+            document.querySelector(".afterContainer").style.display = "inline-block";
+            document.getElementById("afterContainerGray").style.transform = "rotateX(0)";
+            document.getElementById("afterContainerGray").style.left = "50%";
+            document.getElementById("afterContainerGray").style.top = "50%";
+            setTimeout(scaleBlue, 2000);
+
+            function scaleBlue() {
+                document.getElementById("afterContainerGray").style.transform = "scale(90)";
+            }
+
+        }else if (value === 5) {
+            document.querySelector(".afterContainer").style.display = "inline-block";
+            document.getElementById("afterContainerRed").style.transform = "rotateX(0)";
+            document.getElementById("afterContainerRed").style.left = "50%";
+            document.getElementById("afterContainerRed").style.top = "50%";
+            setTimeout(scaleBlue, 2000);
+
+            function scaleBlue() {
+                document.getElementById("afterContainerRed").style.transform = "scale(90)";
+            }
+
+        }else if (value === 6) {
+            document.querySelector(".afterContainer").style.display = "inline-block";
+            document.getElementById("afterContainerDGreen").style.transform = "rotateX(0)";
+            document.getElementById("afterContainerDGreen").style.left = "50%";
+            document.getElementById("afterContainerDGreen").style.top = "50%";
+            setTimeout(scaleBlue, 2000);
+
+            function scaleBlue() {
+                document.getElementById("afterContainerDGreen").style.transform = "scale(90)";
+            }
+
+        }
     }
 }

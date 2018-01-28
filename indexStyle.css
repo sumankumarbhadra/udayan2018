@@ -153,19 +153,17 @@ article
 .afterContainer
 {
     position: fixed;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     color: white;
     z-index: 5;
-    padding: 10px;
+    padding: 50px;
     border-radius: 50%;
     transform-style: preserve-3d;
     transform: rotateX(90deg);
-    transition: all 1s;
+    transition: all 1.6s;
+    text-align: center;
 }
-.afterContainer:active
-{
-    transform: scale(10);
-}
+
 #afterContainerGreen
 {
     top: 67%;
@@ -488,7 +486,7 @@ ul.osx-dock li a img {
 ul.osx-dock li:hover {
     margin-left: 9px;
     margin-right: 9px;
-    z-index: 200;
+    z-index: 4;
 }
 
 ul.osx-dock li:hover a {
@@ -499,7 +497,7 @@ ul.osx-dock li:hover a {
 ul.osx-dock li.nearby {
     margin-left: 6px;
     margin-right: 6px;
-    z-index: 100;
+    z-index: 4;
 }
 
 ul.osx-dock li.nearby a {
@@ -535,7 +533,7 @@ div#dockContainer {
     -moz-border-radius: 6px;
     width: 100%;
     line-height: 1;
-    z-index: 100;
+    z-index: 4;
 }
 
 div#dockWrapper {
