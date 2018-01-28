@@ -62,9 +62,10 @@ article
     text-decoration: none;
     color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 23px;
+    font-size: 18px;
 }
-.trash{
+.trash i{
+    margin-left: 10%;
     font-size: 13px;
 }
 .navBtn
