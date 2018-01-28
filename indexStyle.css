@@ -17,12 +17,9 @@ body
     cursor: url(assets/images/cursor2.png),auto ;
 }
 a{
-  text-decoration: none;
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-      font-size: 23px;
+    text-decoration: none;
 }
-a:hover{
+.menuElement:hover{
   color:#23527c;
 }
 .backgroundImg
@@ -62,6 +59,13 @@ article
 {
     padding: 15px;
     border: 1px solid floralwhite;
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+}
+.trash{
+    font-size: 13px;
 }
 .navBtn
 {
