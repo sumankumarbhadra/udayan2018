@@ -159,7 +159,7 @@ article
     padding: 10px;
     border-radius: 50%;
     transform-style: preserve-3d;
-    transform: rotateX(80deg);
+    transform: rotateX(90deg);
     transition: all 1s;
 }
 .afterContainer:active
@@ -174,27 +174,27 @@ article
 #afterContainerBlue
 {
     top: 67%;
-    left: 36.3%;
+    left: 38.7%;
 }
 #afterContainerYellow
 {
     top: 67%;
-    left: 43.1%;
+    left: 44.6%;
 }
 #afterContainerGray
 {
     top: 67%;
-    left: 49.9%;
+    left: 50.3%;
 }
 #afterContainerRed
 {
     top: 67%;
-    left: 56.7%;
+    left: 56.1%;
 }
 #afterContainerDGreen
 {
     top: 67%;
-    left: 63.5%;
+    left: 61.8%;
 }
 
 
