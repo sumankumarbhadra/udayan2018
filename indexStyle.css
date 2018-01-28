@@ -439,7 +439,6 @@ ul.osx-dock li a {
     -webkit-transition: 0.15s linear;
     -webkit-transition-property: -webkit-transform margin;
     margin: 0;
-    -webkit-box-reflect: below 2px -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(0.45,transparent),to(rgba(255,255,255,0.25)));
 }
 
 ul.osx-dock li a img {
@@ -488,7 +487,7 @@ ul.osx-dock li:hover span {
 
 div#dockContainer {
     position: fixed;
-    bottom: -2%;
+    bottom: 3%;
     height: 120px;
     padding: 50px 0 0;
     text-align: center;
@@ -503,7 +502,6 @@ div#dockWrapper {
     width: auto;
     display: inline-block;
     position: relative;
-    border-bottom: solid 2px rgba(255,255,255,.35);
     line-height: 0;
 }
 
@@ -512,4 +510,12 @@ div#dockWrapper {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
-
+.dockplace1{
+    margin-top: 1em;
+}
+.dockplace2{
+    margin-top: 1.5em;
+}
+.dockplace3{
+    margin-top: 2em;
+}
