@@ -10,7 +10,7 @@
     <script src="TweenMax.min.js"></script>
     <script src="indexjs.js"></script>
 </head>
-<body onload="init();">
+<body onload="init(); getMouse(1);">
 <img src="assets/images/bg1.png" class="backgroundImg">
 
 <header><div id="udayanLogo"><img src="assets/images/Logo.png" width="420px" height="265px"></div></header>
@@ -71,11 +71,19 @@
         <div id="navDivBtn" class="navBtn"><i id="navBtnIcn" class="fas fa-angle-double-left fa-2x"></i></div>
 <!--Nav end-->
 
+
+<!--After containers-->
+        <i id="afterContainerGreen" class="afterContainer">Show here</i>
+        <i id="afterContainerBlue" class="afterContainer">Show here</i>
+        <i id="afterContainerYellow" class="afterContainer">Show here</i>
+        <i id="afterContainerGray" class="afterContainer">Show here</i>
+        <i id="afterContainerRed" class="afterContainer">Show here</i>
+        <i id="afterContainerDGreen" class="afterContainer">Show here</i>
         <!--Dustbin start-->
         <div class="DBS">
 
-            <div class="dustbin" id="greenDB"><img src="assets/images/greencap.png" class="dustbinlid"><img src="assets/images/green.png" height="150px" width="100px"></div>
-                    <div class="dustbin" id="blueDB"><img src="assets/images/bluecap.png" class="dustbinlid"><img src="assets/images/blue.png" height="150px" width="100px"></div>
+            <div class="dustbin" id="greenDB">    <img src="assets/images/greencap.png" class="dustbinlid">   <img src="assets/images/green.png" height="150px" width="100px"></div>
+                    <div class="dustbin" id="blueDB">  <img src="assets/images/bluecap.png" class="dustbinlid">    <!-- <i id="afterContainer">Show here</i>  -->    <img src="assets/images/blue.png" height="150px" width="100px"></div>
                     <div class="dustbin" id="yellowDB"><img src="assets/images/yellowcap.png" class="dustbinlid"><img src="assets/images/yellow.png" height="150px" width="100px"></div>
                     <div class="dustbin" id="blackDB"><img src="assets/images/greycap.png" class="dustbinlid"><img src="assets/images/grey.png" height="150px" width="100px"></div>
                    <div class="dustbin" id="redDB"><img src="assets/images/redcap.png" class="dustbinlid"><img src="assets/images/red.png" height="150px" width="100px"></div>

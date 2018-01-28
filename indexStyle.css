@@ -380,6 +380,59 @@ article
 }
 
 
+.afterContainer
+{
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding-right: 35px;
+    z-index: 5;
+    padding: 10px;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    transform: rotateX(80deg);
+    transition: all 1s;
+}
+.afterContainer:active
+{
+    transform: scale(10);
+}
+#afterContainerGreen
+{
+    top: 71%;
+    left: 29.5%;
+}
+#afterContainerBlue
+{
+    top: 71%;
+    left: 36.3%;
+}
+#afterContainerYellow
+{
+    top: 71%;
+    left: 43.1%;
+}
+#afterContainerGray
+{
+    top: 71%;
+    left: 49.9%;
+}
+#afterContainerRed
+{
+    top: 71%;
+    left: 56.7%;
+}
+#afterContainerDGreen
+{
+    top: 71%;
+    left: 63.5%;
+}
+
+
+
+
+
+
 
 /* dock2 - bottom */
 #osxdock-page {
