@@ -68,3 +68,23 @@ $(document).ready(function(){
         });
    });
 });
+
+
+/*After container*/
+var value;
+function getMouse(){
+
+    value = 2;
+    openAfterCon(value);
+}
+function openAfterCon(value) {
+    if(value === 1){
+        document.getElementById("afterContainerGreen").style.transform= "rotateX(0)";
+    }else if(value === 2 )
+    {
+        document.getElementById("afterContainerBlue").style.transform= "rotateX(0)";
+        document.getElementById("afterContainerBlue").style.left="50%";
+        document.getElementById("afterContainerBlue").style.top="50%";
+
+    }
+}
