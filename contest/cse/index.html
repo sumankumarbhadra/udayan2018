@@ -90,7 +90,7 @@
     </style>
 </head>
 
-<body onload="init();">
+<body onload="init();begin();">
 
     <!-- Preloader -->
    
@@ -332,6 +332,19 @@ function navHandelClick() {
 /*Nav menu end*/
     </script>
     <script>
+      function begin(){
+    var params = location.search.substr(location.search.indexOf("?")+1);
+    var sval = "";
+    var sname= "id";
+    params = params.split("&");
+      // split param and value into individual pieces
+      for (var i=0; i<params.length; i++)
+         {
+           temp = params[i].split("=");
+           if ( [temp[0]] == sname ) { sval = temp[1]; }
+         }
+      scrollto(sval);}
+     // alert(sval);
       //scroll
    function scrollto(eventid){
     var pos=$('#'+eventid).position().top;
