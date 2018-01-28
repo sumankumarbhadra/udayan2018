@@ -177,16 +177,16 @@ article
 
 .blades {
     position: absolute;
-    top: 139px;
-    left: 236px;
+    top: 260px;
+    left: 246px;
     animation: bladeSpin 10s ease-in-out infinite;
 }
 
 .stand {
 
     position: absolute;
-    top: 197px;
-    left: 290px;
+    top: 317px;
+    left: 300px;
     z-index: 1;
 }
 
@@ -281,8 +281,8 @@ article
     position: absolute;
     -webkit-animation: animate 80s linear infinite normal running 0s none;
   opacity: 0;
-    height: 60px;
-    width: 150px;
+    height: 57px;
+    width: 130px;
     z-index: 2;
 
   }
