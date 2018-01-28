@@ -33,11 +33,6 @@ TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1,
 /*Nav menu start*/
 var navWidth;
 var navFlag = true;
-
-
-
-
-/*Initialize*/
 function init() {
     document.getElementById("navDivBtn").addEventListener("click", navHandelClick);
     setTimeout(navHandelClick, 1200);//auto close menu on loading page
@@ -56,10 +51,7 @@ function navHandelClick() {
         document.getElementById("navBtnIcn").style.transform="rotate(360deg)";
         return navFlag = true;
     }
-
 }
-
-
 
 /*Nav menu end*/
 /* dock */
@@ -76,20 +68,3 @@ $(document).ready(function(){
         });
    });
 });
-
-
-
-/*After container*/
-function getMouse(){
-        document.getElementById("afterContainerGreen").style.transform= "rotateX(0)";
-
-
-
-}
-
-
-
-
-
-
-
