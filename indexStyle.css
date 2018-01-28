@@ -202,6 +202,7 @@ article
       top: 10px;
       left: -300px;
       background-size: 100%;
+      opacity: 0.8;
       animation: float 40s cubic-bezier(0, 0, 0.62, 0.6) infinite;
 }
 .small
@@ -210,6 +211,7 @@ article
       top: 60px;
       right: -250px;
       background-size: 100%;
+      opacity: 0.8;
       animation: floatr 40s cubic-bezier(0, 0, 0.62, 0.6) infinite;
 }
 .medium
@@ -218,6 +220,7 @@ article
     top: 130px;
     left: -220px;
     background-size: 100%;
+    opacity: 0.8;
     animation: float 60s cubic-bezier(0, 0, 0.62, 0.6) infinite;
 }
 
@@ -225,6 +228,7 @@ article
       top: 180px;
       right: -200px;
       background-size: 100%;
+      opacity: 0.8;
       animation: floatr 90s cubic-bezier(0, 0, 0.62, 0.6) infinite;
     }
 /* Blades animation */
