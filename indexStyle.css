@@ -756,22 +756,6 @@ div#dockWrapper {
     margin-top: 2em;
 }
 
-<<<<<<< HEAD
-/* light */
-.light{
-    z-index: 2;
-    height: 5em;
-    width: 100%;
-    position:fixed;
-   
-}
-#light1{
-    margin-top: 25.4%;
-    margin-left: 41%;
-}
-#light11{
-    margin-left: 15%;
-}
 
 .flag {
       bottom: 256px;
@@ -797,7 +781,7 @@ div#dockWrapper {
 }
 .flag1 {
 
-  top:45%;left:33%;position:fixed;
+    top:45%;left:34%;position: fixed;
 }
 .flag2 {
 
