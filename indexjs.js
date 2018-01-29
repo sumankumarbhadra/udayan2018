@@ -182,6 +182,8 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.left = "0%";
+                document.getElementById("afteriFrame").style.top = "0%";
                 document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
         } else if (value === 2) {
@@ -196,6 +198,8 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.left = "0%";
+                document.getElementById("afteriFrame").style.top = "0%";
                 document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 
@@ -211,6 +215,8 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.left = "0%";
+                document.getElementById("afteriFrame").style.top = "0%";
                 document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 
@@ -226,6 +232,8 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.left = "0%";
+                document.getElementById("afteriFrame").style.top = "0%";
                 document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 
@@ -241,6 +249,8 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.left = "0%";
+                document.getElementById("afteriFrame").style.top = "0%";
                 document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 
@@ -256,6 +266,8 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.left = "0%";
+                document.getElementById("afteriFrame").style.top = "0%";
                 document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 

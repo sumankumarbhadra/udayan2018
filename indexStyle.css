@@ -380,6 +380,8 @@ article
     background-color: white;
     transition: all 1.6s;
     border-radius: 50%;
+    top: 50%;
+    left: 50%;
 }
 
 
