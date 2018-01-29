@@ -756,18 +756,3 @@ div#dockWrapper {
     margin-top: 2em;
 }
 
-/* light */
-.light{
-    z-index: 2;
-    height: 5em;
-    width: 100%;
-    position:fixed;
-   
-}
-#light1{
-    margin-top: 25.4%;
-    margin-left: 41%;
-}
-#light11{
-    margin-left: 15%;
-}
