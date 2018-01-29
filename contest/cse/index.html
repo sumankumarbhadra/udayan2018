@@ -90,7 +90,7 @@
     </style>
 </head>
 
-<body onload="init();">
+<body onload="init(); begin();">
 
     <!-- Preloader -->
    
@@ -144,7 +144,7 @@
                     </div>
                 </div>
               
-               <div class="ms-section ms-4">
+               <div class="ms-section ms-4" id="davinci">
                     <div class="ms-padding">
                         <h5 class="subtitle">Data Science Club</h5>
                         <h1 class="black-color">Da Vinci Code</h1>
@@ -210,7 +210,7 @@
                 <div class="ms-section ms-3" style="background: url(img/);">
                     <div class="img"></div>
                 </div>
-                <div class="ms-section ms-4" style="background: url(img/);">
+                <div class="ms-section ms-4" id="davinciimg" style="background: url(img/);">
                     <div class="img"></div>
                 </div>
                 <div class="ms-section ms-5" style="background: url(img/);">
@@ -331,6 +331,30 @@ function navHandelClick() {
 }
 
 /*Nav menu end*/
+    </script>
+    <script>
+    function begin(){
+    var params = location.search.substr(location.search.indexOf("?")+1);
+    var sval = "";
+    var sname= "id";
+    params = params.split("&");
+      // split param and value into individual pieces
+      for (var i=0; i<params.length; i++)
+         {
+           temp = params[i].split("=");
+           if ( [temp[0]] == sname ) { sval = temp[1]; }
+         }
+      scrollto(sval);
+    }
+    function scrollto(eventid){
+    var pos=$('#'+eventid).position().top;
+    var left=pos*-1;
+    var leftpos=$('#'+eventid+'img').position().top;
+    var right=leftpos*-1;
+    $('.ms-left').css("top",left);
+
+    $('.ms-right').css("top",right);
+   }
     </script>
 </body>
 
