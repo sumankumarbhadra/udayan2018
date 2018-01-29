@@ -143,6 +143,7 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 
         }else if (value === 3) {
@@ -157,6 +158,7 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 
         }else if (value === 4) {
@@ -171,6 +173,7 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 
         }else if (value === 5) {
@@ -185,6 +188,7 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 
         }else if (value === 6) {
@@ -199,6 +203,7 @@ function openAfterCon(value) {
                 document.getElementById("afteriFrame").style.display = "block";
                 document.getElementById("afteriFrame").style.width = "100%";
                 document.getElementById("afteriFrame").style.height = "100%";
+                document.getElementById("afteriFrame").style.borderRadius = "0%";
             }
 
         }

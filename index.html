@@ -10,7 +10,7 @@
     <script src="TweenMax.min.js"></script>
     <script src="indexjs.js"></script>
 </head>
-<body onload="init();  getMouse();">
+<body onload="init();">
 <img id="bgimg" src="assets\temporary\Backgrounds\Backgroundday.jpg" class="backgroundImg">
 
 <header><div id="udayanLogo"><img src="assets/images/Logo.png" width="420px" height="265px"></div></header>
@@ -178,6 +178,7 @@
         if(clicked && $(this).attr('id')){
             if($(this).attr('id')==trashname){
                // alert("done");
+               // alert($(this).attr('id'));
                 clicked=0;
                 $("*").css("cursor","url(assets/images/cursor2.png),auto");
                 $("#blankimg").attr("hidden",true);
@@ -186,6 +187,29 @@
                 flag=0;
 
               $("#dockContainer").css("z-index","4");
+              var value;
+              switch($(this).attr('id')){
+                case "greenDB":
+                  value=1;
+                  break;
+                case "blueDB":
+                  value=2;
+                  break;
+                case "yellowDB":
+                  value=3;
+                  break;
+                case "blackDB":
+                  value=4;
+                  break;
+                case "redDB":
+                  value=5;
+                  break;
+                case "brownDB":
+                  value=6;
+                  break;
+
+              }
+              openAfterCon(value);
 
             }else{
                 alert("wrong bin");
