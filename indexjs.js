@@ -14,9 +14,11 @@ $(document).ready(function(){
      {
          //night
          $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundnight.jpg");
-         $(".backgroundImg , .trash , #scene , .drone").css("opacity","0.9");
-         $(".DBS").css("opacity","0.9");
-         $("#drone , #wing1 , #wing2").css("opacity","0.9");
+         $(".trash , .drone").css("filter","grayscale(20%)");
+	 $(" #scene ").css("opacity","0.9");
+         $(".DBS").css("filter","grayscale(20%)");
+         $("#drone , #wing1 , #wing2, #plane").css("filter","grayscale(20%)");
+	 $(".blades , .stand").css("filter","grayscale(20%)");
         }
 
 //drone
