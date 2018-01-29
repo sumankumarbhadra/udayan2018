@@ -731,3 +731,23 @@ div#dockWrapper {
     margin-top: 2em;
 }
 
+/* light */
+.light{
+    margin-top: 27%;
+    margin-left: 20%;
+    z-index: 3;
+    height: 5em;
+    width: 100%;
+    position:fixed;
+   
+}
+#light1{
+   
+    left: 10%;
+}
+#light2{
+    margin-left: 40%;
+}
+#light3{
+    margin-left: 10%;
+}
