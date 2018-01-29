@@ -13,7 +13,7 @@ $(document).ready(function(){
    else
      {
          //night
-         $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundnight.jpg");
+         $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundnight.png");
          $(".trash , .drone").css("filter","grayscale(20%)");
 	 $(" #scene ").css("opacity","0.9");
          $(".DBS").css("filter","grayscale(20%)");
