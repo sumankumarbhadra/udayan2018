@@ -132,7 +132,7 @@ article
    z-index: -1;
 }
 .dustbin:hover .dustbinlid{
-     transform: rotate(-25deg);
+     transform: rotate(-55deg);
      transform-origin: 0% 50%;
     }
 .eyes{
