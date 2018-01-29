@@ -394,6 +394,21 @@ article
 }
 
 
+/*Hot! Air Balloon*/
+#hotContainer
+{
+    position: fixed;
+    z-index: 4;
+    animation: moveHot 60s infinite;
+
+}
+@keyframes moveHot {
+    0%{left:10%; top:-5%;}
+    10%{
+        left: 10%; top: 10%;
+    }
+
+}
 
 
 
