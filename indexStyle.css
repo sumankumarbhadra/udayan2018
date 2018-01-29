@@ -828,7 +828,7 @@ div#dockWrapper {
   -webkit-animation-timing-function: cubic-bezier(0.16, 0.14, 0.82, 0.73);
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-  display:block;
+  display:none;
 }
 .flag1 {
 

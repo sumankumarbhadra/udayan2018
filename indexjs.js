@@ -49,6 +49,55 @@ function rotateBladeRight(blade, speed) {
 var spin = "-35px";
 TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1, yoyo:true});
 }
+
+//flag show
+$("#greenDB").on("mouseover", function(){
+  $(".flag1").css("display","block");
+});
+$("#greenDB").on("mouseout", function(){
+  $(".flag1").css("display","none");
+});
+
+
+$("#blueDB").on("mouseover", function(){
+  $(".flag2").css("display","block");
+});
+$("#blueDB").on("mouseout", function(){
+  $(".flag2").css("display","none");
+});
+
+
+$("#yellowDB").on("mouseover", function(){
+  $(".flag3").css("display","block");
+});
+$("#yellowDB").on("mouseout", function(){
+  $(".flag3").css("display","none");
+});
+
+
+$("#blackDB").on("mouseover", function(){
+  $(".flag4").css("display","block");
+});
+$("#blackDB").on("mouseout", function(){
+  $(".flag4").css("display","none");
+});
+
+
+$("#redDB").on("mouseover", function(){
+  $(".flag5").css("display","block");
+});
+$("#redDB").on("mouseout", function(){
+  $(".flag5").css("display","none");
+});
+
+
+$("#brownDB").on("mouseover", function(){
+  $(".flag6").css("display","block");
+});
+$("#brownDB").on("mouseout", function(){
+  $(".flag6").css("display","none");
+});
+
 });
 
 /*Nav menu start*/
