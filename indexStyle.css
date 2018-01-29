@@ -679,7 +679,6 @@ ul.osx-dock li {
     height: 50px;
     margin: 60px 0 4px 0;
     -webkit-transition: 0.15s linear;
-    -webkit-transition-property: -webkit-transform margin;
     text-align: center;
 }
 
@@ -688,7 +687,6 @@ ul.osx-dock li a {
     height: 50px;
     padding: 0 1px;
     -webkit-transition: 0.15s linear;
-    -webkit-transition-property: -webkit-transform margin;
     margin: 0;
 }
 
@@ -904,5 +902,3 @@ div#dockWrapper {
     background-position: 200% 0px;
   }
 }
-=======
->>>>>>> b55d0d8014bd29564e1e83ad7dc83ad10927135c
