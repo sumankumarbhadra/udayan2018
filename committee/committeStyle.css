@@ -139,4 +139,5 @@ video{
 .mem:hover
 {
     transform: scale(3);
+    z-index: 2;
 }
