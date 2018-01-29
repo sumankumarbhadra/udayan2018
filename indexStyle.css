@@ -135,7 +135,10 @@ article
      transform: rotate(-25deg);
      transform-origin: 0% 50%;
     }
-
+.eyes{
+      position: absolute;
+      display: inline-block;
+}
 #greenLid
 {
     position: absolute;
@@ -149,6 +152,42 @@ article
     margin-top: 87%;
     margin-left: 104px;
 
+}
+#eyes1
+{
+    margin-left: 20px;
+    margin-top: -112px;
+    z-index: 2;
+}
+#eyes2
+{
+    margin-left: 109px;
+    margin-top: -112px;
+    z-index: 2;
+}
+#eyes3
+{
+    margin-left: 198px;
+    margin-top: -112px;
+    z-index: 2;
+}
+#eyes4
+{
+    margin-left: 287px;
+    margin-top: -112px;
+    z-index: 2;
+}
+#eyes5
+{
+    margin-left: 376px;
+    margin-top: -112px;
+    z-index: 2;
+}
+#eyes6
+{
+    margin-left: 465px;
+    margin-top: -112px;
+    z-index: 2;
 }
 
 .afterContainer
