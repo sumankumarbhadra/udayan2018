@@ -3,6 +3,7 @@ body
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    background-color: black;
     /*background: url("assets/images/soil.jpg") repeat;
     background-size: cover;
     background-size: 100% 50%;*/

@@ -14,7 +14,7 @@ $(document).ready(function(){
      {
          //night
          $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundnight.jpg");
-         $(".backgroundImg , .trash , #scene , .drone").css("opacity","0.6");
+         $(".backgroundImg , .trash , #scene , .drone").css("opacity","0.4");
          $(".DBS").css("opacity","0.8");
         }
 
