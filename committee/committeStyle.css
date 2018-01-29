@@ -45,9 +45,8 @@ canvas{ display: block; vertical-align: bottom; position: absolute;top: 0;z-inde
     height: 5rem;
     border:5px solid #5026f9;
     position: fixed;
-    
+    align-content: center;
     background:white;
-    text-align: center;
     padding-top: 80px;
     font-size:23px;
     color:#5026f9;
@@ -56,13 +55,16 @@ canvas{ display: block; vertical-align: bottom; position: absolute;top: 0;z-inde
     transition: 1s ease, scale 2s;
     box-shadow: 2px 5px 20px 5px rgba(27, 27, 27, 0.75);
     overflow: hidden;
+   
 }
    #draggable1{                                                                
     top:2.23%;
-    left: 6.3719%;    
+    left: 6.3719%;  
+
 }
 #draggable2{    left: 25.08%;
-    top:2.25%;}
+    top:2.25%;
+        }
 #draggable3{left: 43.86%;
     top: 5.62%;}
 #draggable4{top:4.78%;
