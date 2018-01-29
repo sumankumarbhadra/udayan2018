@@ -34,7 +34,7 @@
 	  } );
 	  </script>
 </head>
-<body onload="init(); placeNodes();">
+<body onload="init();">
 	<!--Nav start-->
         <nav id="navMenu" class="nav">
             <ul id="navContainer">
@@ -113,6 +113,15 @@
 			$("#draggable2").onPositionChanged(function(){connect()});
 			$("#draggable3").onPositionChanged(function(){connect()});
 			$("#draggable4").onPositionChanged(function(){connect()});
+			$("#draggable5").onPositionChanged(function(){connect()});
+			$("#draggable6").onPositionChanged(function(){connect()});
+			$("#draggable7").onPositionChanged(function(){connect()});
+			$("#draggable8").onPositionChanged(function(){connect()});
+			$("#draggable9").onPositionChanged(function(){connect()});
+			$("#draggable10").onPositionChanged(function(){connect()});
+			$("#draggable11").onPositionChanged(function(){connect()});
+			$("#draggable12").onPositionChanged(function(){connect()});
+			$("#draggable13").onPositionChanged(function(){connect()});
 		});
 		function connect(){
 			$("#line1").attr("x1",$("#draggable1").offset().left+100);
@@ -134,6 +143,51 @@
 			$("#line4").attr("y1",$("#draggable4").offset().top+90);
 			$("#line4").attr("x2",$("#draggable").offset().left+100);
 			$("#line4").attr("y2",$("#draggable").offset().top+90);
+
+			$("#line5").attr("x1",$("#draggable5").offset().left+100);
+			$("#line5").attr("y1",$("#draggable5").offset().top+90);
+			$("#line5").attr("x2",$("#draggable").offset().left+100);
+			$("#line5").attr("y2",$("#draggable").offset().top+90);
+
+			$("#line6").attr("x1",$("#draggable6").offset().left+100);
+			$("#line6").attr("y1",$("#draggable6").offset().top+90);
+			$("#line6").attr("x2",$("#draggable").offset().left+100);
+			$("#line6").attr("y2",$("#draggable").offset().top+90);
+
+			$("#line7").attr("x1",$("#draggable7").offset().left+100);
+			$("#line7").attr("y1",$("#draggable7").offset().top+90);
+			$("#line7").attr("x2",$("#draggable").offset().left+100);
+			$("#line7").attr("y2",$("#draggable").offset().top+90);
+
+			$("#line8").attr("x1",$("#draggable8").offset().left+100);
+			$("#line8").attr("y1",$("#draggable8").offset().top+90);
+			$("#line8").attr("x2",$("#draggable").offset().left+100);
+			$("#line8").attr("y2",$("#draggable").offset().top+90);
+
+			$("#line9").attr("x1",$("#draggable9").offset().left+100);
+			$("#line9").attr("y1",$("#draggable9").offset().top+90);
+			$("#line9").attr("x2",$("#draggable").offset().left+100);
+			$("#line9").attr("y2",$("#draggable").offset().top+90);
+
+			$("#line10").attr("x1",$("#draggable10").offset().left+100);
+			$("#line10").attr("y1",$("#draggable10").offset().top+90);
+			$("#line10").attr("x2",$("#draggable").offset().left+100);
+			$("#line10").attr("y2",$("#draggable").offset().top+90);
+
+			$("#line11").attr("x1",$("#draggable11").offset().left+100);
+			$("#line11").attr("y1",$("#draggable11").offset().top+90);
+			$("#line11").attr("x2",$("#draggable").offset().left+100);
+			$("#line11").attr("y2",$("#draggable").offset().top+90);
+
+			$("#line12").attr("x1",$("#draggable12").offset().left+100);
+			$("#line12").attr("y1",$("#draggable12").offset().top+90);
+			$("#line12").attr("x2",$("#draggable").offset().left+100);
+			$("#line12").attr("y2",$("#draggable").offset().top+90);
+
+			$("#line13").attr("x1",$("#draggable13").offset().left+100);
+			$("#line13").attr("y1",$("#draggable13").offset().top+90);
+			$("#line13").attr("x2",$("#draggable").offset().left+100);
+			$("#line13").attr("y2",$("#draggable").offset().top+90);
 		}
 	</script>
 	<script>

@@ -55,35 +55,36 @@ canvas{ display: block; vertical-align: bottom; position: absolute;top: 0;z-inde
     z-index: 1;
     transition: 1s ease, scale 2s;
     box-shadow: 2px 5px 20px 5px rgba(27, 27, 27, 0.75);
+    overflow: hidden;
 }
-#draggable1{
-    top:21.7446px;
-    left: 122.341px;    
+   #draggable1{                                                                
+    top:2.23%;
+    left: 6.3719%;    
 }
-#draggable2{    left: 481.578px;
-    top: -21.9996px;}
-#draggable3{left: 842.227px;
-    top: 54.7514px;}
-#draggable4{top: 46.6208px;
-    left: 1136.08px;}
-#draggable5{top: 125.552px;
-    left: 1429.64px;}
-#draggable6{    top: 446.269px;
-    left: 1338.49px;}
-#draggable7{    left: 1602.96px;
-    top: 386.598px;}
-#draggable8{top: 684.382px;
-    left: 1252.86px;}
-#draggable9{left: 951.966px;
-    top: 657.428px;}
-#draggable10{    left: 587.126px;
-    top: 627.318px;}
-#draggable11{    top: 768.94px;
-    left: 349.49px;}
-#draggable12{    top: 525.178px;
-    left: 317.751px;}
-#draggable13{    top: 321.223px;
-    left: 260.914px;}
+#draggable2{    left: 25.08%;
+    top:2.25%;}
+#draggable3{left: 43.86%;
+    top: 5.62%;}
+#draggable4{top:4.78%;
+    left: 59.17%;}
+#draggable5{top: 12.89%;
+    left: 74.74%;}
+#draggable6{    top: 45.81%;
+    left: 69.71%;}
+#draggable7{    left: 83.48%;
+    top: 39.69%;}
+#draggable8{top: 70.26%;
+    left: 65.25%;}
+#draggable9{left: 49.58%;
+    top: 67.49%;}
+#draggable10{    left: 30.57%;
+    top: 64.44%;}
+#draggable11{    top: 78.94%;
+    left: 18.20%;}
+#draggable12{    top: 53.91%;
+    left: 16.54%;}
+#draggable13{    top: 32.97%;
+    left: 13.58%;}
 line{
     stroke:#5026f9;
     stroke-width:5px;
@@ -110,4 +111,5 @@ video{
 .mem:hover
 {
     transform: scale(3);
+    z-index: 2;
 }
