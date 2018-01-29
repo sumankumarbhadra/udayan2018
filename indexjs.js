@@ -109,7 +109,9 @@ function getMouse(){
     value = 1;
     openAfterCon(value);
 }*/
-
+function setSource(source){
+	$('#afteriFrame').attr('src',source);
+}
 
 function openAfterCon(value) {
     if (value === 0) {
