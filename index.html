@@ -193,9 +193,11 @@
 
               $("#dockContainer").css("z-index","4");
               var value;
+              var source;
               switch($(this).attr('id')){
                 case "greenDB":
                   value=1;
+                  source="adarsh";
                   break;
                 case "blueDB":
                   value=2;
@@ -205,6 +207,7 @@
                   break;
                 case "blackDB":
                   value=4;
+                  source="adarsh";
                   break;
                 case "redDB":
                   value=5;
@@ -214,7 +217,9 @@
                   break;
 
               }
+              setSource(source);
               openAfterCon(value);
+
 
             }else{
                 alert("wrong bin");
