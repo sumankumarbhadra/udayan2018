@@ -108,52 +108,52 @@
          <div id="dockContainer">
             <div id="dockWrapper">
             <ul class="osx-dock">
-              <li class="active trash" id="blackDB">
+              <li class="active trash" name="blackDB">
                 <a href="#"  title=""><img class="dockplace1 trashitem" id="garbage1" src="./assets/temporary/Garbage/Batteries/Asset1.png" /></a>
               </li>
-              <li class="active trash" id="redDB">
+              <li class="active trash" name="redDB">
                 <a href="#" title=""><img class="dockplace3 trashitem" id="garbage2" src="./assets/temporary/Garbage/Plastic/Asset18.png" /></a>
               </li>
-              <li class="active trash" id="yellowDB">
+              <li class="active trash" name="yellowDB">
                 <a href="#" title=""><img class="dockplace1 trashitem" id="garbage3" src="./assets/temporary/Garbage/Organic/Asset10.png" /></a>
               </li>
-              <li class="active trash" id="greenDB">
+              <li class="active trash" name="greenDB">
                 <a href="#" title=""><img class="dockplace2 trashitem" id="garbage4" src="./assets/temporary/Garbage/Paper/Asset13.png" /></a>
               </li>
-              <li class="active trash" id="blueDB">
+              <li class="active trash" name="blueDB">
                 <a href="#" title=""><img class="dockplace3 trashitem" id="garbage5" src="./assets/temporary/Garbage/Metal/Asset14.png" /></a>
               </li>
-                <li class="active trash" id="redDB">
+                <li class="active trash" name="redDB">
                 <a href="#" title=""><img class="dockplace1 trashitem" id="garbage6" src="./assets/temporary/Garbage/Plastic/Asset20.png" /></a>
                 </li>
-                <li class="active trash" id="greenDB">
+                <li class="active trash" name="greenDB">
                 <a href="#" title=""><img class="dockplace2 trashitem" id="garbage7"  src="./assets/temporary/Garbage/Paper/Asset11.png" /></a>
                 </li>
-                <li class="active trash" id="yellowDB">
+                <li class="active trash" name="yellowDB">
                 <a href="#" title=""><img class="dockplace1 trashitem" id="garbage8"  src="./assets/temporary/Garbage/Organic/Asset6.png" /></a>
                 </li>
-                <li class="active trash" id="redDB">
+                <li class="active trash" name="redDB">
                 <a href="#" title=""><img class="dockplace3 trashitem" id="garbage9"  src="./assets/temporary/Garbage/Plastic/Asset20.png" /></a>
                 </li>
-                <li class="active trash" id="yellowDB">
+                <li class="active trash" name="yellowDB">
                 <a href="#" title=""><img class="dockplace1 trashitem" id="garbage10"  src="./assets/temporary/Garbage/Organic/Asset8.png" /></a>
                 </li>
-                 <li class="active trash" id="blueDB">
+                 <li class="active trash" name="blueDB">
                 <a href="#" title=""><img class="dockplace3 trashitem" id="garbage11"  src="./assets/temporary/Garbage/Metal/Asset17.png" /></a>
                 </li>
-                 <li class="active trash" id="blackDB">
+                 <li class="active trash" name="blackDB">
                 <a href="#" title=""><img class="dockplace2 trashitem" id="garbage12"  src="./assets/temporary/Garbage/Batteries/Asset4.png" /></a>
                 </li>
-                 <li class="active trash" id="brownDB">
+                 <li class="active trash" name="brownDB">
                 <a href="#" title=""><img class="dockplace1 trashitem" id="garbage13"  src="./assets/temporary/Garbage/Glass/Asset27.png" /></a>
                 </li>
-                <li class="active trash" id="greenDB">
+                <li class="active trash" name="greenDB">
                 <a href="#" title=""><img class="dockplace3 trashitem" id="garbage14"  src="./assets/temporary/Garbage/Organic/Asset9.png" /></a>
                 </li>
-                <li class="active trash" id="brownDB">
+                <li class="active trash" name="brownDB">
                 <a href="#" title=""><img class="dockplace2 trashitem" id="garbage15"  src="./assets/temporary/Garbage/Glass/Asset23.png" /></a>
                 </li>
-                <li class="active trash" id="greenDB">
+                <li class="active trash" name="greenDB">
                 <a href="#" title=""><img class="dockplace1 trashitem" id="garbage16"  src="./assets/temporary/Garbage/Paper/Asset12.png" /></a>
                 </li>
             </ul>
@@ -165,13 +165,13 @@
         var clicked=0;
         var trashid;
         $('.trash').click(function(){
-            trashid=$(this).attr('id');
+            trashname=$(this).attr('name');
             clicked=1;
         });
 
     $('.dustbin').click(function(){
         if(clicked && $(this).attr('id')){
-            if($(this).attr('id')==trashid){
+            if($(this).attr('id')==trashname){
                // alert("done");
                 clicked=0;
                 $("*").css("cursor","url(assets/images/cursor2.png),auto");
