@@ -140,6 +140,7 @@ article
       display: inline-block;
       -webkit-animation:blink-2 2s 2s infinite both;
       animation:blink-2 2s 2s infinite both;
+      pointer-events: none;
 }
 @-webkit-keyframes blink-2{0%{opacity:1}50%{opacity:.2}100%{opacity:1}}@keyframes blink-2{0%{opacity:1}50%{opacity:.2}100%{opacity:1}}
 .rec{
@@ -147,6 +148,7 @@ article
       display: inline-block;
       -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
       animation: heartbeat 1.5s ease-in-out infinite both;
+      pointer-events: none;
 }
 @-webkit-keyframes heartbeat {
   from {
@@ -728,3 +730,4 @@ div#dockWrapper {
 .dockplace3{
     margin-top: 2em;
 }
+
