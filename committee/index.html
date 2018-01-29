@@ -21,10 +21,20 @@
 	    $( "#draggable2" ).draggable();
 	    $( "#draggable3" ).draggable();
 	    $( "#draggable4" ).draggable();
+	    $( "#draggable5" ).draggable();
+	    $( "#draggable6" ).draggable();
+	    $( "#draggable7" ).draggable();
+	    $( "#draggable8" ).draggable();
+	    $( "#draggable9" ).draggable();
+	    $( "#draggable10" ).draggable();
+	    $( "#draggable11" ).draggable();
+	    $( "#draggable12" ).draggable();
+
+	    $( "#draggable13" ).draggable();
 	  } );
 	  </script>
 </head>
-<body onload="init();">
+<body onload="init(); placeNodes();">
 	<!--Nav start-->
         <nav id="navMenu" class="nav">
             <ul id="navContainer">
@@ -39,33 +49,61 @@
 <video autoplay muted loop id="myVideo">
   <source src="techfest.mp4" type="video/mp4">
 </video>
-	<div >
-
 		<div id="draggable"> Branch name</div>
-		<div id="draggable1" class="mem1 mem">Team Member 1</div></div>
+		<div id="draggable1" class="mem1 mem">Team Member 1</div>
 		<div id="draggable2" class="mem2 mem">Team Member 2</div>
 		<div id="draggable3" class="mem3 mem">Team Member 3</div>
 		<div id="draggable4" class="mem4 mem">Team Member 4</div>
+		<div id="draggable5" class="mem4 mem">Team Member 5</div>
+		<div id="draggable6" class="mem4 mem">Team Member </div>
+		<div id="draggable7" class="mem4 mem">Team Member 4</div>
+		<div id="draggable8" class="mem4 mem">Team Member 4</div>
+		<div id="draggable9" class="mem4 mem">Team Member 4</div>
+		<div id="draggable10" class="mem4 mem">Team Member 4</div>
+		<div id="draggable11" class="mem4 mem">Team Member 4</div>
+		<div id="draggable12" class="mem4 mem">Team Member 4</div>
+		<div id="draggable13" class="mem4 mem">Team Member 4</div>
 		<svg width="100%" height="100%">
 			<line id="line1" x1="0" y1="0" x2="0" y2="0" />
 			<line id="line2" x1="0" y1="0" x2="0" y2="0" />
 			<line id="line3" x1="0" y1="0" x2="0" y2="0" />
 			<line id="line4" x1="0" y1="0" x2="0" y2="0" />
+			<line id="line5" x1="0" y1="0" x2="0" y2="0" />
+			<line id="line6" x1="0" y1="0" x2="0" y2="0" />
+			<line id="line7" x1="0" y1="0" x2="0" y2="0" />
+			<line id="line8" x1="0" y1="0" x2="0" y2="0" />
+			<line id="line9" x1="0" y1="0" x2="0" y2="0" />
+			<line id="line10" x1="0" y1="0" x2="0" y2="0" />
+			<line id="line11" x1="0" y1="0" x2="0" y2="0" />
+			<line id="line12" x1="0" y1="0" x2="0" y2="0" />
+			<line id="line13" x1="0" y1="0" x2="0" y2="0" />
+
 		</svg>
 
 	</div>
 
 	<script src="particle.js"></script>
 	<script type="text/javascript">
-	function shiftval(){
+	/*function shiftval(){
 		var shift=Math.floor(Math.random()*100)+150;
 		return shift;
 	}
-		var offset=$("#draggable").offset();
+	function placeNodes(){
+		$("#draggable1").css({"top":"10","left":"10"});
+		for(i=1;i<=7;i++){
+			var top=$("#draggable"+i).offset().top;
+			var left=$("#draggable"+i).offset().left;
+			alert(top+" "+left);
+			var j=i+1;
+			$("#draggable"+j).css("top",top+100);
+			$("#draggable"+j).css("left",left+100);
+		}
+	}
+	/*	var offset=$("#draggable").offset();
 		$("#draggable1 , #oDraggable1").css({"top":offset.top+shiftval(),"left":offset.left-shiftval()});
 		$("#draggable2").css({"top":offset.top+shiftval(),"left":offset.left+shiftval()});
 		$("#draggable3").css({"top":offset.top-shiftval(),"left":offset.left-shiftval()});
-		$("#draggable4").css({"top":offset.top-shiftval(),"left":offset.left+shiftval()});
+		$("#draggable4").css({"top":offset.top-shiftval(),"left":offset.left+shiftval()});*/
 	</script>
 	<script>
 		$(function() {
