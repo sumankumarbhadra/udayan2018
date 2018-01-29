@@ -13,6 +13,7 @@
     transition: all 0.3s;
     cursor: pointer;
     box-shadow: 0px 0px 0px;
+    z-index: 2;
 }
 .flexBox div:hover
 {
@@ -35,7 +36,7 @@
     flex-wrap: wrap;
     min-width: 19em;
     margin-left: 0;
-    margin-right: 0;  
+    margin-right: 0;
 }
 .one{
    // background: rgb(106, 86, 179);
@@ -81,9 +82,15 @@
     //background-color: rgb(9, 158, 207);
    // opacity: 0.5;  
 }
-body
+#bgScale
 {
-    background: url(images/event1.png) repeat;
-    background-size: cover;  
-    
+  transition: all 4s;
+  transition-delay: 1s;
+  z-index: 1;
+  position: absolute;
+  background-image: url("images/bg2.jpg");
+}
+#bgScale:hover
+{
+  transform: scale(1.8);
 }
