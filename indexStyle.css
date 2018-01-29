@@ -1,3 +1,28 @@
+#moon
+{
+    position:fixed;
+    width:100px;
+    top:189px;
+    height:100px;
+    z-index: 1;
+}
+#moon
+{
+  animation: move1 500s ease infinite;
+}
+@keyframes move1 {
+  0% {left:0%; top:25%;}
+  10% {left:10%; top:20.21%; }
+  20% {left:20%; top:15.42%;}
+  30% {left:30%; top:10.63%;}
+  40% {left:40%; top:5.84%;}
+  50% {left:50%; top:5%;}
+  60% {left:60%; top:5.84%;}
+  70% {left:70%; top:10.63%;}
+  80% {left:80%; top:15.42%;}
+  90% {left:90%; top:20.21%;}
+  100% {left:100%; top:25%;}
+}
 #plane {
     position:fixed;
     width:100px;
@@ -394,6 +419,34 @@ article
 }
 
 
+/*Hot! Air Balloon*/
+#hotContainer
+{
+    position: fixed;
+    z-index: 1;
+    animation: moveHot 180s infinite;
+
+}
+@keyframes moveHot {
+    0%{left:10%; top:-25%;}
+    10%{
+        left: 10%; top: 10%;
+    }
+    30%{
+        left: 60%; top: 10%;
+    }
+    50%{
+        left: 70%; top: 6%;
+    }
+    60%{
+        left: 50%; top: 3%;
+    }
+    100%
+    {
+        left:10%; top:-25%;
+    }
+
+}
 
 
 
@@ -664,7 +717,6 @@ ul.osx-dock li {
     height: 50px;
     margin: 60px 0 4px 0;
     -webkit-transition: 0.15s linear;
-    -webkit-transition-property: -webkit-transform margin;
     text-align: center;
 }
 
@@ -673,7 +725,6 @@ ul.osx-dock li a {
     height: 50px;
     padding: 0 1px;
     -webkit-transition: 0.15s linear;
-    -webkit-transition-property: -webkit-transform margin;
     margin: 0;
 }
 
@@ -756,22 +807,6 @@ div#dockWrapper {
     margin-top: 2em;
 }
 
-<<<<<<< HEAD
-/* light */
-.light{
-    z-index: 2;
-    height: 5em;
-    width: 100%;
-    position:fixed;
-   
-}
-#light1{
-    margin-top: 25.4%;
-    margin-left: 41%;
-}
-#light11{
-    margin-left: 15%;
-}
 
 .flag {
       bottom: 256px;
@@ -797,7 +832,7 @@ div#dockWrapper {
 }
 .flag1 {
 
-  top:45%;left:33%;position:fixed;
+    top:45%;left:34%;position: fixed;
 }
 .flag2 {
 
@@ -905,5 +940,3 @@ div#dockWrapper {
     background-position: 200% 0px;
   }
 }
-=======
->>>>>>> b55d0d8014bd29564e1e83ad7dc83ad10927135c

@@ -9,8 +9,32 @@
     <script src="jquery.min.js"></script>
     <script src="TweenMax.min.js"></script>
     <script src="indexjs.js"></script>
+    <link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example1/colorbox.css" />
+
 </head>
 <body onload="init();">
+<!-- Popup Box Start -->
+
+<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+<script>
+  function openPopup(){
+    $.colorbox({iframe:true, width:"80%", height:"80%", href: "./popup.html"});
+  }
+  
+  function countDown(){
+    seconds--
+    $("#seconds").text(seconds);
+    if (seconds === 0){
+      openPopup();
+      clearInterval(i);
+    }
+  }openPopup
+
+  var seconds = 2,
+      i = setInterval(countDown, 1000);
+</script>
+
+<!-- Popup Box Ends -->
 <img id="bgimg" src="assets\temporary\Backgrounds\Backgroundday.jpg" class="backgroundImg">
 
 <header><div id="udayanLogo"><img src="assets/images/Logo.png" width="420px" height="265px"></div></header>
@@ -24,6 +48,11 @@
             <img class="stand" src="http://www.dwuser.com/education/content/creating-keyframe-animations-with-css3/images/stand.png" width="12" height="235"/>
         </div>
 
+        <!--Moon Starts -->
+            <div id="moon">
+                <img src="assets\temporary\Backgrounds\moon.png" height="100px" width="100px">
+            </div>
+        <!--Moon Ends -->
 
 
 
@@ -50,6 +79,21 @@
 
 
         <!--Drone End-->
+
+
+        <!--Hot! Air Balloon Start-->
+
+        <div id="hotContainer" width="150px" height="200px">
+            <img src="assets/temporary/Backgrounds/baloon2.png" width="150px" height="200px">
+
+        </div>
+
+
+        <!--Hot! Air Balloon End-->
+
+
+
+
 
 <!--Nav start-->
         <nav id="navMenu" class="nav">
@@ -185,7 +229,7 @@
                  <li class="active trash" name="brownDB">
                 <a href="#" title=""><img class="dockplace1 trashitem" id="garbage13"  src="./assets/temporary/Garbage/Glass/Asset27.png" /></a>
                 </li>
-                <li class="active trash" name="greenDB">
+                <li class="active trash" name="yellowDB">
                 <a href="#" title=""><img class="dockplace3 trashitem" id="garbage14"  src="./assets/temporary/Garbage/Organic/Asset9.png" /></a>
                 </li>
                 <li class="active trash" name="brownDB">
