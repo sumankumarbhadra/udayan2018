@@ -11,15 +11,17 @@
     position:relative;
  }
 #plane {
-  -webkit-animation:move 50s infinite;
- /* -moz-animation:move 30s infinte;
-  -ms-animation:move 30s infinite;
-  animation:move 30s infinte;
+  -webkit-animation:move 50s linear;
+ /* -moz-animation:move 30s linear infinte;
+  -ms-animation:move 30s linear infinite;
+  animation:move 30s linear infinte;
   */
+  opacity: 0.9;
+
 }
 @-webkit-keyframes move {
   from {right:-2000px;}
-  to{right:2000px;}
+  to{right:4000px;}
 }
 body
 {
