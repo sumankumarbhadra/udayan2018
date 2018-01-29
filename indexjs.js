@@ -1,5 +1,23 @@
 //function for document on ready event
 $(document).ready(function(){
+
+    //day night theme change
+
+    var date= new Date();
+    var hour= date.getHours();
+   if(hour>6 && hour<18)
+     {
+       //day
+       $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundday.jpg");
+     }
+   else
+     {
+         //night
+         $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundnight.jpg");
+         $(".backgroundImg , .trash , #scene , .drone").css("opacity","0.6");
+         $(".DBS").css("opacity","0.8");
+        }
+
 //drone
 var $p1 = $("#l-prop1");
 var $p2 = $("#l-prop2");
