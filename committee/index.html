@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
 	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>	 <script src="../indexjs.js"></script>
-    <link rel="stylesheet" href="../indexStyle.css">
+  <link rel="stylesheet" href="../indexStyle.css">
 	<link rel="stylesheet" href="committeStyle.css">
 	<style>
 	/* ---- reset ---- */
@@ -42,10 +42,10 @@
 	<div >
 
 		<div id="draggable"> Branch name</div>
-		<div id="draggable1" class="mem1">Team Member 1</div>
-		<div id="draggable2" class="mem2">Team Member 2</div>
-		<div id="draggable3" class="mem3">Team Member 3</div>
-		<div id="draggable4" class="mem4">Team Member 4</div>
+		<div id="draggable1" class="mem1 mem">Team Member 1</div></div>
+		<div id="draggable2" class="mem2 mem">Team Member 2</div>
+		<div id="draggable3" class="mem3 mem">Team Member 3</div>
+		<div id="draggable4" class="mem4 mem">Team Member 4</div>
 		<svg width="100%" height="100%">
 			<line id="line1" x1="0" y1="0" x2="0" y2="0" />
 			<line id="line2" x1="0" y1="0" x2="0" y2="0" />
@@ -62,7 +62,7 @@
 		return shift;
 	}
 		var offset=$("#draggable").offset();
-		$("#draggable1").css({"top":offset.top+shiftval(),"left":offset.left-shiftval()});
+		$("#draggable1 , #oDraggable1").css({"top":offset.top+shiftval(),"left":offset.left-shiftval()});
 		$("#draggable2").css({"top":offset.top+shiftval(),"left":offset.left+shiftval()});
 		$("#draggable3").css({"top":offset.top-shiftval(),"left":offset.left-shiftval()});
 		$("#draggable4").css({"top":offset.top-shiftval(),"left":offset.left+shiftval()});

@@ -7,7 +7,7 @@ canvas{ display: block; vertical-align: bottom; position: absolute;top: 0;z-inde
     width: 10rem;
     height: 5rem;
     border:5px solid #5026f9;
-    position: absolute;
+    position: fixed;
     top: 15rem;
     left:30rem;
     background:white;
@@ -17,7 +17,7 @@ canvas{ display: block; vertical-align: bottom; position: absolute;top: 0;z-inde
     color:#5026f9;
     font-weight: bold;
     z-index: 1;
-    transition: 1s ease;
+    transition: 1s ease, scale 2s;
     box-shadow: 2px 5px 20px 5px rgba(27, 27, 27, 0.75);
 
 }
@@ -34,4 +34,17 @@ video{
     position: fixed;
     z-index: -1;
     object-fit: fill;
+}
+
+.nodeOverlay
+{
+    background-color: black;
+    z-index: 2;
+    display: inline;
+    width: 200px;
+    height: 200px;
+}
+.mem:hover
+{
+    transform: scale(3);
 }
