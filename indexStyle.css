@@ -1,3 +1,26 @@
+#plane {
+    position:fixed;
+    width:100px;
+    top:0px;
+    height:100px;
+    z-index: 1;
+
+}
+.body {
+    width:500px;
+    position:relative;
+ }
+#plane {
+  -webkit-animation:move 50s infinite;
+ /* -moz-animation:move 30s infinte;
+  -ms-animation:move 30s infinite;
+  animation:move 30s infinte;
+  */
+}
+@-webkit-keyframes move {
+  from {right:-2000px;}
+  to{right:2000px;}
+}
 body
 {
     margin: 0px;
