@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "pure-heart";
+    src: url("assets/temporary/Backgrounds/PureHeart-Regular.otf");
+}
 #bodies
 {
     position:fixed;
@@ -462,11 +466,10 @@ article
 #instructions
 {
     height: 120px;
-    max-width: 150px;
+    width: 130px;
     background: url("assets/temporary/Backgrounds/board.png") no-repeat;
-    background-size: 150px 150px;
+    background-size: 150px 140px;
     position: relative;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serifss;
     padding: 10px;
     overflow: auto;
     box-shadow: 0px 0px 5px rgba(242, 242, 0, 0.7);
@@ -474,6 +477,9 @@ article
     text-align: center;
     transition: all 1s;
     margin: 0px;
+    font-family: "pure-heart";
+    color: white;
+    font-size: large;
 
 }
 
