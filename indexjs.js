@@ -13,6 +13,8 @@ $(document).ready(function(){
        $("#stars").css("display", "none");
        $("#stars2").css("display", "none");
        $("#stars3").css("display", "none");
+       //gapfix
+         $("body").css("bottom","0px");
      }
    else
      {
@@ -24,6 +26,8 @@ $(document).ready(function(){
          $(".DBS").css("filter","grayscale(20%)");
          $("#drone , #wing1 , #wing2, #plane").css("filter","grayscale(20%)");
 	     $(".blades , .stand").css("filter","grayscale(20%)");
+         //gapfix
+         $("body").css("top","-6px");
         }
 
 //drone
