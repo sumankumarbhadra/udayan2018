@@ -327,3 +327,10 @@ function showInstruct(needInstruct,textInstruct) {
            $("#planeimg").css("width","200px");
         }, 35000);
     }, 35000);
+
+function popup() {
+    document.querySelector("#mainOverlay").style.height="100%";
+    document.querySelector("#subOverlay").style.height="60%";
+    document.querySelector("#subOverlay").style.padding="15px";
+
+}
