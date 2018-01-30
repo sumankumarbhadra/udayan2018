@@ -89,7 +89,7 @@
 
         <div id="hotContainer" width="150px" height="200px">
             <img id="balloon" src="assets/temporary/Backgrounds/baloon2.png" width="150px" height="200px">
-            <div id="instructions">Nullam ornare mi dolor. Ut mollis eros ut enim sollicitudin volutpat. Vestibulum pretium sollicitudin maximus. Nulla laoreet enim non elit congue lobortis. Ut ut mi justo. Nullam sit amet consequat sem. Praesent tristique auctor enim et maximus. </div>
+            <div id="instructions">GO GREEN! </div>
 
         </div>
 
@@ -309,11 +309,11 @@
               openAfterCon(value);
 
 
-            }else{
-                alert("wrong bin");
+             }else{
+                showInstruct(true,"Wrong bin");
             }
         }else{
-            alert("Select a trash first");
+            showInstruct(true,"Select a trash first!");
         }
     });
     </script>
@@ -346,6 +346,18 @@
         $('#afteriFrame').attr('src',source);
       }
 
+    </script>
+    <script>
+    	$(document).keyup(function(e){
+    		if(clicked==1 && e.keyCode === 27){
+    			clicked=0;
+                $("*").css("cursor","url(assets/images/cursor2.png),auto");
+                $("#blankimg").attr("hidden",true);
+                imgid=null;
+                imgsrc=null;
+                flag=0;
+    		}
+    	});
     </script>
 </body>
 </html>
