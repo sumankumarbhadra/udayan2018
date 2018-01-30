@@ -21,6 +21,15 @@ canvas{ display: block; vertical-align: bottom; position: absolute;top: 0;z-inde
     box-shadow: 2px 5px 20px 5px rgba(27, 27, 27, 0.75);
 
 }*/
+.details-node1 {
+
+    position: fixed;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 14px;
+    color: #000000;
+}
+
 #draggable{
     border-radius: 50%;
     width: 10rem;
@@ -48,7 +57,7 @@ canvas{ display: block; vertical-align: bottom; position: absolute;top: 0;z-inde
     align-content: center;
     background:white;
     padding-top: 80px;
-    font-size:23px;
+    font-size:10px;
     color:#5026f9;
     font-weight: bold;
     z-index: 1;
@@ -114,4 +123,5 @@ video{
 {
     transform: scale(3);
     z-index: 2;
+    font-size:7px;
 }
