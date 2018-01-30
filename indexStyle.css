@@ -896,6 +896,7 @@ div#dockWrapper {
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   display:none;
+  font-size: 0.9rem;
 }
 .flag1 {
 
