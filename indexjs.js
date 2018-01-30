@@ -334,3 +334,10 @@ function popup() {
     document.querySelector("#subOverlay").style.padding="15px";
 
 }
+function closePop(){
+    document.querySelector("#mainOverlay").style.height="0%";
+    document.querySelector("#subOverlay").style.height="0%";
+    document.querySelector("#subOverlay").style.padding="0px";
+    document.querySelector("#closeBtn").style.display="none";
+
+}
