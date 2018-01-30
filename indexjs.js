@@ -114,7 +114,6 @@ var navWidth;
 var navFlag = true;
 function init() {
     document.getElementById("navDivBtn").addEventListener("click", navHandelClick);
-    setTimeout(navHandelClick, 1200);//auto close menu on loading page
 }
 
 function navHandelClick() {
@@ -348,5 +347,6 @@ function closePop(){
     document.querySelector("#subOverlay").style.height="0%";
     document.querySelector("#subOverlay").style.padding="0px";
     document.querySelector("#closeBtn").style.display="none";
+    setTimeout(navHandelClick, 1600);//auto close menu on loading page
 
 }
