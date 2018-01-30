@@ -642,6 +642,10 @@ article
     transition-delay: 1s;
     padding: 0px;
 }
+#instructionsVideo
+{
+  display: block;
+}
 #subOverlay i{
     z-index: 8;
     color: black;
