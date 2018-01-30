@@ -50,6 +50,8 @@
 }
 body
 {
+    top: -6px;
+    position: relative;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
