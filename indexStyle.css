@@ -870,27 +870,27 @@ div#dockWrapper {
 }
 .flag1 {
 
-    top:45%;left:34%;position: fixed;
+    margin-top: 48%;left:34%;position: fixed;
 }
 .flag2 {
 
-  top:45%;left:40%;position:fixed;
+  margin-top: 68%;left:40%;position:fixed;
 }
 .flag3 {
 
-  top:45%;left:46%;position:fixed;
+  margin-top: 68%;left:46%;position:fixed;
 }
 .flag4 {
 
-  top:45%;left:52%;position:fixed;
+  margin-top: 68%;left:52%;position:fixed;
 }
 .flag5 {
 
-  top:45%;left:58%;position:fixed;
+  margin-top: 68%;left:58%;position:fixed;
 }
 .flag6 {
 
-  top:45%;left:64%;position:fixed;
+  margin-top: 68%;left:64%;position:fixed;
 }
 .flag:nth-child(odd) {
   -webkit-animation-delay: 1s;
