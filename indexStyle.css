@@ -1,4 +1,4 @@
-#moon
+#bodies
 {
     position:fixed;
     width:100px;
@@ -6,7 +6,7 @@
     height:100px;
     z-index: 0;
 }
-#moon
+#bodies
 {
   animation: move1 500s ease infinite;
 }

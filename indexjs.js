@@ -1,4 +1,4 @@
-//function for document on ready event
+﻿//function for document on ready event
 $(document).ready(function(){
 
     //day night theme change
@@ -8,12 +8,13 @@ $(document).ready(function(){
    if(hour>6 && hour<18)
      {
        //day
-       $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundday.jpg");
+       $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundday.png");
      }
    else
      {
          //night
          $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundnight.png");
+         $("#bodies").attr("src","assets/temporary/Backgrounds/moon.png");
          $(".trash , .drone").css("filter","grayscale(20%)");
 	 $(" #scene ").css("opacity","0.9");
          $(".DBS").css("filter","grayscale(20%)");
