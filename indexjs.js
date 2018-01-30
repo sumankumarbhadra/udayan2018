@@ -145,6 +145,7 @@ $(document).ready(function(){
 
 /* --- !important Call function openAfterCon(value); ---
 where value :
+value = 0 close After container
 value = 1 green bin
 value = 2 Blue bin
 value = 3 Yellow bin
@@ -274,3 +275,39 @@ function openAfterCon(value) {
         }
     }
 }
+
+/* Hot! Instructions 🔥 */
+/*---!Important call finction showInstruct(needInstruct,textInstruct);
+* Where needInstruct (to show important instructions value = true/false)
+*       textInstruct (Text to show) = text
+* */
+
+/*Test program*/
+/*var needInstruct = false;
+var textInstruct ;
+function runInstruct() {
+    needInstruct = true;
+    textInstruct = "I did a program";
+    showInstruct(needInstruct,textInstruct);
+}*/
+function showInstruct(needInstruct,textInstruct) {
+    if (needInstruct === true){
+        document.querySelector("#instructions").style.boxShadow="0px 0px 10px rgba(242, 0, 0, 0.7)";
+        document.querySelector("#instructions").innerHTML=textInstruct;
+        setInterval(function (args) {
+            document.querySelector("#instructions").style.boxShadow="0px 0px 10px rgba(242, 242, 0, 0.7)";
+            document.querySelector("#instructions").style.border="1px solid rgba(242, 242, 0, 0.7)";
+        },3000)
+        setInterval(function (args) {
+            document.querySelector("#instructions").style.boxShadow="0px 0px 10px rgba(242, 0, 0, 0.7)";
+            document.querySelector("#instructions").style.border="1px solid rgba(242, 0, 0, 0.7)";
+        },2000)
+
+    }else if(needInstruct === false && textInstruct)
+    {
+        document.querySelector("#instructions").style.boxShadow="0px 0px 5px rgba(242, 242, 0, 0.7)";
+        document.querySelector("#instructions").innerHTML=textInstruct;
+    }
+
+}
+/* Hot! Instructions 🔥  end*/
