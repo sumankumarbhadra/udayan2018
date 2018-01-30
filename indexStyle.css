@@ -151,13 +151,21 @@ article
 #udayanLogo
 {
 
-    position: fixed;
-    /*margin-left: 42%;*/
+   /*  position: fixed;
+   margin-left: 42%;
+   font-size: 5em;
+   z-index: 2;
+   width: 100%;
+   text-align: center;
+   top: 35px; */
+   position: fixed;
+    margin-left: 31%;
     font-size: 5em;
-    z-index: 2;
-    width: 100%;
+    z-index: 5;
+    width: 40%;
     text-align: center;
-    top: 35px;
+    top: -100px;
+    height: 68%;
 }
 .DBS
 {
