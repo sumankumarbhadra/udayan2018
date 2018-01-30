@@ -602,6 +602,15 @@ article
 */
 
 
+/*Popup overlay  start*/
+#mainOverlay
+{
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    height: 0%;
+}
+/*Popup overlay  end*/
 
 
 
