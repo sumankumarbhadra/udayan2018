@@ -9,6 +9,10 @@ $(document).ready(function(){
      {
        //day
        $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundday.png");
+       $("html").css("background","radial-gradient(ellipse at bottom, #489cff 0%, #26a9e1 100%)");
+       $("stars").css("display", "none");
+       $("stars2").css("display", "none");
+       $("stars3").css("display", "none");
      }
    else
      {
@@ -16,10 +20,10 @@ $(document).ready(function(){
          $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundnight.png");
          $("#bodies").attr("src","assets/temporary/Backgrounds/moon.png");
          $(".trash , .drone").css("filter","grayscale(20%)");
-	 $(" #scene ").css("opacity","0.9");
+	     $(" #scene ").css("opacity","0.9");
          $(".DBS").css("filter","grayscale(20%)");
          $("#drone , #wing1 , #wing2, #plane").css("filter","grayscale(20%)");
-	 $(".blades , .stand").css("filter","grayscale(20%)");
+	     $(".blades , .stand").css("filter","grayscale(20%)");
         }
 
 //drone
