@@ -10,9 +10,9 @@ $(document).ready(function(){
        //day
        $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundday.png");
        $("html").css("background","radial-gradient(ellipse at bottom, #489cff 0%, #26a9e1 100%)");
-       $("stars").css("display", "none");
-       $("stars2").css("display", "none");
-       $("stars3").css("display", "none");
+       $("#stars").css("display", "none");
+       $("#stars2").css("display", "none");
+       $("#stars3").css("display", "none");
      }
    else
      {
@@ -316,3 +316,14 @@ function showInstruct(needInstruct,textInstruct) {
 
 }
 /* Hot! Instructions 🔥  end*/
+//plane change
+    setInterval(function(){ 
+    $("#planeimg").attr("src","assets/temporary/Backgrounds/planes/plane3.png");
+    $("#planeimg").css("height","80px");
+    $("#planeimg").css("width","200px");
+        setInterval(function(){ 
+        $("#planeimg").attr("src","assets/temporary/Backgrounds/planes/plane1.png");
+           $("#planeimg").css("height","50px");
+           $("#planeimg").css("width","200px");
+        }, 35000);
+    }, 35000);
