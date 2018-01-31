@@ -174,13 +174,20 @@ function getMouse(){
 function setSource(source){
 	$('#afteriFrame').attr('src',source);
 }
-
+function closeiframe(){
+         document.querySelector(".afterContainer").style.display = "none";
+        document.getElementById("afteriFrame").style.width = "0%";
+        document.getElementById("afteriFrame").style.height = "0%";
+        document.getElementById("iframeclose").style.display = "none";
+}
 function openAfterCon(value) {
     if (value === 0) {
         document.querySelector(".afterContainer").style.display = "hidden";
         document.getElementById("afteriFrame").style.width = "0%";
         document.getElementById("afteriFrame").style.height = "0%";
+        document.getElementById("iframeclose").style.display = "hidden";
     } else {
+        document.getElementById("iframeclose").style.display = "block";
         if (value === 1) {
             document.querySelector(".afterContainer").style.display = "inline-block";
             document.getElementById("afterContainerGreen").style.transform = "rotateX(0)";
