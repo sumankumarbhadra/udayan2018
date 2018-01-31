@@ -352,3 +352,7 @@ function closePop(){
     setTimeout(navHandelClick, 1600);//auto close menu on loading page
 
 }
+/*preloader js*/
+function loadingComplete(){
+   $(".preloader").css({"-webkit-animation":"slit-out-horizontal 1s ease-in both","animation":"slit-out-horizontal 1s ease-in both"}); 
+}
