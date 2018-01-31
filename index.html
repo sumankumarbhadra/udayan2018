@@ -344,22 +344,60 @@
     		}
     	});
     </script>
-    <script>  //DRAG AND DROP CODE
+  <script>  //DRAG AND DROP CODE
+    dragname="";
+    dropname="";
 	function allowDrop(ev) {
 	    ev.preventDefault();
 	}
 
 	function drag(ev) {
-	    ev.dataTransfer.setData("text", ev.target.name);
-	  alert("call 1"+ev.target.name);
+	    //ev.dataTransfer.setData("text", ev.target.name);
+	 	//alert("call 1"+ev.target.name);
+	 	dragname=ev.target.name;
 	}
 
 	function drop(ev) {
 	    ev.preventDefault();
-	    var data = ev.dataTransfer.getData("text");
+	    //var data = ev.dataTransfer.getData("text");
+	 	//alert("call 2"+ev.target.name);
+	 	dropname=ev.target.name;
+	 	if(dragname==dropname){
+	 		var value;
+              var source;
+              switch(dropname){
+                case "greenDB":
+                  value=1;
+                  source="./events/CSE_IT.html";
+                  break;
+                case "blueDB":
+                  value=2;
+                  source="./events/Civil.html";
+                  break;
+                case "yellowDB":
+                  value=3;
+                  source="./events/EE.html";
+                  break;
+                case "blackDB":
+                  value=4;
+                  source="./events/EEE.html";
+                  break;
+                case "redDB":
+                  value=5;
+                  source="./events/ETC.html";
+                  break;
+                case "brownDB":
+                  value=6;
+                  source="./events/Mechanical.html";
+                  break;
 
-	  alert("call 2"+ev.target.name);
+
+              }
+              setSource(source);
+              openAfterCon(value);
+
+	 	}else{
+                showInstruct(true,"Wrong bin");
+            }
 	}
 	</script>
-</body>
-</html>
