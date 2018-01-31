@@ -351,9 +351,13 @@ setInterval(function(){
     }, 35000);
 
 function popup() {
+  if(sessionStorage.getItem("view")!="1"){
     document.querySelector("#mainOverlay").style.height="100%";
     document.querySelector("#subOverlay").style.height="70%";
     document.querySelector("#subOverlay").style.padding="15px";
+  }else{
+    document.querySelector("#closeBtn").style.display="none";
+  }
 
 }
 function closePop(){
@@ -361,7 +365,9 @@ function closePop(){
     document.querySelector("#subOverlay").style.height="0%";
     document.querySelector("#subOverlay").style.padding="0px";
     document.querySelector("#closeBtn").style.display="none";
-    setTimeout(navHandelClick, 1600);//auto close menu on loading page
+    setTimeout(navHandelClick, 1600);
+    sessionStorage.setItem("view", "1");
+    //auto close menu on loading page
 
 }
 /*preloader js*/
