@@ -6,7 +6,7 @@
     <style type="text/css">
     	/*Preloader*/
 		.preloader {
-		 font: 400 1em/1.5 "Neuton";
+		 font: 400 1em/1.5 "voice";
 		 background: #090d00;
 		 color: rgba(255, 255, 255, 0.25);
 		 text-align: center;
@@ -16,7 +16,14 @@
 		 position: fixed;
 		 width: 100%;
 		}
-
+    @font-face {
+    font-family: "hojas";
+    src: url("assets/temporary/Backgrounds/Hojas.otf");
+    }
+    @font-face {
+    font-family: "voice";
+    src: url("assets/temporary/Backgrounds/voice.otf");
+    }
 		.loaderUpperText {
 		 text-transform: uppercase;
 		 letter-spacing: .5em;
@@ -31,7 +38,7 @@
 		 margin: 0 0 0 -20em;
 		}
 		.loaderUdayan {
-		 font: 700 4em/1 "Oswald", sans-serif;
+		 font: 700 4em/1 "hojas", sans-serif;
 		 letter-spacing: 0;
 		 padding: .25em 0 .325em;
 		 display: block;
