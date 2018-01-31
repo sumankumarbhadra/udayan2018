@@ -357,6 +357,7 @@ function popup() {
     document.querySelector("#subOverlay").style.padding="15px";
   }else{
     document.querySelector("#closeBtn").style.display="none";
+    navHandelClick();
   }
 
 }
