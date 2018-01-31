@@ -175,17 +175,22 @@ function setSource(source){
 	$('#afteriFrame').attr('src',source);
 }
 function closeiframe(){
-         document.querySelector(".afterContainer").style.display = "none";
+         document.getElementById("afterContainerGreen").style.transform = "scale(0)";
+         document.getElementById("afterContainerBlue").style.transform = "scale(0)";
+          document.getElementById("afterContainerYellow").style.transform = "scale(0)";
+          document.getElementById("afterContainerGray").style.transform = "scale(0)";
+          document.getElementById("afterContainerRed").style.transform = "scale(0)";
+          document.getElementById("afterContainerDGreen").style.transform = "scale(0)";
         document.getElementById("afteriFrame").style.width = "0%";
         document.getElementById("afteriFrame").style.height = "0%";
         document.getElementById("iframeclose").style.display = "none";
 }
 function openAfterCon(value) {
     if (value === 0) {
-        document.querySelector(".afterContainer").style.display = "hidden";
+        document.querySelector(".afterContainer").style.display = "none";
         document.getElementById("afteriFrame").style.width = "0%";
         document.getElementById("afteriFrame").style.height = "0%";
-        document.getElementById("iframeclose").style.display = "hidden";
+        document.getElementById("iframeclose").style.display = "none";
     } else {
         document.getElementById("iframeclose").style.display = "block";
         if (value === 1) {
