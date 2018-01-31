@@ -338,7 +338,7 @@ setInterval(function(){
 
 function popup() {
     document.querySelector("#mainOverlay").style.height="100%";
-    document.querySelector("#subOverlay").style.height="60%";
+    document.querySelector("#subOverlay").style.height="70%";
     document.querySelector("#subOverlay").style.padding="15px";
 
 }
