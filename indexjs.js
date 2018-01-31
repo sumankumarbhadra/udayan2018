@@ -130,7 +130,7 @@ function navHandelClick() {
         document.getElementById("navBtnIcn").style.transform="rotate(360deg)";
         return navFlag = true;
     }
-    document.getElementById("mainOverlay").addEventListener("ontouchend", closePop);
+    document.getElementById("mainOverlay").addEventListener("touchstart", closePop,false);
 }
 
 /*Nav menu end*/
