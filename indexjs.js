@@ -19,6 +19,7 @@ $(document).ready(function(){
    else
      {
          //night
+         $("#udayanLogo").attr("src","assets/temporary/Backgrounds/Logonight.png");
          $("#bgimg").attr("src","assets/temporary/Backgrounds/Backgroundnight.png");
          $("#bodies").attr("src","assets/temporary/Backgrounds/moon.png");
          $(".trash , .drone").css("filter","grayscale(20%)");
