@@ -163,8 +163,8 @@
                 <nav id="navMenu" class="nav">
             <ul id="navContainer">
                 <a href="#"><li class="menuElement">Home</li></a>
-                <a href="./Committee/index.html"><li class="menuElement">Core Committee</li></a>
-                <a href="./Committee/students.html"><li class="menuElement">Students Committee</li></a>
+                <a href="./committee/index.html"><li class="menuElement">Core Committee</li></a>
+                <a href="./committee/students.html"><li class="menuElement">Students Committee</li></a>
                   <a href="./contest/cse/index.html"><li class="menuElement">Contest&nbsp;-&nbsp;CSE/IT</li></a>
                  <a href="./contest/civil/index.html"><li class="menuElement">Contest&nbsp;-&nbsp;Civil</li></a>
                  <a href="./contest/ee/index.html"><li class="menuElement">Contest&nbsp;-&nbsp;EE</li></a>
@@ -372,10 +372,72 @@
 
 
              }else{
+                //alert("Wrong bin");
                 showInstruct(true,"Wrong bin");
+                flagtempmsg="";
+                switch($(this).attr('id')){
+                case "greenDB":
+                  flagtempmsg=$(".flag1").find(".ch").html();
+                  $(".flag1").find(".ch").css("color","red");
+                  $(".flag1").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag1").find(".ch").css("color","black");
+                  $(".flag1").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "blueDB":
+                  flagtempmsg=$(".flag2").find(".ch").html();
+                  $(".flag2").find(".ch").css("color","red");
+                  $(".flag2").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag2").find(".ch").css("color","black");
+                  $(".flag2").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "yellowDB":
+                  flagtempmsg=$(".flag3").find(".ch").html();
+                  $(".flag3").find(".ch").css("color","red");
+                  $(".flag3").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag3").find(".ch").css("color","black");
+                  $(".flag3").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "blackDB":
+                  flagtempmsg=$(".flag4").find(".ch").html();
+                  $(".flag4").find(".ch").css("color","red");
+                  $(".flag4").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag4").find(".ch").css("color","black");
+                  $(".flag4").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "redDB":
+                  flagtempmsg=$(".flag5").find(".ch").html();
+                  $(".flag5").find(".ch").css("color","red");
+                  $(".flag5").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag5").find(".ch").css("color","black");
+                  $(".flag5").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "brownDB":
+                  flagtempmsg=$(".flag6").find(".ch").html();
+                  $(".flag6").find(".ch").css("color","red");
+                  $(".flag6").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag6").find(".ch").css("color","black");
+                  $(".flag6").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+              }
+              
+                
             }
         }else{
+            alert("Select a trash first!");
             showInstruct(true,"Select a trash first!");
+            
         }
     });
     </script>
@@ -474,7 +536,65 @@
               openAfterCon(value);
 
 	 	}else{
+                //alert("Wrong bin");
                 showInstruct(true,"Wrong bin");
+                flagtempmsg="";
+                switch(dropname){
+                case "greenDB":
+                  flagtempmsg=$(".flag1").find(".ch").html();
+                  $(".flag1").find(".ch").css("color","red");
+                  $(".flag1").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag1").find(".ch").css("color","black");
+                  $(".flag1").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "blueDB":
+                  flagtempmsg=$(".flag2").find(".ch").html();
+                  $(".flag2").find(".ch").css("color","red");
+                  $(".flag2").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag2").find(".ch").css("color","black");
+                  $(".flag2").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "yellowDB":
+                  flagtempmsg=$(".flag3").find(".ch").html();
+                  $(".flag3").find(".ch").css("color","red");
+                  $(".flag3").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag3").find(".ch").css("color","black");
+                  $(".flag3").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "blackDB":
+                  flagtempmsg=$(".flag4").find(".ch").html();
+                  $(".flag4").find(".ch").css("color","red");
+                  $(".flag4").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag4").find(".ch").css("color","black");
+                  $(".flag4").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "redDB":
+                  flagtempmsg=$(".flag5").find(".ch").html();
+                  $(".flag5").find(".ch").css("color","red");
+                  $(".flag5").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag5").find(".ch").css("color","black");
+                  $(".flag5").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+                case "brownDB":
+                  flagtempmsg=$(".flag6").find(".ch").html();
+                  $(".flag6").find(".ch").css("color","red");
+                  $(".flag6").find(".ch").html("Wrong Bin");
+                  setTimeout(function(){
+                  $(".flag6").find(".ch").css("color","black");
+                  $(".flag6").find(".ch").html(flagtempmsg);
+                  },2000);
+                  break;
+              }
             }
 	}
 	</script>
