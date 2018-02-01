@@ -1,4 +1,4 @@
 function init() {
-    var uagent = navigator.userAgent.toLowerCase();
-    alert(uagent);
+    /*var uagent = navigator.userAgent.toLowerCase();
+    alert(uagent);*/
 }
