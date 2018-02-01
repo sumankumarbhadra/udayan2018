@@ -4624,4 +4624,7 @@ ul>a{
       font-size: 23px;
 }
 /*nav menu end*/
-
+/*Cursor*/
+*{
+    cursor: url(../../assets/images/cursor2.png),auto ;
+}
