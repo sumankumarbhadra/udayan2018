@@ -31,7 +31,7 @@ nav ul
     margin: 0px;
     margin-top: 20%;
 }
-nav ul li{
+.navElement{
     list-style: none;
     padding: 20px;
     color: white;
@@ -53,12 +53,16 @@ nav
     overflow:hidden;
     transition: all 0.8s;
 }
-nav ul li:active
+.navElement:active
 {
     background-color: rgba(0,220,0,0.7);
     transform: scale(0.7);
 }
-
+a
+{
+    text-decoration: none;
+    color: white;
+}
 section
 {
     overflow: hidden;
