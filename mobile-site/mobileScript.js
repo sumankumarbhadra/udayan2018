@@ -45,3 +45,7 @@ function rotateBladeRight(blade, speed) {
 var spin = "-35px";
 TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1, yoyo:true});
 }
+/*preloader js*/
+function loadingComplete(){
+   $(".preloader").css({"-webkit-animation":"slit-out-horizontal 1s ease-in both","animation":"slit-out-horizontal 1s ease-in both"}); 
+}
