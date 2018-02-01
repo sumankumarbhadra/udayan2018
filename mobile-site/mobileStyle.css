@@ -30,6 +30,7 @@ nav ul li{
     text-shadow: 0px 0px 5px rgba(254,254,254,0.6);
     border-bottom: 3px solid white;
     border-top: 3px solid white;
+    transition: all 0.6s;
 }
 nav
 {
@@ -40,7 +41,8 @@ nav
     height: 100%;
     z-index: 2;
 }
-nav ul li:hover
+nav ul li:active
 {
-    background-color: rgba(0,220,0,0.8);
+    background-color: rgba(0,220,0,0.7);
+    transform: scale(0.7);
 }
