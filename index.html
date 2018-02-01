@@ -231,7 +231,7 @@
                              </div>
                    <div class="dustbin" name="redDB" id="redDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/redcap.png" class="dustbinlid" name="redDB" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/red.png" height="130px" width="85px" name="redDB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                    <div class="flag flag6">  
-                     <div class="flag-pattern ch6">Put Plastic Waste To Open Mechanical Events</div>
+                     <div class="flag-pattern ch6">Put Glass Waste To Open Mechanical Events</div>
                          <div class="flag-wave"></div>  
                  	</div>
                    <div class="dustbin" name="brownDB" id="brownDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/darkgreencap.png" class="dustbinlid" name="brownDB" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/darkgreen.png" height="130px" width="85px"  name="brownDB"ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
@@ -377,60 +377,54 @@
                 flagtempmsg="";
                 switch($(this).attr('id')){
                     case "greenDB":
-                      flagtempmsg=$(".flag1").find(".ch").html();
                       $(".flag1").find(".ch").css("color","red");
                       $(".flag1").find(".ch").html("Wrong Bin");
                       setTimeout(function(){
                       $(".flag1").find(".ch").css("color","black");
-                      $(".flag1").find(".ch").html(flagtempmsg);
+                      $(".flag1").find(".ch").html("Put Paper Waste To Open CSE Events");
                       },2000);
                       break;
                     case "blueDB":
-                      flagtempmsg=$(".flag2").find(".ch2").html();
                       $(".flag2").find(".ch2").css("color","red");
                       $(".flag2").find(".ch2").html("Wrong Bin");
                       setTimeout(function(){
                       $(".flag2").find(".ch2").css("color","black");
-                      $(".flag2").find(".ch2").html(flagtempmsg);
+                      $(".flag2").find(".ch2").html("Put Metal Waste To Open Civil Events");
                       },2000);
                       break;
                     case "yellowDB":
-                      flagtempmsg=$(".flag3").find(".ch3").html();
                       $(".flag3").find(".ch3").css("color","red");
                       $(".flag3").find(".ch3").html("Wrong Bin");
                       setTimeout(function(){
                       $(".flag3").find(".ch3").css("color","black");
-                      $(".flag3").find(".ch3").html(flagtempmsg);
+                      $(".flag3").find(".ch3").html("Put Organic Waste To Open EE Events");
                       },2000);
                       break;
                     case "blackDB":
-                      flagtempmsg=$(".flag4").find(".ch4").html();
                       $(".flag4").find(".ch4").css("color","red");
                       $(".flag4").find(".ch4").html("Wrong Bin");
                       //alert("call");
                       setTimeout(function(){
                       //alert(flagtempmsg);
                       $(".flag4").find(".ch4").css("color","black");
-                      $(".flag4").find(".ch4").html(flagtempmsg);
+                      $(".flag4").find(".ch4").html("Put Battery Waste To Open EEE Events");
                       },2000);
                       break;
                     case "redDB":
-                      flagtempmsg=$(".flag5").find(".ch5").html();
                       $(".flag5").find(".ch5").css("color","black");
                       $(".flag5").find(".ch5").html("Wrong Bin");
                       setTimeout(function(){
                       $(".flag5").find(".ch5").css("color","black");
-                      $(".flag5").find(".ch5").html(flagtempmsg);
+                      $(".flag5").find(".ch5").html("Put Plastic Waste To Open ETC Events");
                       },2000);
                       break;
                     case "brownDB":
-                      flagtempmsg=$(".flag6").find(".ch6").html();
                       $(".flag6").find(".ch6").css("color","red");
                       $(".flag6").find(".ch6").html("Wrong Bin");
                       setTimeout(function(){
                     //alert(flagtempmsg);
                       $(".flag6").find(".ch6").css("color","black");
-                      $(".flag6").find(".ch6").html(flagtempmsg);
+                      $(".flag6").find(".ch6").html("Put Glass Waste To Open Mechanical Events");
                       },2000);
                       break;
                   }
@@ -543,59 +537,55 @@
                 showInstruct(true,"Wrong bin");
                 flagtempmsg="";
                 switch(dropname){
-                case "greenDB":
-                  flagtempmsg=$(".flag1").find(".ch").html();
+                  case "greenDB":
                   $(".flag1").find(".ch").css("color","red");
                   $(".flag1").find(".ch").html("Wrong Bin");
                   setTimeout(function(){
                   $(".flag1").find(".ch").css("color","black");
-                  $(".flag1").find(".ch").html(flagtempmsg);
+                  $(".flag1").find(".ch").html("Put Paper Waste To Open CSE Events");
                   },2000);
                   break;
                 case "blueDB":
-                  flagtempmsg=$(".flag2").find(".ch2").html();
                   $(".flag2").find(".ch2").css("color","red");
                   $(".flag2").find(".ch2").html("Wrong Bin");
                   setTimeout(function(){
                   $(".flag2").find(".ch2").css("color","black");
-                  $(".flag2").find(".ch2").html(flagtempmsg);
+                  $(".flag2").find(".ch2").html("Put Metal Waste To Open Civil Events");
                   },2000);
                   break;
                 case "yellowDB":
-                  flagtempmsg=$(".flag3").find(".ch3").html();
                   $(".flag3").find(".ch3").css("color","red");
                   $(".flag3").find(".ch3").html("Wrong Bin");
                   setTimeout(function(){
                   $(".flag3").find(".ch3").css("color","black");
-                  $(".flag3").find(".ch3").html(flagtempmsg);
+                  $(".flag3").find(".ch3").html("Put Organic Waste To Open EE Events");
                   },2000);
                   break;
                 case "blackDB":
-                  flagtempmsg=$(".flag4").find(".ch4").html();
                   $(".flag4").find(".ch4").css("color","red");
                   $(".flag4").find(".ch4").html("Wrong Bin");
+                  //alert("call");
                   setTimeout(function(){
+                  //alert(flagtempmsg);
                   $(".flag4").find(".ch4").css("color","black");
-                  $(".flag4").find(".ch4").html(flagtempmsg);
+                  $(".flag4").find(".ch4").html("Put Battery Waste To Open EEE Events");
                   },2000);
                   break;
                 case "redDB":
-                  flagtempmsg=$(".flag5").find(".ch5").html();
-                  $(".flag5").find(".ch5").css("color","red");
+                  $(".flag5").find(".ch5").css("color","black");
                   $(".flag5").find(".ch5").html("Wrong Bin");
                   setTimeout(function(){
                   $(".flag5").find(".ch5").css("color","black");
-                  $(".flag5").find(".ch5").html(flagtempmsg);
+                  $(".flag5").find(".ch5").html("Put Plastic Waste To Open ETC Events");
                   },2000);
                   break;
                 case "brownDB":
-                  flagtempmsg=$(".flag6").find(".ch6").html();
                   $(".flag6").find(".ch6").css("color","red");
                   $(".flag6").find(".ch6").html("Wrong Bin");
                   setTimeout(function(){
-                  alert(flagtempmsg);
+                //alert(flagtempmsg);
                   $(".flag6").find(".ch6").css("color","black");
-                  $(".flag6").find(".ch6").html(flagtempmsg);
+                  $(".flag6").find(".ch6").html("Put Glass Waste To Open Mechanical Events");
                   },2000);
                   break;
               }
