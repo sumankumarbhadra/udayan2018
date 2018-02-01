@@ -208,3 +208,36 @@ section
 /*loader exit animation*/
 
 @-webkit-keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}@keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}
+/*social*/
+.social{
+       height: 105px;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+#socialbox{
+        position: absolute;
+    top: 0;
+    height: 100%;
+    color: white;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+} 
+.socialboximg{
+    height: 80px;
+    width: 80px;
+    padding-right: 67px;
+    z-index: 6;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.socialList{
+    display: inline;
+}
