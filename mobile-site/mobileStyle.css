@@ -38,8 +38,10 @@ nav
     position: fixed;
     background-color: rgba(0,220,0,0.5);
     width: 100%;
-    height: 100%;
+    height: 0%;
     z-index: 2;
+    overflow:hidden;
+    transition: all 0.8s;
 }
 nav ul li:active
 {
