@@ -116,7 +116,7 @@ video{
 }
 .panel {
 
-    position: absolute;
+    position: relative;
     left: 0px;
     height: 60px;
     width : 157px;
