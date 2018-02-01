@@ -67,35 +67,24 @@ canvas{ display: block; vertical-align: bottom; position: absolute;top: 0;z-inde
    
 }
    #draggable1{                                                                
-    top:2.23%;
-    left: 6.3719%;  
+    left:125.821px;
+    top: 393.837px;  
 
 }
-#draggable2{    left: 25.08%;
-    top:2.25%;
+#draggable2{    
+    left: 59.6568px;
+    top : 195.329px;
         }
-#draggable3{left: 43.86%;
-    top: 5.62%;}
-#draggable4{top:4.78%;
-    left: 59.17%;}
-#draggable5{top: 12.89%;
-    left: 74.74%;}
-#draggable6{    top: 45.81%;
-    left: 69.71%;}
-#draggable7{    left: 83.48%;
-    top: 39.69%;}
-#draggable8{top: 70.26%;
-    left: 65.25%;}
-#draggable9{left: 49.58%;
-    top: 67.49%;}
-#draggable10{    left: 30.57%;
-    top: 64.44%;}
-#draggable11{    top: 78.94%;
-    left: 18.20%;}
-#draggable12{    top: 53.91%;
-    left: 16.54%;}
-#draggable13{    top: 32.97%;
-    left: 13.58%;}
+#draggable3{
+    left: 196.656px;
+     top: 26.6868px;}
+#draggable4{left: 621.368px;
+ top: 32.7747px;}
+#draggable5{left: 953.286px; top: 28.6924px;}
+#draggable6{left: 1056.88px; top: 409.896px;}
+#draggable7{    left: 1063.78px; top: 195.581px;}
+#draggable8{left: 761.423px; top: 449.939px;}
+#draggable9{left: 457.976px; top: 434.679px;}
 line{
     stroke:#5026f9;
     stroke-width:5px;
@@ -124,4 +113,13 @@ video{
     transform: scale(3);
     z-index: 2;
     font-size:7px;
+}
+.panel {
+
+    position: absolute;
+    left: 0px;
+    height: 60px;
+    width : 157px;
+    background-color: white;
+    opacity : 0.5;
 }
