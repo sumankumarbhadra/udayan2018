@@ -163,7 +163,7 @@ section
 .large
 {
 
-      top: 10px;
+      top: 561px;
       left: -300px;
       background-size: 100%;
       opacity: 0.9;
@@ -172,7 +172,7 @@ section
 .small
 {
 
-      top: 60px;
+      top: 612px;
       right: -250px;
       background-size: 100%;
       opacity: 0.9;
@@ -181,7 +181,7 @@ section
 .medium
 {
 
-    top: 130px;
+    top: 682px;
     left: -220px;
     background-size: 100%;
     opacity: 0.9;
@@ -189,7 +189,7 @@ section
 }
 
 .xsmall{
-      top: 180px;
+      top: 732px;
       right: -200px;
       background-size: 100%;
       opacity: 0.9;
