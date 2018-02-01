@@ -2,6 +2,10 @@
     font-family: "pure-heart";
     src: url("assets/temporary/Backgrounds/PureHeart-Regular.otf");
 }
+@font-face {
+    font-family: "bebas";
+    src: url("./assets/temporary/Backgrounds/BEBAS.ttf");
+}
 #bodies
 {
     position:fixed;
@@ -494,9 +498,9 @@ article
     text-align: center;
     transition: all 1s;
     margin: 0px;
-    font-family: "pure-heart";
+    font-family: "bebas";
     color: white;
-    font-size: large;
+    font-size: small;
 
 }
 
