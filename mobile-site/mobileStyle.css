@@ -260,3 +260,22 @@ section
     margin: auto;
     background-color: rgba(255, 255, 255, 0.48);
 }
+#udayanLogo
+{
+
+   /*  position: fixed;
+   margin-left: 42%;
+   font-size: 5em;
+   z-index: 2;
+   width: 100%;
+   text-align: center;
+   top: 35px; */
+    position: fixed;
+    margin-left: 15%;
+    font-size: 5em;
+    z-index: 5;
+    width: 73%;
+    text-align: center;
+    top: 88px;
+    height: 43%;
+}
