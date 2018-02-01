@@ -277,5 +277,6 @@ section
     width: 73%;
     text-align: center;
     top: 88px;
-    height: 43%;
+    height: 41%;
+    z-index: 0;
 }
