@@ -3,12 +3,16 @@
 <head>
   <!-- redrict according to screen size -->
   <script type="text/javascript">
-
     if (screen.width <= 699) {
-    document.location = "./mobile-site/";
-    }
-  
-    </script>
+       document.location = "./mobile-site/";
+       }
+    window.onresize = function(event) {
+       if (document.body.clientWidth <= 699) {
+        alert("The desktop site provides a better navigation and convenient display.");
+       document.location = "./mobile-site/";
+       }
+    };
+  </script>
 
 
     <meta charset="UTF-8">
