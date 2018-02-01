@@ -39,6 +39,9 @@
     width:500px;
     position:relative;
  }
+li{
+    list-style: none;
+}
 
 /*Plane Animation start*/
 #plane {
