@@ -217,20 +217,23 @@ section
 /*loader exit animation*/
 
 @-webkit-keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}@keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}
+
 /*social*/
 .social{
-       height: 105px;
+       height: 118px;
     width: 100%;
     position: absolute;
     overflow: hidden;
     bottom: 0;
     left: 0;
     z-index: 0;
+    background: rgba(0, 0, 0, 0.17);
 }
 
 #socialbox{
-        position: absolute;
+    position: absolute;
     top: 0;
+    top: 20px;
     height: 100%;
     color: white;
     width: 100%;
@@ -249,4 +252,11 @@ section
 
 .socialList{
     display: inline;
+}
+#foot1{
+    height: 3px;
+    border: none;
+    width: 82%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.48);
 }
