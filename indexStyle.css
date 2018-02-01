@@ -1124,3 +1124,35 @@ html {
 /*loader exit animation*/
 
 @-webkit-keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}@keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}
+/*social*/
+.social{
+    height: 500px;
+    width: 100px;
+    position: absolute;
+    resize: vertical;
+    overflow: hidden;
+    right: 0;
+    z-index: 3;
+}
+
+#socialbox{
+    position: absolute;
+    top: 43%;
+    height: 100%;
+    color: white;
+    width: 100%;
+} 
+.socialboximg{
+    height: 45px;
+    width: 45px;
+    z-index: 6;
+    filter: grayscale(1);
+    opacity: 0.4;
+    transition: 0.3s ease-out;
+}
+.socialboximg:hover{
+  filter: grayscale(0);
+   opacity: 1;
+}
+
+
