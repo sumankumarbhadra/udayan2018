@@ -68,6 +68,7 @@
 		 width: 40em;
 		 margin: 0 0 0 -20em;
 		}
+		
 		.loaderUdayan {
 		 font: 700 4em/1 "hojas", sans-serif;
 		 letter-spacing: 0;
@@ -97,6 +98,11 @@
 		 }
 		}
     </style>
+    <script type="text/javascript">
+    	if (document.body.clientWidth <= 699) {
+       document.querySelector(".loaderUpperText").style.top="43%";
+       }
+    </script>
 </head>
 <body onload="init(); loadingComplete();" style="background:transparent;">
 	<!-- Preloader -->
