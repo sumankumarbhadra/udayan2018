@@ -29,70 +29,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-  /*Preloader*/
-    .preloader {
-     font: 400 1em/1.5 "voice";
-     background: #090d00;
-     color: rgba(255, 255, 255, 0.25);
-     text-align: center;
-     margin: 0;
-     z-index: 8;
-     height: 105%;
-     position: fixed;
-     width: 100%;
-    }
-    @font-face {
-    font-family: "hojas";
-    src: url("assets/temporary/Backgrounds/hojas.otf");
-    }
-    @font-face {
-    font-family: "voice";
-    src: url("assets/temporary/Backgrounds/voice.otf");
-    }
-    .loaderUpperText {
-     text-transform: uppercase;
-     letter-spacing: .5em;
-     display: inline-block;
-     border: 4px double rgba(255, 255, 255, 0.25);
-     border-width: 4px 0;
-     padding: 1.5em 0em;
-     position: absolute;
-     top: 36%;
-     left: 50%;
-     width: 40em;
-     margin: 0 0 0 -20em;
-    }
-    .loaderUdayan {
-     font: 700 4em/1 "hojas", sans-serif;
-     letter-spacing: 0;
-     padding: .25em 0 .325em;
-     display: block;
-     margin: 0 auto;
-     text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-     /* Clip Background Image */
-     background: url(./assets/temporary/loader.png) repeat-y;
-     -webkit-background-clip: text;
-     background-clip: text;
-     /* Animate Background Image */
-     -webkit-text-fill-color: transparent;
-     -webkit-animation: aitf 80s linear infinite;
-     /* Activate hardware acceleration for smoother animations */
-     -webkit-transform: translate3d(0, 0, 0);
-     -webkit-backface-visibility: hidden;
-    }
 
-    /* Animate Background Image */
-    @-webkit-keyframes aitf {
-     0% {
-       background-position: 0% 50%;
-     }
-     100% {
-       background-position: 100% 50%;
-     }
-    }
-
-  </style>
     <style>
         /* style for floating img*/
         html {width:100vw;height:100vh;perspective:1000px;}
@@ -154,19 +91,9 @@
     </style>
 </head>
 
-<body onload="init(); begin(); loadingComplete();">
+<body onload="init(); begin();">
 
-    <!-- Preloader -->
-      <div class="preloader">
-        <p class="loaderUpperText">
-         Trident Group Of Institutions Presents
-         <span class="loaderUdayan">
-           Udayan 2k18
-         </span>
-         &mdash; THE TECHFEST &mdash;
-        </p>
-      </div>
-      <!-- Preloader ends -->
+   
 
     <!-- navbar -->
     <nav id="navMenu" class="nav">
