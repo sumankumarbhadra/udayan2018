@@ -377,10 +377,10 @@ function loadingComplete(){
    $(".preloader").css({"-webkit-animation":"slit-out-horizontal 1s ease-in both","animation":"slit-out-horizontal 1s ease-in both"}); 
 }
 /*help*/
-helpopen=0;
+helpopen=0;   
 function showhelp(){
   if(helpopen==0){helpopen=1;
-  $(".helpmsg").css({"width":"100px","height":"100px","padding":"13px"});
+  $(".helpmsg").css({"width":"400px","height":"250px","padding":"13px"});
     setTimeout(function(){
       $(".helpmsg").css({"width":"0px","height":"0px","padding":"0px"});
       helpopen=0;
