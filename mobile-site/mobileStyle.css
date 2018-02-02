@@ -35,6 +35,10 @@ body {
     margin: 0px;
     margin-top: 20%;
 }
+li
+{
+    list-style: none;
+}
 .navElement{
     list-style: none;
     padding: 25px;
