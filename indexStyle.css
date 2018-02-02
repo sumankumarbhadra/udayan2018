@@ -1166,7 +1166,7 @@ html {
 /*Help*/
 .helpmsg{
   position: fixed;
-  background: white;
+  background: rgba(0, 0, 0, 0.38);
   z-index: 7;
   display: block;
     width: 0;
@@ -1179,4 +1179,20 @@ html {
     color: white;
     
 }
-
+ /*notice*/
+ #notice
+{
+  margin:0px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.46) 64%,rgba(0, 0, 0, 0.46) 79%,rgba(0, 0, 0, 0) 100%);
+    color: red;
+    font-size: 60px;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: fixed;
+    right: 0;
+    padding: 0px;
+    border-radius: 0px 0 0 10px;
+    z-index: 7;
+    transition: 0.4s ease-in;
+}

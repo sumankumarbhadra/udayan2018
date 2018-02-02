@@ -377,6 +377,26 @@ function loadingComplete(){
    $(".preloader").css({"-webkit-animation":"slit-out-horizontal 1s ease-in both","animation":"slit-out-horizontal 1s ease-in both"}); 
 }
 /*help*/
+helpopen=0;
 function showhelp(){
+  if(helpopen==0){helpopen=1;
   $(".helpmsg").css({"width":"100px","height":"100px","padding":"13px"});
+    setTimeout(function(){
+      $(".helpmsg").css({"width":"0px","height":"0px","padding":"0px"});
+      helpopen=0;
+    },10000);
+  }else if(helpopen==1){
+    $(".helpmsg").css({"width":"0px","height":"0px","padding":"0px"});
+    helpopen=0;
+  }
+}
+
+function showalert(msg){
+
+  $("#notice").css({"height": "130px","padding": "15px"});
+  $("#notice").html(msg);
+  setTimeout(function(){
+    $("#notice").css({"height": "0px","padding": "0px"});
+    $("#notice").html("");
+  },3000);
 }
