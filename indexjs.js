@@ -131,6 +131,7 @@ function navHandelClick() {
         return navFlag = true;
     }
     document.getElementById("mainOverlay").addEventListener("touchend", closePop,false);
+
 }
 
 /*Nav menu end*/
