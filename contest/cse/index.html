@@ -87,12 +87,19 @@
             transform: scale(1.3);
           }
         }
-		
+		    .bg{
+        height: 100%;
+        background: url(bg.jpg) center center / cover no-repeat;
+        width: 100%;
+        position: absolute;
+    }
     </style>
 </head>
 
 <body onload="init(); begin();">
-
+<div class="bg" data-ibg-bg="bg.jpg">
+    
+  </div>
    
 
     <!-- navbar -->
@@ -395,6 +402,9 @@ function navHandelClick() {
 
     $('.ms-right').css("top",right);
    }
+    </script>
+    <script type="text/javascript">
+        $(".bg").interactive_bg();
     </script>
 </body>
 
