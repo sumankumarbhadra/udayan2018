@@ -77,11 +77,12 @@
                  newX = -(xA*2),
                  newY = -(yA*2);
                  
-                $('.bg').css({
+                 el.find("> .ibg-bg").css({
                    "-webkit-transform": "matrix(" + settings.scale + ",0,0," + settings.scale + "," + newX + "," + newY + ")",
                    "-moz-transform": "matrix(" + settings.scale + ",0,0," + settings.scale + "," + newX + "," + newY + ")",
                    "-o-transform": "matrix(" + settings.scale + ",0,0," + settings.scale + "," + newX + "," + newY + ")",
-                   "transform": "matrix(" + settings.scale + ",0,0," + settings.scale + "," + newX + "," + newY + ")"
+                   "transform": "matrix(" + settings.scale + ",0,0," + settings.scale + "," + newX + "," + newY + ")",
+                   "z-index":"-1"
                  });    
 
           }
@@ -89,9 +90,9 @@
       } else {
         // For Desktop 
         // Animate only scaling when mouse enter
-        $("body").mouseenter(function(e) {
+        el.mouseenter(function(e) {
           if (settings.scale != 1) el.addClass("ibg-entering")
-          $('.bg').css({
+          el.find("> .ibg-bg").css({
             "-webkit-transform": "matrix(" + settings.scale + ",0,0," + settings.scale + ",0,0)",
             "-moz-transform": "matrix(" + settings.scale + ",0,0," + settings.scale + ",0,0)",
             "-o-transform": "matrix(" + settings.scale + ",0,0," + settings.scale + ",0,0)",
@@ -99,7 +100,8 @@
             "-webkit-transition": "-webkit-transform " + settings.animationSpeed + " linear",
             "-moz-transition": "-moz-transform " + settings.animationSpeed + " linear",
             "-o-transition": "-o-transform " + settings.animationSpeed + " linear",
-            "transition": "transform " + settings.animationSpeed + " linear"
+            "transition": "transform " + settings.animationSpeed + " linear",
+                   "z-index":"-1"
           }).on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
 
             // This will signal the mousemove below to execute when the scaling animation stops
@@ -116,7 +118,7 @@
                 newY = ((sh * pageY)) * - 1;
             // Use matrix to move the background from its origin
             // Also, disable transition to prevent lag
-            $('.bg').css({
+            el.find("> .ibg-bg").css({
               "-webkit-transform": "matrix(" + settings.scale + ",0,0," + settings.scale + "," + newX + "," + newY + ")",
               "-moz-transform": "matrix(" + settings.scale + ",0,0," + settings.scale + "," + newX + "," + newY + ")",
               "-o-transform": "matrix(" + settings.scale + ",0,0," + settings.scale + "," + newX + "," + newY + ")",
@@ -124,13 +126,14 @@
               "-webkit-transition": "none",
               "-moz-transition": "none",
               "-o-transition": "none",
-              "transition": "none"
+              "transition": "none",
+                   "z-index":"-1"
             });
           }
         }).mouseleave(function(e) {
           if (settings.scale != 1) el.addClass("ibg-exiting")
           // Same condition applies as mouseenter. Rescale the background back to its original scale
-          $('.bg').find("> .ibg-bg").css({
+          el.addClass("ibg-exiting").find("> .ibg-bg").css({
             "-webkit-transform": "matrix(1,0,0,1,0,0)",
             "-moz-transform": "matrix(1,0,0,1,0,0)",
             "-o-transform": "matrix(1,0,0,1,0,0)",
@@ -138,7 +141,8 @@
             "-webkit-transition": "-webkit-transform " + settings.animationSpeed + " linear",
             "-moz-transition": "-moz-transform " + settings.animationSpeed + " linear",
             "-o-transition": "-o-transform " + settings.animationSpeed + " linear",
-            "transition": "transform " + settings.animationSpeed + " linear"
+            "transition": "transform " + settings.animationSpeed + " linear",
+                   "z-index":"-1"
           }).on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
             el.removeClass("ibg-exiting")
           });
