@@ -1,315 +1,61 @@
+<!DOCTYPE html>
 <html>
 <head>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
-	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>	 <script src="../indexjs.js"></script>
-  <link rel="stylesheet" href="../indexStyle.css">
-	<link rel="stylesheet" href="committeStyle.css">
-	<style>
-	/* ---- reset ---- */
+	<title>Udayan Committee</title>
 
-	</style>
+	<link rel="stylesheet" type="text/css" href="index.css">
 
+	<script src="../jquery.min.js"></script>
 
-
-	  <script>
-	  $( function() {
-	    $( "#draggable" ).draggable();
-	    $( "#draggable1" ).draggable();
-	    $( "#draggable2" ).draggable();
-	    $( "#draggable3" ).draggable();
-	    $( "#draggable4" ).draggable();
-	    $( "#draggable5" ).draggable();
-	    $( "#draggable6" ).draggable();
-	    $( "#draggable7" ).draggable();
-	    $( "#draggable8" ).draggable();
-	    $( "#draggable9" ).draggable();
-	    $( "#draggable10" ).draggable();
-	    $( "#draggable11" ).draggable();
-	    $( "#draggable12" ).draggable();
-
-	    $( "#draggable13" ).draggable();
-	  } );
-	  </script>
-
-	  <style type="text/css">
-    	/*Preloader*/
-		.preloader {
-		 font: 400 1em/1.5 "voice";
-		 background: #090d00;
-		 color: rgba(255, 255, 255, 0.25);
-		 text-align: center;
-		 margin: 0;
-		 z-index: 8;
-		 height: 105%;
-		 position: fixed;
-		 width: 100%;
-		}
-    @font-face {
-    font-family: "hojas";
-    src: url("assets/temporary/Backgrounds/hojas.otf");
-    }
-    @font-face {
-    font-family: "voice";
-    src: url("assets/temporary/Backgrounds/voice.otf");
-    }
-		.loaderUpperText {
-		 text-transform: uppercase;
-		 letter-spacing: .5em;
-		 display: inline-block;
-		 border: 4px double rgba(255, 255, 255, 0.25);
-		 border-width: 4px 0;
-		 padding: 1.5em 0em;
-		 position: absolute;
-		 top: 36%;
-		 left: 50%;
-		 width: 40em;
-		 margin: 0 0 0 -20em;
-		}
-		
-		.loaderUdayan {
-		 font: 700 4em/1 "hojas", sans-serif;
-		 letter-spacing: 0;
-		 padding: .25em 0 .325em;
-		 display: block;
-		 margin: 0 auto;
-		 text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-		 /* Clip Background Image */
-		 background: url(./assets/temporary/loader.png) repeat-y;
-		 -webkit-background-clip: text;
-		 background-clip: text;
-		 /* Animate Background Image */
-		 -webkit-text-fill-color: transparent;
-		 -webkit-animation: aitf 80s linear infinite;
-		 /* Activate hardware acceleration for smoother animations */
-		 -webkit-transform: translate3d(0, 0, 0);
-		 -webkit-backface-visibility: hidden;
-		}
-
-		/* Animate Background Image */
-		@-webkit-keyframes aitf {
-		 0% {
-		   background-position: 0% 50%;
-		 }
-		 100% {
-		   background-position: 100% 50%;
-		 }
-		}
-    </style>
-    <script type="text/javascript">
-    	if (document.body.clientWidth <= 699) {
-       document.querySelector(".loaderUpperText").style.top="43%";
-       }
-    </script>
-</head>
-<body onload="init(); loadingComplete();" style="background:transparent;">
-	<!-- Preloader -->
-	<div class="preloader">
-		<p class="loaderUpperText">
-		 Trident Group Of Institutions Presents
-		 <span class="loaderUdayan">
-		   Udayan 2k18
-		 </span>
-		 &mdash; THE TECHFEST &mdash;
-		</p>
-	</div>
-	<!-- Preloader ends -->
-	<!--Nav start-->
-        <nav id="navMenu" class="nav">
-            <ul id="navContainer">
-                 <a href="../index.html"><li class="menuElement">Home</li></a>
-                <details>
-                <summary style="font-size:20px;">Committee</summary>
-                <a href="./index.html"><li class="menuElement">Core Committee</li></a>
-                <a href="./students.html"><li class="menuElement">Students Committee</li></a>
-                </details>
-                <details>
-                <summary style="font-size:20px;" >Contest</summary>
-                  <a href="../contest/cse/index.html"><li class="menuElement">Contest&nbsp;-&nbsp;CSE/IT</li></a>
-                 <a href="../contest/civil/index.html"><li class="menuElement">Contest&nbsp;-&nbsp;Civil</li></a>
-                 <a href="../contest/ee/index.html"><li class="menuElement">Contest&nbsp;-&nbsp;EE</li></a>
-                 <a href="../contest/eee/index.html"><li class="menuElement">Contest&nbsp;-&nbsp;EEE</li></a>
-                  <a href="../contest/etc/index.html"><li class="menuElement">Contest&nbsp;-&nbsp;ETC</li></a>
-                  <a href="../contest/mech/index.html"><li class="menuElement">Contest&nbsp;-&nbsp;Mechanical</li></a>
-                 </details>
-            </ul>
-        </nav>
-        <div id="navDivBtn" class="navBtn"><i id="navBtnIcn" class="fas fa-angle-double-left fa-2x"></i></div>
-<!--Nav end-->
-<video autoplay muted loop id="myVideo">
-  <source src="techfest.mp4" type="video/mp4">
-</video> 
-		<div id="draggable"> Core Committee</div>
-		<div id="draggable1" class="mem1 mem">Prof.(Dr.)R.N.Satpathy</div>
-		<div id="draggable2" class="mem2 mem">Prof.(Dr.)M.N Dwibedi</div>
-		<div id="draggable3" class="mem3 mem">Dr.Sakuntala Mahapatra (HOD ETC)</div>
-		<div id="draggable4" class="mem4 mem">Ms.Millee Panigrahi</div>
-		<div id="draggable5" class="mem4 mem">Prof P.K Sahoo (HOD EEE)</div>
-		<div id="draggable6" class="mem4 mem">Prof N.G Das (Head Training and Placement)</div>
-		<div id="draggable7" class="mem4 mem">Ms. Rina Mahakud (ETC)</div>
-		<div id="draggable8" class="mem4 mem">Mr. Lohit Kumar Sahoo (EEE)</div>
-		<div id="draggable9" class="mem4 mem">Ms.Sasmita Mishra (IT)</div>
-		<div id="draggable10" class="mem4 mem">Mr. Aditya Narayan Das (CSE)</div>
-		<div id="draggable11" class="mem4 mem">Ms. Sagarika Swain (Civil)</div>
-		<div id="draggable12" class="mem4 mem">Mr. Sumanta Sahoo (System Administrator)</div>
-		<div id="draggable13" class="mem4 mem">Prof A.K Sahoo (HOD MECH)</div>
-		<svg width="100%" height="100%">
-			<line id="line1" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line2" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line3" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line4" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line5" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line6" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line7" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line8" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line9" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line10" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line11" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line12" x1="0" y1="0" x2="0" y2="0" />
-			<line id="line13" x1="0" y1="0" x2="0" y2="0" />
-
-		</svg>
-
-	</div>
-
-	<script src="particle.js"></script>
 	<script type="text/javascript">
-	/*function shiftval(){
-		var shift=Math.floor(Math.random()*100)+150;
-		return shift;
-	}
-	function placeNodes(){
-		$("#draggable1").css({"top":"10","left":"10"});
-		for(i=1;i<=7;i++){
-			var top=$("#draggable"+i).offset().top;
-			var left=$("#draggable"+i).offset().left;
-			alert(top+" "+left);
-			var j=i+1;
-			$("#draggable"+j).css("top",top+100);
-			$("#draggable"+j).css("left",left+100);
-		}
-	}
-	/*	var offset=$("#draggable").offset();
-		$("#draggable1 , #oDraggable1").css({"top":offset.top+shiftval(),"left":offset.left-shiftval()});
-		$("#draggable2").css({"top":offset.top+shiftval(),"left":offset.left+shiftval()});
-		$("#draggable3").css({"top":offset.top-shiftval(),"left":offset.left-shiftval()});
-		$("#draggable4").css({"top":offset.top-shiftval(),"left":offset.left+shiftval()});*/
+		$(window).scroll(function(){				 
+	$('.container p').each(function(){
+    	var scrollTop     = $(window).scrollTop(),
+        	elementOffset = $(this).offset().top,
+       		distance      = (elementOffset - scrollTop),
+			    windowHeight  = $(window).height(),
+			    breakPoint    = windowHeight*0.7;
+
+			if(distance > breakPoint) {
+				$(this).addClass("more-padding");	
+			}  if(distance < breakPoint) {
+				$(this).removeClass("more-padding");	
+			}
+	});
+});
+
+
+
 	</script>
-	<script>
-		$(function() {
-			connect();
-			$("#draggable").onPositionChanged(function(){connect()});
-			$("#draggable1").onPositionChanged(function(){connect()});
-			$("#draggable2").onPositionChanged(function(){connect()});
-			$("#draggable3").onPositionChanged(function(){connect()});
-			$("#draggable4").onPositionChanged(function(){connect()});
-			$("#draggable5").onPositionChanged(function(){connect()});
-			$("#draggable6").onPositionChanged(function(){connect()});
-			$("#draggable7").onPositionChanged(function(){connect()});
-			$("#draggable8").onPositionChanged(function(){connect()});
-			$("#draggable9").onPositionChanged(function(){connect()});
-			$("#draggable10").onPositionChanged(function(){connect()});
-			$("#draggable11").onPositionChanged(function(){connect()});
-			$("#draggable12").onPositionChanged(function(){connect()});
-			$("#draggable13").onPositionChanged(function(){connect()});
-		});
-		function connect(){
-			$("#line1").attr("x1",$("#draggable1").offset().left+100);
-			$("#line1").attr("y1",$("#draggable1").offset().top+90);
-			$("#line1").attr("x2",$("#draggable").offset().left+100);
-			$("#line1").attr("y2",$("#draggable").offset().top+90);
+</head>
+<body>
+<div class="container">
+  <h1>Udayan Core Committee Members</h1>
+   <div class="left-content">
+      <p><div><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Udit N. Sia</span><img src="udit.jpg" class="imgl"></div></p>
+      <p><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Aj. Loren</span><img src="aj.jpg" class="imgl"></p>
+      <p><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Suman K. Bhadra</span><img src="suman.jpg" class="imgl"></p>
+      <p><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Satyabrata Mohanty</span><img src="satya.jpg" class="imgl"></p>
+      <p><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Udit N. Sia</span><img src="udit.jpg" class="imgl"></p>
+      <p><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Aj. Loren</span><img src="aj.jpg" class="imgl"></p>
+      <p><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Suman K. Bhadra</span><img src="suman.jpg" class="imgl"></p>
+      <p><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Satyabrata Mohanty</span><img src="satya.jpg" class="imgl"></p>
+      <p><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Suman K. Bhadra</span><img src="suman.jpg" class="imgl"></p>
+      <p><span style="position: absolute;margin-top: -9px;margin-left: -180px;">Satyabrata Mohanty</span><img src="satya.jpg" class="imgl"></p>
 
-			$("#line2").attr("x1",$("#draggable2").offset().left+100);
-			$("#line2").attr("y1",$("#draggable2").offset().top+90);
-			$("#line2").attr("x2",$("#draggable").offset().left+100);
-			$("#line2").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line3").attr("x1",$("#draggable3").offset().left+100);
-			$("#line3").attr("y1",$("#draggable3").offset().top+90);
-			$("#line3").attr("x2",$("#draggable").offset().left+100);
-			$("#line3").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line4").attr("x1",$("#draggable4").offset().left+100);
-			$("#line4").attr("y1",$("#draggable4").offset().top+90);
-			$("#line4").attr("x2",$("#draggable").offset().left+100);
-			$("#line4").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line5").attr("x1",$("#draggable5").offset().left+100);
-			$("#line5").attr("y1",$("#draggable5").offset().top+90);
-			$("#line5").attr("x2",$("#draggable").offset().left+100);
-			$("#line5").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line6").attr("x1",$("#draggable6").offset().left+100);
-			$("#line6").attr("y1",$("#draggable6").offset().top+90);
-			$("#line6").attr("x2",$("#draggable").offset().left+100);
-			$("#line6").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line7").attr("x1",$("#draggable7").offset().left+100);
-			$("#line7").attr("y1",$("#draggable7").offset().top+90);
-			$("#line7").attr("x2",$("#draggable").offset().left+100);
-			$("#line7").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line8").attr("x1",$("#draggable8").offset().left+100);
-			$("#line8").attr("y1",$("#draggable8").offset().top+90);
-			$("#line8").attr("x2",$("#draggable").offset().left+100);
-			$("#line8").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line9").attr("x1",$("#draggable9").offset().left+100);
-			$("#line9").attr("y1",$("#draggable9").offset().top+90);
-			$("#line9").attr("x2",$("#draggable").offset().left+100);
-			$("#line9").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line10").attr("x1",$("#draggable10").offset().left+100);
-			$("#line10").attr("y1",$("#draggable10").offset().top+90);
-			$("#line10").attr("x2",$("#draggable").offset().left+100);
-			$("#line10").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line11").attr("x1",$("#draggable11").offset().left+100);
-			$("#line11").attr("y1",$("#draggable11").offset().top+90);
-			$("#line11").attr("x2",$("#draggable").offset().left+100);
-			$("#line11").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line12").attr("x1",$("#draggable12").offset().left+100);
-			$("#line12").attr("y1",$("#draggable12").offset().top+90);
-			$("#line12").attr("x2",$("#draggable").offset().left+100);
-			$("#line12").attr("y2",$("#draggable").offset().top+90);
-
-			$("#line13").attr("x1",$("#draggable13").offset().left+100);
-			$("#line13").attr("y1",$("#draggable13").offset().top+90);
-			$("#line13").attr("x2",$("#draggable").offset().left+100);
-			$("#line13").attr("y2",$("#draggable").offset().top+90);
-		}
-	</script>
-	<script>
-		jQuery.fn.onPositionChanged = function (trigger, millis) {
-    if (millis == null) millis = 100;
-    var o = $(this[0]); // our jquery object
-    if (o.length < 1) return o;
-
-    var lastPos = null;
-    var lastOff = null;
-    setInterval(function () {
-	        if (o == null || o.length < 1) return o; // abort if element is non existend eny more
-	        if (lastPos == null) lastPos = o.position();
-	        if (lastOff == null) lastOff = o.offset();
-	        var newPos = o.position();
-	        var newOff = o.offset();
-	        if (lastPos.top != newPos.top || lastPos.left != newPos.left) {
-	            $(this).trigger('onPositionChanged', { lastPos: lastPos, newPos: newPos });
-	            if (typeof (trigger) == "function") trigger(lastPos, newPos);
-	            lastPos = o.position();
-	        }
-	        if (lastOff.top != newOff.top || lastOff.left != newOff.left) {
-	            $(this).trigger('onOffsetChanged', { lastOff: lastOff, newOff: newOff});
-	            if (typeof (trigger) == "function") trigger(lastOff, newOff);
-	            lastOff= o.offset();
-	        }
-	    }, millis);
-
-	    return o;
-	};
-	</script>
+   </div>
+   <div class="right-content">
+      <p><img src="udit.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Udit N. Sia</span></p>
+      <p><img src="aj.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Aj. Loren</span></p>
+      <p><img src="suman.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Suman K. Bhadra</span></p>
+      <p><img src="satya.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Satyabrata Mohanty</span></p>
+      <p><img src="udit.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Udit N. Sia</span></p>
+      <p><img src="aj.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Aj. Loren</span></p>
+      <p><img src="suman.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Suman K. Bhadra</span></p>
+      <p><img src="satya.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Satyabrata Mohanty</span></p>
+      <p><img src="suman.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Suman K. Bhadra</span></p>
+      <p><img src="satya.jpg" class="imgr"><span style="position: absolute;margin-top: -9px;margin-left: 100px;">Name:Satyabrata Mohanty</span></p>
+   </div>
+</div>
 </body>
 </html>
