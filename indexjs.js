@@ -376,3 +376,7 @@ function closePop(){
 function loadingComplete(){
    $(".preloader").css({"-webkit-animation":"slit-out-horizontal 1s ease-in both","animation":"slit-out-horizontal 1s ease-in both"}); 
 }
+/*help*/
+function showhelp(){
+  $(".helpmsg").css({"width":"100px","height":"100px","padding":"13px"});
+}

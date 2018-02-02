@@ -1133,7 +1133,7 @@ html {
 @-webkit-keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}@keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}
 /*social*/
 .social{
-    height: 500px;
+    height: 596px;
     width: 100px;
     position: absolute;
     resize: vertical;
@@ -1162,4 +1162,21 @@ html {
    opacity: 1;
 }
 
+
+/*Help*/
+.helpmsg{
+  position: fixed;
+  background: white;
+  z-index: 7;
+  display: block;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    border-radius:10px 0px 0px 0px;
+    transition: 0.4s ease-in;
+    background: #00000052;
+    color: white;
+    
+}
 
