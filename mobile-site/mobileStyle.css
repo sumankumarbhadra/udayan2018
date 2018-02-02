@@ -283,3 +283,21 @@ section
     height: 20%;
     z-index: 0;
 }
+/*Dustbin start*/
+.DBS
+{
+    position: fixed;
+    margin-left: 25%;
+    overflow:paged-x;
+    z-index: 2;
+    bottom: 88px;
+
+}
+.dustbin
+{
+    margin-top: 89%;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+}
