@@ -18,6 +18,14 @@
 
   </script>
 	<style type="text/css">
+      @font-face {
+    font-family: "hojas";
+    src: url("../assets/temporary/Backgrounds/hojas.otf");
+    }
+    @font-face {
+    font-family: "voice";
+    src: url("../assets/temporary/Backgrounds/voice.otf");
+    }
     	/*Preloader*/
 		.preloader {
 		 font: 400 1em/1.5 "voice";
@@ -30,14 +38,6 @@
 		 position: fixed;
 		 width: 100%;
 		}
-    @font-face {
-    font-family: "hojas";
-    src: url("../assets/temporary/Backgrounds/hojas.otf");
-    }
-    @font-face {
-    font-family: "voice";
-    src: url("../assets/temporary/Backgrounds/voice.otf");
-    }
 		.loaderUpperText {
 		 text-transform: uppercase;
 		 letter-spacing: .5em;
@@ -57,6 +57,7 @@
 		 padding: .25em 0 .325em;
 		 display: block;
 		 margin: 0 auto;
+		 text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
 		 /* Clip Background Image */
 		 background: url(../assets/temporary/loader.png) repeat-y;
 		 -webkit-background-clip: text;
