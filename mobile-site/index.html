@@ -4,14 +4,19 @@
   <script type="text/javascript">
     if (screen.width >= 699) {
        document.location = "../";
-       }else{
-        alert("The desktop site provides a better navigation and convenient display.");
        }
     window.onresize = function(event) {
        if (document.body.clientWidth >= 699) {
        document.location = "../";
        }
     };
+
+    if(sessionStorage.getItem("mview")!="1"){
+      alert("The desktop site provides a better navigation and convenient display.");
+    }else{
+      sessionStorage.setItem("mview", "1");
+    }
+
   </script>
 	<style type="text/css">
     	/*Preloader*/
