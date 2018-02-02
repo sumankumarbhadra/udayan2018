@@ -123,9 +123,16 @@ article
     padding: 0px;
     margin: 0px;
 }
-.menuElement
+summary
 {
     padding: 15px;
+}
+.pad1
+{
+    padding: 15px;
+}
+.menuElement
+{
     border: 1px solid floralwhite;
     text-decoration: none;
     color: black;
