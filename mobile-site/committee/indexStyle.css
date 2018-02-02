@@ -7,6 +7,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
+
 }
 .space {
 
@@ -31,7 +32,7 @@
 	padding: 0%;
 	height : 100%;
 	width : 100%;
-	background-color : #00000054;
+	background-color : rgba(0, 0, 0, 0.36);
 	
 }
 .panel1 {
@@ -48,7 +49,7 @@
 .panel2 {
 
 	position : relative;
-	margin-top : -199px;
+	margin-top : -155px;
 	margin-left : 37.5%;
 	    height: 14%;
     width: 22%;
@@ -59,7 +60,7 @@
 
 .panel3 {
 	position : relative;
-	margin-top : -190px;
+	margin-top : -162px;
 	margin-left : 75%;
 	    height: 14%;
     width: 22%;
@@ -79,7 +80,7 @@
 }
 .panel5 {
 	position : relative;
-	margin-top : -197px;
+	margin-top : -161px;
 	margin-left : 38%;
 	    height: 14%;
     width: 22%;
@@ -89,7 +90,7 @@
 }
 .panel6 {
 	position : relative;
-	margin-top : -189px;
+	margin-top : -157px;
 	margin-left : 75%;
 	    height: 14%;
     width: 22%;
@@ -110,7 +111,7 @@
 }
 .panel8 {
 	position : relative;
-	margin-top : -196px;
+	margin-top : -157px;
 	margin-left : 38%;
 	    height: 14%;
     width: 22%;
@@ -120,7 +121,7 @@
 }
 .panel9 {
 	position : relative;
-	margin-top : -191px;
+	margin-top : -157px;
 	margin-left : 75%;
 	    height: 14%;
     width: 22%;
