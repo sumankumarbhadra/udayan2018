@@ -18,7 +18,8 @@
 
   </script>
 	<style type="text/css">
-      @font-face {
+    	/*Preloader*/
+    @font-face {
     font-family: "hojas";
     src: url("../assets/temporary/Backgrounds/hojas.otf");
     }
@@ -26,7 +27,6 @@
     font-family: "voice";
     src: url("../assets/temporary/Backgrounds/voice.otf");
     }
-    	/*Preloader*/
 		.preloader {
 		 font: 400 1em/1.5 "voice";
 		 background: #090d00;
@@ -38,6 +38,7 @@
 		 position: fixed;
 		 width: 100%;
 		}
+
 		.loaderUpperText {
 		 text-transform: uppercase;
 		 letter-spacing: .5em;
@@ -52,7 +53,7 @@
 		 margin: 0 0 0 -20em;
 		}
 		.loaderUdayan {
-		 font-size:5em;
+		 font: 700 4em/1 "hojas", sans-serif;
 		 letter-spacing: 0;
 		 padding: .25em 0 .325em;
 		 display: block;
@@ -63,7 +64,7 @@
 		 -webkit-background-clip: text;
 		 background-clip: text;
 		 /* Animate Background Image */
-		 -webkit-text-fill-color: transparent
+		 -webkit-text-fill-color: transparent;
 		 -webkit-animation: aitf 80s linear infinite;
 		 /* Activate hardware acceleration for smoother animations */
 		 -webkit-transform: translate3d(0, 0, 0);
