@@ -275,12 +275,11 @@ section
    text-align: center;
    top: 35px; */
     position: fixed;
-    margin-left: 15%;
+    margin-left: 27%;
     font-size: 5em;
-    z-index: 5;
-    width: 73%;
+    width: 48%;
     text-align: center;
-    top: 88px;
-    height: 41%;
+    top: 371px;
+    height: 20%;
     z-index: 0;
 }
