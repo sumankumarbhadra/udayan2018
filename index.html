@@ -137,7 +137,7 @@
 
 		<!--   Help msg -->
      	 <div class="helpmsg">Hi</div>
-         
+
          <!-- alert box -->
          <div id="notice"> </div>
          <!--Drone Start-->
@@ -402,6 +402,7 @@
              }else{
                 //alert("Wrong bin");
                 showInstruct(true,"Wrong bin");
+                showalert("Wrong bin");
                 flagtempmsg="";
                 switch($(this).attr('id')){
                     case "greenDB":
@@ -462,6 +463,7 @@
         }else{
             //alert("Select a trash first!");
             showInstruct(true,"Select a trash first!");
+            showalert("Select a trash first!");
             
         }
     });
