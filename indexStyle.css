@@ -1133,9 +1133,9 @@ html {
 @-webkit-keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}@keyframes slit-out-horizontal{0%{-webkit-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}54%{-webkit-transform:translateZ(-160px) rotateX(87deg);transform:translateZ(-160px) rotateX(87deg);opacity:1}100%{-webkit-transform:translateZ(-800px) rotateX(90deg);transform:translateZ(-800px) rotateX(90deg);opacity:0}}
 /*social*/
 .social{
-    height: 596px;
+    height: 75%;
     width: 100px;
-    position: absolute;
+    position: fixed;
     resize: vertical;
     overflow: hidden;
     right: 0;
@@ -1144,7 +1144,7 @@ html {
 
 #socialbox{
     position: absolute;
-    top: 43%;
+    top: 32%;
     height: 100%;
     color: white;
     width: 100%;
