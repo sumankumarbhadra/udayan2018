@@ -11,10 +11,10 @@
 }
 .space {
 
-	margin-top : 30%;
-	margin-left : 13%;
+	margin-top : 25%;
+	margin-left : 7%;
 	height : 80%;
-	width : 75%;
+	width : 85%;
 	
 }
 .image {
@@ -49,7 +49,7 @@
 .panel2 {
 
 	position : relative;
-	margin-top : -155px;
+	margin-top : -188px;
 	margin-left : 37.5%;
 	    height: 14%;
     width: 22%;
@@ -60,7 +60,7 @@
 
 .panel3 {
 	position : relative;
-	margin-top : -162px;
+	margin-top : -196px;
 	margin-left : 75%;
 	    height: 14%;
     width: 22%;
@@ -80,7 +80,7 @@
 }
 .panel5 {
 	position : relative;
-	margin-top : -161px;
+	margin-top : -196px;
 	margin-left : 38%;
 	    height: 14%;
     width: 22%;
@@ -90,7 +90,7 @@
 }
 .panel6 {
 	position : relative;
-	margin-top : -157px;
+	margin-top : -182px;
 	margin-left : 75%;
 	    height: 14%;
     width: 22%;
@@ -121,7 +121,7 @@
 }
 .panel9 {
 	position : relative;
-	margin-top : -157px;
+	margin-top : -204px;
 	margin-left : 75%;
 	    height: 14%;
     width: 22%;
@@ -168,4 +168,53 @@
 	background-color : white; 
 	opacity : 1.0;
 	border-radius : 15px;
+}
+.data1 {
+
+	position : fixed;
+	height : 140px;
+	width : 91%;
+	top: 27%;
+	left : 3%;
+	
+}
+.bio1 {
+
+	position : absolute;
+	color : white;
+	font-size: 37px;
+	padding-left : 10px;
+}
+.bio2 {
+
+	position : absolute;
+	color : white;
+	font-size: 37px;
+	padding-left : 37%;
+}
+.bio3 {
+
+	position : absolute;
+	color : white;
+	font-size: 37px;
+	padding-left : 73%;
+}
+.data2 {
+
+	position : fixed;
+	height : 140px;
+	width : 91%;
+	top: 49%;
+	left : 3%;
+	
+	
+}
+.data3 {
+
+	position : fixed;
+	height : 140px;
+	width : 91%;
+	top: 72%;
+	left : 3%;
+	
 }
