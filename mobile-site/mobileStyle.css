@@ -37,6 +37,9 @@ body {
     height: 100%;
 }
 
+
+/*Nav Start*/
+
 #mNavBtn
 {
     position: fixed;
@@ -92,6 +95,9 @@ nav
     background-color: rgba(0,220,0,0.7);
     transform: scale(0.7);
 }
+/*Nav End*/
+
+
 a
 {
     text-decoration: none;
