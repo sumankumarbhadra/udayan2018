@@ -97,6 +97,18 @@ nav
 }
 /*Nav End*/
 
+.instruct
+{
+    position: fixed;
+    left: 21%;
+    top: 60%;
+    background-color: rgba(0,0,0,0.6);
+    color: ghostwhite;
+    padding: 20px;
+    width: 65%;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+}
 
 a
 {
