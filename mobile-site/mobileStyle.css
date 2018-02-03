@@ -27,6 +27,30 @@
   90% {left:90%; top:20.21%;}
   100% {left:100%; top:25%;}
 }
+#plane {
+    position:fixed;
+    width:100px;
+    top:0px;
+    height:100px;
+    z-index: 1;
+
+}
+/*Plane Animation start*/
+#plane {
+  animation:move 35s infinite;
+ /* -moz-animation:move 30s linear infinte;
+  -ms-animation:move 30s linear infinite;
+  animation:move 30s linear infinte;
+  */
+  opacity: 0.9;
+
+}
+@keyframes move {
+  from {right:0px;}
+  to {right:1920px;}
+}
+/*Plane Animation end*/
+sss
 body {
     overflow: hidden;
     margin: 0px;
