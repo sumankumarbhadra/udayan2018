@@ -312,10 +312,10 @@ section
 .DBS
 {
     position: fixed;
-    margin-left: 25%;
-    overflow:paged-x;
+    margin-left: 23.5%;
+    overflow: paged-x;
     z-index: 2;
-    bottom: 88px;
+    bottom: 116px;
 
 }
 .dustbin
