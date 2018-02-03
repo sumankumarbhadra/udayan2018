@@ -2,6 +2,31 @@
     font-family: "pirulen";
     src: url("../assets/temporary/Backgrounds/pirulen.ttf");
 }
+#bodies
+{
+    position:fixed;
+    width:100px;
+    top:189px;
+    height:100px;
+    z-index: 0;
+}
+#bodies
+{
+  animation: move1 500s ease infinite;
+}
+@keyframes move1 {
+  0% {left:0%; top:25%;}
+  10% {left:10%; top:20.21%; }
+  20% {left:20%; top:15.42%;}
+  30% {left:30%; top:10.63%;}
+  40% {left:40%; top:5.84%;}
+  50% {left:50%; top:5%;}
+  60% {left:60%; top:5.84%;}
+  70% {left:70%; top:10.63%;}
+  80% {left:80%; top:15.42%;}
+  90% {left:90%; top:20.21%;}
+  100% {left:100%; top:25%;}
+}
 body {
     overflow: hidden;
     margin: 0px;
