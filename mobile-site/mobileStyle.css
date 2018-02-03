@@ -393,37 +393,10 @@ section
 
 /*!--Car Start--*/
 .car{
-        position: absolute;
-    margin-left: -33%;
+    position: fixed;
+    margin-left: 66%;
     z-index: 3;
-    bottom: 462px;
-    animation:forward linear 5s;
+    bottom: 386px;
 }
-.carbody{
-      position: absolute;
-    z-index: 0;
-}
-.cartyrel{
-      position: absolute;
-    z-index: 1;
-    left: 29px;
-    top: 35px;
-    animation:rotate linear 1.5s infinite;
-}
-.cartyrer{
-      position: absolute;
-    z-index: 1;
-    left: 222px;
-    top: 35px;
-    animation:rotate linear 1.5s infinite;
-}
-@keyframes rotate{
-  0%{    transform: rotate(360deg);}
-  50%{    transform: rotate(180deg);}
-  100%{    transform: rotate(0deg);}
-}
-@keyframes forward{
-  0%{margin-left:66%;}
-  100%{margin-left: -33%; display:none;}
-}
+
 /*!--Car End--*/
