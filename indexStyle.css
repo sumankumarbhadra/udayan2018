@@ -939,6 +939,8 @@ div#dockWrapper {
   -webkit-animation-iteration-count: infinite;
   display:none;
   font-size: 0.9rem;
+  color: white;
+  font-weight: bold;
 }
 .flag1 {
 
