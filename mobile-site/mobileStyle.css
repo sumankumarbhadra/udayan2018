@@ -27,30 +27,6 @@
   90% {left:90%; top:20.21%;}
   100% {left:100%; top:25%;}
 }
-#plane {
-    position:fixed;
-    width:100px;
-    top:0px;
-    height:100px;
-    z-index: 1;
-
-}
-/*Plane Animation start*/
-#plane {
-  animation:move 35s infinite;
- /* -moz-animation:move 30s linear infinte;
-  -ms-animation:move 30s linear infinite;
-  animation:move 30s linear infinte;
-  */
-  opacity: 0.9;
-
-}
-@keyframes move {
-  from {right:0px;}
-  to {right:1920px;}
-}
-/*Plane Animation end*/
-sss
 body {
     overflow: hidden;
     margin: 0px;
@@ -336,10 +312,10 @@ section
 .DBS
 {
     position: fixed;
-    margin-left: 25%;
-    overflow:paged-x;
+    margin-left: 23.5%;
+    overflow: paged-x;
     z-index: 2;
-    bottom: 88px;
+    bottom: 116px;
 
 }
 .dustbin
@@ -350,3 +326,61 @@ section
     cursor: pointer;
     position: relative;
 }
+#plane {
+    position:fixed;
+    width:100px;
+    top:0px;
+    height:100px;
+    z-index: 1;
+
+}
+/*Plane Animation start*/
+#plane {
+  animation:move 35s infinite;
+ /* -moz-animation:move 30s linear infinte;
+  -ms-animation:move 30s linear infinite;
+  animation:move 30s linear infinte;
+  */
+  opacity: 0.9;
+
+}
+@keyframes move {
+  from {right:0px;}
+  to {right:1920px;}
+}
+/*Plane Animation end*/
+
+/*Hot!🔥  Air Balloon start*/
+#hotContainer
+{
+    position: fixed;
+    z-index: 1;
+    animation: moveHot 180s infinite;
+
+}
+@keyframes moveHot {
+    0%{left:10%; top:-25%;}
+    10%{
+        left: 10%; top: 10%;
+    }
+    30%{
+        left: 60%; top: 10%;
+    }
+    50%{
+        left: 70%; top: 6%;
+    }
+    60%{
+        left: 50%; top: 3%;
+    }
+    100%
+    {
+        left:10%; top:-25%;
+    }
+
+}
+#balloon
+{
+    display: block;
+}
+
+/*Hot!🔥  Air Balloon ends*/
