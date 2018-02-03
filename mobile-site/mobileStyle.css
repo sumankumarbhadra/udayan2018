@@ -349,3 +349,38 @@ section
   to {right:1920px;}
 }
 /*Plane Animation end*/
+
+/*Hot!🔥  Air Balloon start*/
+#hotContainer
+{
+    position: fixed;
+    z-index: 1;
+    animation: moveHot 180s infinite;
+
+}
+@keyframes moveHot {
+    0%{left:10%; top:-25%;}
+    10%{
+        left: 10%; top: 10%;
+    }
+    30%{
+        left: 60%; top: 10%;
+    }
+    50%{
+        left: 70%; top: 6%;
+    }
+    60%{
+        left: 50%; top: 3%;
+    }
+    100%
+    {
+        left:10%; top:-25%;
+    }
+
+}
+#balloon
+{
+    display: block;
+}
+
+/*Hot!🔥  Air Balloon ends*/
