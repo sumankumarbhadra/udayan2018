@@ -318,7 +318,7 @@ section
 .DBS
 {
     position: fixed;
-    margin-left: 23.5%;
+    margin-left: 21.85%;
     overflow: paged-x;
     z-index: 2;
     bottom: 116px;
@@ -335,7 +335,7 @@ section
 #plane {
     position:fixed;
     width:100px;
-    top:0px;
+    top: 40%;
     height:100px;
     z-index: 1;
 
