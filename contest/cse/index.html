@@ -87,23 +87,13 @@
             transform: scale(1.3);
           }
         }
-		.bg{
-            position: absolute;
-            min-height: 100% !important;
-            width: 100%;
-            
-    }
-    ibg-bg{
-      z-index: -9;
-    }
+		
     </style>
 </head>
 
-<body onload="init(); begin();" class="bg" data-ibg-bg="bg.jpg">
+<body onload="init(); begin();">
 
-   <div class="bg" data-ibg-bg="bg.jpg">
-    
- 
+   
 
     <!-- navbar -->
     <nav id="navMenu" class="nav">
@@ -283,7 +273,7 @@
     <!-- end slidre section -->
 
 
- </div>
+
 
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
@@ -295,8 +285,7 @@
 
     <!-- custom js -->
     <script src="../js/custom.js"></script>
-    <script type="text/javascript" src="../js/jquery.interactive_bg.js"></script>
-  
+
     <!-- multi scroll script -->
     <script>
         $(document).ready(function() {
@@ -407,30 +396,6 @@ function navHandelClick() {
     $('.ms-right').css("top",right);
    }
     </script>
-    <script type="text/javascript">
-
-      $(document).ready(function(){
-         
-          if (screen.width <= 699){
-             $(".bg").interactive_bg();
-             $("#btns").interactive_bg({
-               strength: 10,
-               scale: 1.15,
-               contain: false,
-               wrapContent: true
-             });
-          }
-      });
-
-      $(window).resize(function() {
-        $(".wrapper > .ibg-bg").css({
-          width: $(window).outerWidth(),
-          height: $(window).outerHeight()
-        })
-      });
-
-      
-      </script>
 </body>
 
 </html>
