@@ -95,6 +95,7 @@
 </div>
 <header><img id="udayanLogo" src="../assets/mobile/resize/Logonight.png"></header>
 <article>
+	<div class="swipearea"></div>
     <section>
 <!--Cloud start-->
         <div id="scene">
@@ -181,6 +182,7 @@
 
         <!--Nav start-->
         <nav id="mainNav">
+        	<ul>
              <li id="navContainer">
                 <a href="#"><li class="navElement" onclick="showNav();">Home</li></a>
                  <li class="navElement">
@@ -202,6 +204,7 @@
                 </details>
             </li>
             </ul>
+            <div class="closeswipearea"></div>
         </nav>
         <!--Nav end-->
 
@@ -211,23 +214,34 @@
     </section>
 </article>
 <script>
-$(function() {
-  $("html").swipe( {
-    //Generic swipe handler for all directions
-    swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-     showNav(); 
-    }
-  });
-  $("#mainNav").swipe( {
-    //Generic swipe handler for all directions
-    swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
-     showNav(); 
-    }
-  });
 
+  $(window).load(function(){
+        
+         $(".swipearea").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="right") {
+                           showNav();
+                           return false;
+                      }
+                      
+                  }
+          }); 
+         $(".closeswipearea").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="left") {
+                           showNav();
+                           return false;
+                      }
+                      
+                  }
+          }); 
+
+      });
   //Set some options later
   
-});
+
 </script>
 </body>
 </html>

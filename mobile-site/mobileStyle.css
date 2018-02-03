@@ -400,3 +400,17 @@ section
 
 /*Hot!🔥  Air Balloon ends*/
 
+/*swipe code*/
+.swipearea{
+      height: 100%;
+    width: 31px;
+    position: fixed;
+    z-index: 1;
+}
+.closeswipearea{
+      position: absolute;
+    height: 100%;
+    width: 30px;
+    top: 0;
+    right: 0;
+}
