@@ -108,16 +108,16 @@ article
 
 /*Nav menu start*/
 #navMenu
-{
-    height: 100%;
-    width: 17%;
-    background-color:  rgba(255,255,255,0.6);
-    position: fixed;
-    overflow: hidden;
-    z-index: 2;
-    transition: all 1.5s;
-    box-shadow: -20px 0px 0px 0px grey;
-}
+ {
+     height: 100%;
+     width: 17%;
+     background-color:  rgba(255,255,255,0.6);
+     position: fixed;
+     overflow: hidden;
+     z-index: 2;
+     transition: all 1.5s;
+     box-shadow: -20px 0px 0px 0px grey;
+ }
 #navContainer
 {
     padding: 0px;
