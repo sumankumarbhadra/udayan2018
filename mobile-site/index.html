@@ -79,6 +79,8 @@
     <script src="mobileScript.js"></script>
     <script src="../jquery.min.js"></script>
     <link href="mobileStyle.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 </head>
 <body onload="loadingComplete();">
 <!-- Preloader -->
@@ -208,5 +210,23 @@
         
     </section>
 </article>
+<script>
+	$(window).load(function(){
+		$(".swipe-area").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                     /* if (phase=="move" && direction =="right") {
+                           $(".container").addClass("open-sidebar");
+                           return false;
+                      }
+                      if (phase=="move" && direction =="left") {
+                           $(".container").removeClass("open-sidebar");
+                           return false;
+                      }*/
+                      showNav();
+                  }
+          });
+	});
+</script>
 </body>
 </html>
