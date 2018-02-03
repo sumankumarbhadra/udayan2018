@@ -1,4 +1,6 @@
 
+
+/*Nav Start*/
 var navFlag = false;
 function showNav() {
 
@@ -17,6 +19,12 @@ function showNav() {
             return navFlag = false;
         }
 }
+
+
+/*Nav End*/
+
+
+
 //drone
 var $p1 = $("#l-prop1");
 var $p2 = $("#l-prop2");
