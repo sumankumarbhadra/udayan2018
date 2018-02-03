@@ -393,7 +393,10 @@ section
 
 /*!--Car Start--*/
 .car{
-    
+    position: fixed;
+    margin-left: 66%;
+    z-index: 3;
+    bottom: 386px;
 }
 
 /*!--Car End--*/
