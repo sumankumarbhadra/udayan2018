@@ -97,7 +97,22 @@ nav
 }
 /*Nav End*/
 
-
+.instruct
+{
+    position: fixed;
+    background-color: black;
+    margin-top: 92%;
+    z-index: 3;
+    margin-left: 25%;
+    width:65%;
+    height: 6%;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
+    padding: 3px;
+}
 a
 {
     text-decoration: none;
