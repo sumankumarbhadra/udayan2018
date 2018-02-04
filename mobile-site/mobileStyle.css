@@ -345,7 +345,7 @@ section
 /*Dustbin start*/
 .DBS
 {
-    position: fixed;
+    position: absolute;
     margin-left: 21.85%;
     overflow: paged-x;
     z-index: 2;
