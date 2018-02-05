@@ -1,13 +1,13 @@
 .object
 {
-    
-    height:6rem;
+    /*
+    height:6rem;*/
     padding: 5%;
     color: white;
     font-weight: bold;
     font-size: 30px;
     margin:.5em;
-    
+    text-shadow: 2px 3px 3px black;
     text-align: center;
     border: 3px solid white;
     transition: all 0.3s;
@@ -39,47 +39,47 @@
 }
 .one{
    // background: rgb(106, 86, 179);
-   // opacity: 0.5;  
+   ///*  opacity: 0.5;   */
 }
 
 .two{
    // background-color: rgb(151, 117, 12);
-   // opacity: 0.3;  
+   // /* opacity: 0.3;  */ 
 }
 .three
 {
     //background-color: rgb(227, 94, 137);
-   // opacity: 0.5;  
+   // /* opacity: 0.5; */  
 }
 .four
 {
    // background-color: rgb(76, 100, 88);
-  //  opacity: 0.5;  
+  //  /* opacity: 0.5;   */
 }
 .five
 {
     //background-color: rgb(178, 173, 150);
-  //  opacity: 0.5;  
+  // /*  opacity: 0.5;  */ 
 }
 .six
 {
     //background-color: rgb(235, 85, 61);
-  //  opacity: 0.5;  
+  // /*  opacity: 0.5;   */
 }
 .seven
 {
    // background-color: rgb(91, 236, 61);
-   // opacity: 0.5;  
+   ///*  opacity: 0.5;   */
 }
 .eight
 {
     //background-color: rgb(251, 65, 83);
-   // opacity: 0.5;  
+   ///*  opacity: 0.5;   */
 }
 .nine
 {
     //background-color: rgb(9, 158, 207);
-   // opacity: 0.5;  
+   // /* opacity: 0.5;   */
 }
 body
 {
