@@ -1219,3 +1219,19 @@ html {
     text-align: center;
     text-shadow: 2px 0px 3px black;
 }
+.roadinstRight{
+    position: fixed;
+    background-color: rgba(4, 4, 4, 0.74);
+    top: 51%;
+    left: 44%;
+    width: 143px;
+    height: 43px;
+    border: 0;
+    border-radius: 20px;
+    z-index: 5;
+    color: white;
+    font-size: 1em;
+}
+a{
+    color: white;
+}
