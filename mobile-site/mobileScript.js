@@ -12,12 +12,12 @@ function showNav() {
         return navFlag = true;
 
     }else  if(navFlag === true)
-        {
-            document.querySelector("#mainNav").style.width = "0%";
-            document.querySelector("#mNavBtn").style.transform="translateX(15px)";
-            document.querySelector("#mNavBtn2").style.top="-100px";
-            return navFlag = false;
-        }
+    {
+        document.querySelector("#mainNav").style.width = "0%";
+        document.querySelector("#mNavBtn").style.transform="translateX(15px)";
+        document.querySelector("#mNavBtn2").style.top="-100px";
+        return navFlag = false;
+    }
 }
 
 
@@ -45,15 +45,15 @@ rotateBladeLeft($p4, speed)
 rotateBladeRight($p3, speed)
 
 function rotateBladeLeft(blade, speed) {
-var spin = "230px";
-TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1, yoyo:true});
+    var spin = "230px";
+    TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1, yoyo:true});
 }
 
 function rotateBladeRight(blade, speed) {
-var spin = "-35px";
-TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1, yoyo:true});
+    var spin = "-35px";
+    TweenMax.to(blade, speed, {x:spin, scaleX:".1", ease:Power2.easeNone, repeat:-1, yoyo:true});
 }
 /*preloader js*/
 function loadingComplete(){
-   $(".preloader").css({"-webkit-animation":"slit-out-horizontal 1s ease-in both","animation":"slit-out-horizontal 1s ease-in both"}); 
+    $(".preloader").css({"-webkit-animation":"slit-out-horizontal 1s ease-in both","animation":"slit-out-horizontal 1s ease-in both"});
 }
