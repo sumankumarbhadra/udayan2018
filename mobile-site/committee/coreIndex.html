@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="coreIndexStyle.css">
 
 	<script src="../../jquery.min.js"></script>
+    <script src="committeeScript.js"></script>
 
 	<script type="text/javascript">
 		$(window).scroll(function(){				 
@@ -51,6 +52,41 @@
   </style>
 </head>
 <body>
+<!--Nav start-->
+<!-- <img id="bgImage" src="../assets/mobile/mobilebg.png" width="100%" height="100%">-->
+<i id="mNavBtn"  onclick="showNav();" class="mNavbtn"><img src="../../assets/mobile/resize/navbar.png" width="40px" height="40px"></i>
+<i id="mNavBtn2"  onclick="showNav();" class="mNavbtn"><img src="../../assets/mobile/resize/navbarclose.png" width="40px" height="40px"></i>
+
+
+
+
+
+<nav id="mainNav">
+    <ul>
+        <li id="navContainer">
+            <a href="../index.html"><li class="navElement" onclick="showNav();">Home</li></a>
+        <li class="navElement">
+            <details>
+                <summary>Committee</summary>
+                <a href="../committee/index.html"><li class="navElement">Core Committee</li></a>
+        <a href="../committee/students.html"><li class="navElement">Students Committee</li></a>
+        </details>
+        </li>
+        <li class="navElement">
+            <details>
+                <summary>Events</summary>
+                <a href="../contest/cse/index.html"><li class="navElement">Events&nbsp;-&nbsp;CSE/IT</li></a>
+        <a href="../contest/civil/index.html"><li class="navElement">Events&nbsp;-&nbsp;Civil</li></a>
+        <a href="../contest/ee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EE</li></a>
+        <a href="../contest/eee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EEE</li></a>
+        <a href="../contest/etc/index.html"><li class="navElement">Events&nbsp;-&nbsp;ETC</li></a>
+        <a href="../contest/mech/index.html"><li class="navElement">Events&nbsp;-&nbsp;Mechanical</li></a>
+        </details>
+        </li>
+    </ul>
+    <div class="closeswipearea"></div>
+</nav>
+<!--Nav end-->
 <div class="container">
   <h1>Udayan Core Committee Members</h1>
    <div class="left-content">
