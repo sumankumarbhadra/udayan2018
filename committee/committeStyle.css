@@ -110,7 +110,7 @@ video{
 }
 .mem:hover
 {
-    transform: scale(3);
+    transform: scale(1.5);
     z-index: 2;
     font-size:7px;
 }
@@ -122,4 +122,7 @@ video{
     width : 157px;
     background-color: white;
     opacity : 0.5;
+}
+li{
+    padding: 10px;
 }
