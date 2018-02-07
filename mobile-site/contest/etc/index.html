@@ -19,35 +19,9 @@
     <link href="../css/owl.carousel.min.css" rel="stylesheet">
     <link href="../css/jquery.multiscroll.css" rel="stylesheet">
     <link href="../../fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../contest.css">
-    <link href="../../fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- main css -->
-     <script src="../../../jquery.min.js"></script>
-    <script src="../../committee/committeeScript.js"></script>
-    <link rel="stylesheet" type="text/css" href="../contest.css">
-
-
-  <script type="text/javascript">
-    $(window).scroll(function(){         
-  $('.container div ').each(function(){
-      var scrollTop     = $(window).scrollTop(),
-          elementOffset = $(this).offset().top,
-          distance      = (elementOffset - scrollTop),
-          windowHeight  = $(window).height(),
-          breakPoint    = windowHeight*0.7;
-
-      if(distance > breakPoint) {
-        $(this).addClass("more-padding"); 
-      }  if(distance < breakPoint) {
-        $(this).removeClass("more-padding");  
-      }
-  });
-});
-
-
-
-  </script>
+    <link href="../css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -112,7 +86,7 @@
             transform: scale(1.3);
           }
         }
-		
+    
     </style>
 </head>
 
@@ -122,41 +96,46 @@
    
     <!-- ./Preloader -->
 
-    <!--Nav start-->
-<!-- <img id="bgImage" src="../assets/mobile/mobilebg.png" width="100%" height="100%">-->
-<i id="mNavBtn"  onclick="showNav();" class="mNavbtn"><img src="../../../assets/mobile/resize/navbar.png" width="40px" height="40px"></i>
-<i id="mNavBtn2"  onclick="showNav();" class="mNavbtn"><img src="../../../assets/mobile/resize/navbarclose.png" width="40px" height="40px"></i>
+ <!--Nav start-->
+
+  <div class="swipearea"></div>
+   <!-- <img id="bgImage" src="../assets/mobile/mobilebg.png" width="100%" height="100%">-->
+        <i id="mNavBtn"  onclick="showNav();" class="mNavbtn"><img style="    transform: scale(0.5);" src="../../../assets/mobile/resize/navbar.png" width="80px" height="80px"></i>
+        <i id="mNavBtn2"  onclick="showNav();" class="mNavbtn"><img style="    transform: scale(0.5);" src="../../../assets/mobile/resize/navbarclose.png" width="80px" height="80px"></i>
 
 
 
 
 
-<nav id="mainNav">
-    <ul>
-        <li id="navContainer">
-            <a href="../../index.html"><li class="navElement" onclick="showNav();">Home</li></a>
-        <li class="navElement">
-            <details>
-                <summary>Committee</summary>
-                <a href="../../committee/coreIndex.html"><li class="navElement">Core Committee</li></a>
-        <a href="../../committee/students.html"><li class="navElement">Students Committee</li></a>
-        </details>
-        </li>
-        <li class="navElement">
-            <details>
-                <summary>Events</summary>
-                <a href="../cse/index.html"><li class="navElement">Events&nbsp;-&nbsp;CSE/IT</li></a>
-        <a href="../civil/index.html"><li class="navElement">Events&nbsp;-&nbsp;Civil</li></a>
-        <a href="../ee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EE</li></a>
-        <a href="../eee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EEE</li></a>
-        <a href="../etc/index.html"><li class="navElement">Events&nbsp;-&nbsp;ETC</li></a>
-        <a href="../mech/index.html"><li class="navElement">Events&nbsp;-&nbsp;Mechanical</li></a>
-        </details>
-        </li>
-    </ul>
-    <div class="closeswipearea"></div>
-</nav>
-<!--Nav end-->
+        <nav id="mainNav">
+          <ul>
+             <li id="navContainer">
+                <li class="navElement" onclick="showNav();">Home</li>
+                 <li class="navElement">
+                <details>
+                  <summary>Committee</summary>
+                <a href="./committee/coreIndex.html"><li class="navElement">Core Committee</li></a>
+                <a href="./committee/students.html"><li class="navElement">Students Committee</li></a>
+              </details>
+             </li>
+            <li class="navElement">
+                 <details>
+                  <summary>Events</summary>
+                  <a href="./contest/cse/index.html"><li class="navElement">Events&nbsp;-&nbsp;CSE/IT</li></a>
+                 <a href="./contest/civil/index.html"><li class="navElement">Events&nbsp;-&nbsp;Civil</li></a>
+                 <a href="./contest/ee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EE</li></a>
+                 <a href="./contest/eee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EEE</li></a>
+                  <a href="./contest/etc/index.html"><li class="navElement">Events&nbsp;-&nbsp;ETC</li></a>
+                  <a href="./contest/mech/index.html"><li class="navElement">Events&nbsp;-&nbsp;Mechanical</li></a>
+                </details>
+            </li>
+            <a href="../webteam/about-crowd/"><li class="navElement">Meet The Developer</li></a>
+            <a target="_blank" href="https://goo.gl/forms/5S4N3s1b6IICdy9e2"><li class="navElement">Register Now</li></a>
+    
+        </ul>
+            <div class="closeswipearea"></div>
+        </nav>
+        <!--Nav end-->
 
     <!-- slidre section -->
     <div id="section-0" class="clearfix">
@@ -165,114 +144,87 @@
                 <div class="ms-section ms-1" id="c1">
                     <div class="ms-padding">
                         <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Chess Board</h1>
+                        <h1 class="black-color">Battle Bots –Survival of Robots </h1>
                         <div class="h-20"></div>
-                        <p>Contest Details<br>1st Prize: 3000<br>2ndPrize:2000 </p>
+                        <p>An Autonomous Robotic competition<br>
+                            An arena will be designed by the coordinators and all participant teams have to leave their bot in it. An overhead<a target="_blank" href="../contest-details/ETC%20data/Battle-Bots–Survival-of-Robots.pdf">more....</a>
+                            <br>1st Prize- Rs 7000/- <br>2nd Prize-Rs 6000/- <br>3rd Prize-Rs 5000/</p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
                 <div class="ms-section ms-2" id="c2">
-                    <div class="ms-padding">
+                    <div class="ms-padding" style="font-size: 12px; line-height: 14px">
                         <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Maze Runner</h1>
-                        <div class="h-20"></div>
-                        <p>Contest Details </p>
-                        <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <h1 class="black-color">Robotics Exposition-2018</h1>
+                        <div class="h-20">The event is planned with different concept based on technological challenges to facilitate<br> <a target="_blank" href="../contest-details/ETC%20data/Robotics-Exposition-2018.pdf">more...</a></div><br>
+                        <p><br>Faculty Co-ordinators:-<br>
+                            1. Mr. Arun Kumar Pradhan <br>
+                            2. Mr.Shuvendra Kumar Tripathy<br>
+                            3. Mr.Satya Narayan Rath <br>
+                            4. Mr.Rizwan Khan <br>
+                            5. Mrs. Monalisa Rout<br>
+                        </p>
+                        <div class="h-30">1st Prize-Rs 2500/-<br>
+                            2nd Prize-Rs 2000/- </div>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
                 <div class="ms-section ms-3" id="c3">
-                    <div class="ms-padding">
+                    <div class="ms-padding" style="line-height: 14px">
                         <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Pick and Place</h1>
-                        <div class="h-20"></div>
-                        <p>Contest Details </p>
-                        <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <h1 class="black-color">CIRKITRIX-3</h1>
+                        <div class="h-20"></div>“Micron” a circuit design club of Trident Academy of Tecnology, Bhubaneswar invites all the designers to technical<br>
+                        <a target="_blank" href="../contest-details/ETC%20data/CIRKITRIX-4.pdf">more....</a>
+                        <p>EVENT COORDINATORS:<br>
+                            Faculty Coordinators:<br>
+                            Minu Samantaray  (9692304848)<br>
+                            Millie Panigrahi    (9861384420)<br>
+                            Lalit Kumar Kanoje (7205849567)<br>
+                            Nibedita Pati             (9861577993)<br>
+
+                            Student Coordinators:<br>
+                            Satyajit Mohapatra (8260523094)<br>
+                            Rupam                      (7205721302)<br>
+                            Payal Sardar            (9040968526)<br>
+                        </p>
+                        <div class="h-30">First Prize: 2000/-  <br>Second Prize: 1500/- </div>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
               
                <div class="ms-section ms-4" id="c4">
                     <div class="ms-padding">
                         <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Robo War</h1>
-                        <div class="h-20"></div>
+                        <h1 class="black-color">Junkyard</h1>
+                        <div class="h-20"> Each team must have 3 members and each team must be <a target="_blank" href="../contest-details/ETC%20data/Junkyard.pdf">more...</a></div>
                         <p>Contest Details </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
                 <div class="ms-section ms-5" id="c5">
-                    <div class="ms-padding">
+                    <div class="ms-padding" style="line-height: 15px">
                         <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Cirkitrix</h1>
-                        <div class="h-20"></div>
-                        <p>Contest Details </p>
-                        <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <h1 class="black-color">MOKCHAZERS</h1>
+                        <div class="h-20">The MOCNET ( A Technical Club Of Mobile Computing & Networks) is going to<br> <a target="_blank" href="../contest-details/ETC%20data/MOKCHAZERS.pdf">more...</a></div><br>
+                        <p>Faculty coordinators:<br>
+                            1. Asso.Prof . Rabindra Bhojray                                                  9778164609 <br>
+                            2. Asst. Prof.S.K.Mohapatra                                                       9861126251 <br>
+                            3. Asst. Prof. Ramya Ranjan Choudhury                                     9937339122    <br>
+                            4. Asst. Prof. B.R.Swain                                                               9439365560 <br> </p>
+                        <div class="h-30">
+                            Refreshment               Rs.500<br>
+
+                            Winners                    Rs.1500<br>
+
+                            Runners up                   Rs.1000 </div><br>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
-                <div class="ms-section ms-6" id="c6">
-                    <div class="ms-padding">
-                        <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Net Wars</h1>
-                        <div class="h-20"></div>
-                        <p>Contest Details </p>
-                        <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
-                    </div>
-                </div>
-
-                <div class="ms-section ms-7" id="c7">
-                    <div class="ms-padding">
-                        <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Embed Tronix</h1>
-                        <div class="h-20"></div>
-                        <p>Contest Details </p>
-                        <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
-                    </div>
-                </div>
-
-                <div class="ms-section ms-8" id="c8">
-                    <div class="ms-padding">
-                        <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Mock Chazers</h1>
-                        <div class="h-20"></div>
-                        <p>Contest Details <br>1st prize-: 1500<br>2nd prize-: 1000
-</p>
-                        <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
-                    </div>
-                </div>
-
-                <div class="ms-section ms-9" id="c9">
-                    <div class="ms-padding">
-                        <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Udayan Got Tallent</h1>
-                        <div class="h-20"></div>
-                        <p>Contest Details <br>1st prize-: 1500<br>2nd prize-: 1000
-</p>
-                        <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
-                    </div>
-                </div>
-
-                <div class="ms-section ms-10" id="c10">
-                    <div class="ms-padding">
-                        <h5 class="subtitle">ETC Club</h5>
-                        <h1 class="black-color">Treasure Hunt</h1>
-                        <div class="h-20"></div>
-                        <p>Contest Details <br>1st prize-: 1500<br>2nd prize-: 1000
-</p>
-                        <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
-                    </div>
-                </div>
-            </div>
+               </div>
             <div class="ms-right">
                 <div class="ms-section ms-1" id="c1img" style="background: url(img/);">
                     <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
@@ -289,21 +241,7 @@
                 <div class="ms-section ms-5" id="c5img" style="background: url(img/);">
                     <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
                 </div>
-                <div class="ms-section ms-6" id="c6img" style="background: url(img/);">
-                    <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
-                </div>
-                <div class="ms-section ms-7" id="c7img" style="background: url(img/);">
-                    <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
-                </div>
-                <div class="ms-section ms-8" id="c8img" style="background: url(img/);">
-                    <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
-                </div>
-                <div class="ms-section ms-9" id="c8img" style="background: url(img/);">
-                    <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
-                </div>
-                <div class="ms-section ms-10" id="c8img" style="background: url(img/);">
-                    <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
-                </div>
+                  
 
             </div>
         </div>
@@ -387,7 +325,7 @@
     </script>
     <!-- navbar js-->
     <script>
-    	/*Nav menu start*/
+      /*Nav menu start*/
 var navWidth;
 var navFlag = false;
 function init() {

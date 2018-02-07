@@ -18,35 +18,11 @@
     <link href="../css/aos.css" rel="stylesheet">
     <link href="../css/owl.carousel.min.css" rel="stylesheet">
     <link href="../css/jquery.multiscroll.css" rel="stylesheet">
-    <link href="../contest.css" rel="stylesheet">
     <link href="../../fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- main css -->
-     <script src="../../../jquery.min.js"></script>
-    <script src="../../committee/committeeScript.js"></script>
-    <link rel="stylesheet" type="text/css" href="../contest.css">
+    <link href="../css/style.css" rel="stylesheet">
 
-
-  <script type="text/javascript">
-    $(window).scroll(function(){         
-  $('.container div ').each(function(){
-      var scrollTop     = $(window).scrollTop(),
-          elementOffset = $(this).offset().top,
-          distance      = (elementOffset - scrollTop),
-          windowHeight  = $(window).height(),
-          breakPoint    = windowHeight*0.7;
-
-      if(distance > breakPoint) {
-        $(this).addClass("more-padding"); 
-      }  if(distance < breakPoint) {
-        $(this).removeClass("more-padding");  
-      }
-  });
-});
-
-
-
-  </script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -110,7 +86,7 @@
             transform: scale(1.3);
           }
         }
-		
+    
     </style>
 </head>
 
@@ -120,41 +96,46 @@
    
     <!-- ./Preloader -->
 
-    <!--Nav start-->
-<!-- <img id="bgImage" src="../assets/mobile/mobilebg.png" width="100%" height="100%">-->
-<i id="mNavBtn"  onclick="showNav();" class="mNavbtn"><img src="../../../assets/mobile/resize/navbar.png" width="40px" height="40px"></i>
-<i id="mNavBtn2"  onclick="showNav();" class="mNavbtn"><img src="../../../assets/mobile/resize/navbarclose.png" width="40px" height="40px"></i>
+ <!--Nav start-->
+
+  <div class="swipearea"></div>
+   <!-- <img id="bgImage" src="../assets/mobile/mobilebg.png" width="100%" height="100%">-->
+        <i id="mNavBtn"  onclick="showNav();" class="mNavbtn"><img style="    transform: scale(0.5);" src="../../../assets/mobile/resize/navbar.png" width="80px" height="80px"></i>
+        <i id="mNavBtn2"  onclick="showNav();" class="mNavbtn"><img style="    transform: scale(0.5);" src="../../../assets/mobile/resize/navbarclose.png" width="80px" height="80px"></i>
 
 
 
 
 
-<nav id="mainNav">
-    <ul>
-        <li id="navContainer">
-            <a href="../../index.html"><li class="navElement" onclick="showNav();">Home</li></a>
-        <li class="navElement">
-            <details>
-                <summary>Committee</summary>
-                <a href="../../committee/coreIndex.html"><li class="navElement">Core Committee</li></a>
-        <a href="../../committee/students.html"><li class="navElement">Students Committee</li></a>
-        </details>
-        </li>
-        <li class="navElement">
-            <details>
-                <summary>Events</summary>
-                <a href="../cse/index.html"><li class="navElement">Events&nbsp;-&nbsp;CSE/IT</li></a>
-        <a href="../civil/index.html"><li class="navElement">Events&nbsp;-&nbsp;Civil</li></a>
-        <a href="../ee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EE</li></a>
-        <a href="../eee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EEE</li></a>
-        <a href="../etc/index.html"><li class="navElement">Events&nbsp;-&nbsp;ETC</li></a>
-        <a href="../mech/index.html"><li class="navElement">Events&nbsp;-&nbsp;Mechanical</li></a>
-        </details>
-        </li>
-    </ul>
-    <div class="closeswipearea"></div>
-</nav>
-<!--Nav end-->
+        <nav id="mainNav">
+          <ul>
+             <li id="navContainer">
+                <li class="navElement" onclick="showNav();">Home</li>
+                 <li class="navElement">
+                <details>
+                  <summary>Committee</summary>
+                <a href="./committee/coreIndex.html"><li class="navElement">Core Committee</li></a>
+                <a href="./committee/students.html"><li class="navElement">Students Committee</li></a>
+              </details>
+             </li>
+            <li class="navElement">
+                 <details>
+                  <summary>Events</summary>
+                  <a href="./contest/cse/index.html"><li class="navElement">Events&nbsp;-&nbsp;CSE/IT</li></a>
+                 <a href="./contest/civil/index.html"><li class="navElement">Events&nbsp;-&nbsp;Civil</li></a>
+                 <a href="./contest/ee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EE</li></a>
+                 <a href="./contest/eee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EEE</li></a>
+                  <a href="./contest/etc/index.html"><li class="navElement">Events&nbsp;-&nbsp;ETC</li></a>
+                  <a href="./contest/mech/index.html"><li class="navElement">Events&nbsp;-&nbsp;Mechanical</li></a>
+                </details>
+            </li>
+            <a href="../webteam/about-crowd/"><li class="navElement">Meet The Developer</li></a>
+            <a target="_blank" href="https://goo.gl/forms/5S4N3s1b6IICdy9e2"><li class="navElement">Register Now</li></a>
+    
+        </ul>
+            <div class="closeswipearea"></div>
+        </nav>
+        <!--Nav end-->
 
     <!-- slidre section -->
     <div id="section-0" class="clearfix">
@@ -162,75 +143,130 @@
             <div class="ms-left">
                 <div class="ms-section ms-1" id="c1">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Mechanical Club</h5>
-                        <h1 class="black-color">Mech O Engineering</h1>
+                        <h5 class="subtitle">DEPARTMENT OF MECHANICAL ENGINEERING</h5>
+                        <h1 class="black-color">MECH-O-MANIA</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details<br>1st Prize: 3000<br>2ndPrize:2000 </p>
+                        <p>This is a mechanical based event which is coordinate by mechanical department.<br>
+            There are 5 rounds which will be played by a group of 4 members.<br>
+            ROUND 1 : Ball bucket run<br>
+            ROUND2: Boost your energy<br>
+            ROUND3: Lock &amp; key<br>
+            ROUND4: Brain freezer<br>
+            ROUND5: Mech-Expert<br>
+            <br>1st Prize: 6000<br>2nd Prize: 3000 </p>
                         <div class="h-30"></div>
+                        <p>FACULTY –IN-CHARGE-: DEEPAK MOHAPATRA<br>Event coordinator- : SAGAR RATNA PANDAB (7788864196)</p>
                         <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
                 <div class="ms-section ms-2" id="c2">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Mechanical Club</h5>
-                        <h1 class="black-color">CAD Craze</h1>
+                        <h5 class="subtitle">DEPARTMENT OF MECHANICAL ENGINEERING</h5>
+                        <h1 class="black-color">MECH-O-IGNITION</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>This is a mechanical based event which is coordinate by mechanical department.<br>
+            There are 3 rounds which will be played by a group of 2 members.<br>
+            ROUND1: Minute to win it<br>
+            ROUND2: Quiz<br>
+            ROUND3: Identify machine component.<br>
+            <br>1st Prize: 2000<br>2nd Prize: 1000 </p>
                         <div class="h-30"></div>
+                        <p>FACULTY –IN-CHARGE-: DEEPTI RANJAN PANDA<br>Event coordinator- : GANESH CH. SAHOO</p>
                         <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
                 <div class="ms-section ms-3" id="c3">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Mechanical Club</h5>
-                        <h1 class="black-color">Mecho Mania</h1>
+                        <h5 class="subtitle">DEPARTMENT OF MECHANICAL ENGINEERING</h5>
+                        <h1 class="black-color">MECH-O-CHALLENGE</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>This is a mechanical based event which is coordinate by mechanical department.<br>
+            There are 5 rounds which will be played by a group of 4 members.<br>
+            ROUND 1 : Team building<br>
+            ROUND2: Quiz<br>
+            ROUND3: Castle making<br>
+            <br>1st Prize: 2000<br>2nd Prize: 1000 </p>
                         <div class="h-30"></div>
+                        <p>FACULTY –IN-CHARGE-: ITISHREE BEHERA<br>Event coordinator- : TAPASUNDAR ROUT (7855962323)</p>
                         <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
               
                <div class="ms-section ms-4" id="c4">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Mechanical Club</h5>
-                        <h1 class="black-color">Tross O Bridge</h1>
+                        <h5 class="subtitle">DEPARTMENT OF MECHANICAL ENGINEERING</h5>
+                        <h1 class="black-color">MECH-O-BRAIN</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>This is a mechanical based event which is coordinate by mechanical department.<br>
+            There are 2 rounds which will be played by a single member.<br>
+            ROUND 1 : MCQ quiz<br>
+            ROUND2: Solve the puzzle<br>
+            <br>1st Prize: 2000<br>2nd Prize: 1000 </p>
                         <div class="h-30"></div>
+                        <p>FACULTY –IN-CHARGE-: PURNA CH ROUTRAY<br>Event coordinator- : BISWANATH BAISAKH</p>
                         <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
                 <div class="ms-section ms-5" id="c5">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Mechanical Club</h5>
-                        <h1 class="black-color">Mech Marvel</h1>
+                        <h5 class="subtitle">DEPARTMENT OF MECHANICAL ENGINEERING</h5>
+                        <h1 class="black-color">MECH-O-MARVEL</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>This is a mechanical based event which is coordinate by mechanical department.<br>
+            There are 3 rounds which will be played by a single member.<br>
+            ROUND 1 : Bucket game<br>
+            ROUND2: Paint ball &amp; Treasure hunt<br>
+            ROUND3: Shooting game<br>
+            <br>1st Prize: 2000<br>2nd Prize: 1000 </p>
                         <div class="h-30"></div>
+                        <p>FACULTY –IN-CHARGE-: PRADYUMNA NAYAK<br>Event coordinator- : SATYA PRAKASH MOHANTY (8018810738)</p>
                         <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
                 <div class="ms-section ms-6" id="c6">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Mechanical Club</h5>
-                        <h1 class="black-color">Mechognition</h1>Mechanical
+                        <h5 class="subtitle">DEPARTMENT OF MECHANICAL ENGINEERING</h5>
+                        <h1 class="black-color">MECH-O-ENGINEERING</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>This is a mechanical based event which is coordinate by mechanical department.<br>
+            There are 2 rounds which will be played by a single member.<br>
+            ROUND 1 : MCQ &amp; video visual questions.<br>
+            ROUND2: Assembly and disassembly of petrol engine<br>
                         <div class="h-30"></div>
+                        <p>FACULTY –IN-CHARGE-: RABI TEJA PATRA<br>Event coordinator- : RAJIB LOCHAN DAS</p>
                         <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
                 <div class="ms-section ms-7" id="c7">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Mechanical Club</h5>
-                        <h1 class="black-color">Mech Challenge</h1>
+                        <h5 class="subtitle">DEPARTMENT OF MECHANICAL ENGINEERING</h5>
+                        <h1 class="black-color">TRUSS-O-BRIDGE</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>This is a mechanical based event which is coordinate by mechanical department.<br>
+            A group of 3 members make bridge by ice-cream sticks &amp; dead weights will be applied over it.<br>
+            ROUND 1 : Bridge making<br>
+            <br>1st Prize: 2000<br>2nd Prize: 1000 </p>
                         <div class="h-30"></div>
+                        <p>FACULTY –IN-CHARGE-: KALYANI PRADHAN<br>Event coordinator- : AKSHYA KUMAR SAHOO</p>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                    </div>
+                </div>
+
+                 <div class="ms-section ms-7" id="c7">
+                    <div class="ms-padding">
+                        <h5 class="subtitle">DEPARTMENT OF MECHANICAL ENGINEERING</h5>
+                        <h1 class="black-color">MECH-O-MANIA</h1>
+                        <div class="h-20"></div>
+                        <p>This is a mechanical based event which is coordinate by the PLM club of mechanical department.<br>
+            There are 2 rounds and it is a single member event.<br>
+            ROUND1 : Creativity (thermocole home making)<br>
+            ROUND2: Bridge making<br>
+            <br>1st Prize: 2000<br>2nd Prize: 1000 </p>
+                        <div class="h-30"></div>
+                        <p>FACULTY –IN-CHARGE-: ASHIS BARIK<br>Event coordinator- : SIVANANDA MOHANTY (9853793251)</p>
                         <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
@@ -343,7 +379,7 @@
     </script>
     <!-- navbar js-->
     <script>
-    	/*Nav menu start*/
+      /*Nav menu start*/
 var navWidth;
 var navFlag = false;
 function init() {

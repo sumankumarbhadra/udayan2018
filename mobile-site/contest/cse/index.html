@@ -18,36 +18,13 @@
     <link href="../css/aos.css" rel="stylesheet">
     <link href="../css/owl.carousel.min.css" rel="stylesheet">
     <link href="../css/jquery.multiscroll.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../contest.css">
     <link href="../../fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="../../../jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
     <!-- main css -->
-     <script src="../../jquery.min.js"></script>
-    <script src="../../committee/committeeScript.js"></script>
-    <link rel="stylesheet" type="text/css" href="../contest.css">
-
-
-  <script type="text/javascript">
-    $(window).scroll(function(){         
-  $('.container div ').each(function(){
-      var scrollTop     = $(window).scrollTop(),
-          elementOffset = $(this).offset().top,
-          distance      = (elementOffset - scrollTop),
-          windowHeight  = $(window).height(),
-          breakPoint    = windowHeight*0.7;
-
-      if(distance > breakPoint) {
-        $(this).addClass("more-padding"); 
-      }  if(distance < breakPoint) {
-        $(this).removeClass("more-padding");  
-      }
-  });
-});
-
-
-
-  </script>
-
+    <link href="../css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -113,163 +90,404 @@
             transform: scale(1.3);
           }
         }
-		
+    
     </style>
 </head>
 
 <body onload="init(); begin();">
 
-   
-
-       <!--Nav start-->
-<!-- <img id="bgImage" src="../assets/mobile/mobilebg.png" width="100%" height="100%">-->
-<i id="mNavBtn"  onclick="showNav();" class="mNavbtn"><img src="../../../assets/mobile/resize/navbar.png" width="40px" height="40px"></i>
-<i id="mNavBtn2"  onclick="showNav();" class="mNavbtn"><img src="../../../assets/mobile/resize/navbarclose.png" width="40px" height="40px"></i>
 
 
+ <!--Nav start-->
+
+  <div class="swipearea"></div>
+   <!-- <img id="bgImage" src="../assets/mobile/mobilebg.png" width="100%" height="100%">-->
+        <i id="mNavBtn"  onclick="showNav();" class="mNavbtn"><img style="    transform: scale(0.5);" src="../../../assets/mobile/resize/navbar.png" width="80px" height="80px"></i>
+        <i id="mNavBtn2"  onclick="showNav();" class="mNavbtn"><img style="    transform: scale(0.5);" src="../../../assets/mobile/resize/navbarclose.png" width="80px" height="80px"></i>
 
 
 
-<nav id="mainNav">
-    <ul>
-        <li id="navContainer">
-            <a href="../index.html"><li class="navElement" onclick="showNav();">Home</li></a>
-        <li class="navElement">
-            <details>
-                <summary>Committee</summary>
-                <a href="../../committee/coreIndex.html"><li class="navElement">Core Committee</li></a>
-        <a href="../../committee/students.html"><li class="navElement">Students Committee</li></a>
-        </details>
-        </li>
-        <li class="navElement">
-            <details>
-                <summary>Events</summary>
-                <a href="../../../cse/index.html"><li class="navElement">Events&nbsp;-&nbsp;CSE/IT</li></a>
-        <a href="../civil/index.html"><li class="navElement">Events&nbsp;-&nbsp;Civil</li></a>
-        <a href="../ee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EE</li></a>
-        <a href="../eee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EEE</li></a>
-        <a href="../etc/index.html"><li class="navElement">Events&nbsp;-&nbsp;ETC</li></a>
-        <a href="../mech/index.html"><li class="navElement">Events&nbsp;-&nbsp;Mechanical</li></a>
-        </details>
-        </li>
-    </ul>
-    <div class="closeswipearea"></div>
-</nav>
-<!--Nav end-->
+
+
+        <nav id="mainNav">
+          <ul>
+             <li id="navContainer">
+                <li class="navElement" onclick="showNav();">Home</li>
+                 <li class="navElement">
+                <details>
+                  <summary>Committee</summary>
+                <a href="./committee/coreIndex.html"><li class="navElement">Core Committee</li></a>
+                <a href="./committee/students.html"><li class="navElement">Students Committee</li></a>
+              </details>
+             </li>
+            <li class="navElement">
+                 <details>
+                  <summary>Events</summary>
+                  <a href="./contest/cse/index.html"><li class="navElement">Events&nbsp;-&nbsp;CSE/IT</li></a>
+                 <a href="./contest/civil/index.html"><li class="navElement">Events&nbsp;-&nbsp;Civil</li></a>
+                 <a href="./contest/ee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EE</li></a>
+                 <a href="./contest/eee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EEE</li></a>
+                  <a href="./contest/etc/index.html"><li class="navElement">Events&nbsp;-&nbsp;ETC</li></a>
+                  <a href="./contest/mech/index.html"><li class="navElement">Events&nbsp;-&nbsp;Mechanical</li></a>
+                </details>
+            </li>
+            <a href="../webteam/about-crowd/"><li class="navElement">Meet The Developer</li></a>
+            <a target="_blank" href="https://goo.gl/forms/5S4N3s1b6IICdy9e2"><li class="navElement">Register Now</li></a>
+    
+        </ul>
+            <div class="closeswipearea"></div>
+        </nav>
+        <!--Nav end-->
+
+
+
     <!-- slidre section -->
     <div id="section-0" class="clearfix">
         <div id="multiscroll">
             <div class="ms-left">
                 <div class="ms-section ms-1" id="c1">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Programming Club</h5>
-                        <h1 class="black-color">Code Jumbling</h1>
+                        <h5 class="subtitle">Data Science Club</h5>
+                        <h1 class="black-color">Da Vini Code</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details<br>1st Prize: 3000<br>2ndPrize:2000 </p>
+                        <p>
+                                This is a club event which is coordinated by Data Science Club . There are 3 Rounds that are Round-1,Round-2,
+                                <a href="../contest-details/CSE-Data/Da-Vini-Code.pdf" target="_blank">more....</a>
+                       </p>
+                        <p>
+                                Faculty-In-Charge:- Sasmita Mishra (Asst. Prof Computer Science And Engineering  Dept) 9437036496
+                                <br>
+                                Event Coordinator:-
+                                <br>
+                                Kumari Akansha (4th Year)8984398818
+                                <br>
+                                Chinmayee Mekap(3rd Year)8280474863
+                                <br>
+                                Aishwarya Nayak(3rd Year)8018531094
+                                <br>
+                                Prize:-
+                                <br>
+                                1st :-2000
+                                <br>
+                                2nd:-1000
+                                <br>
+
+                        </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
                 <div class="ms-section ms-2" id="c2">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Mobility Club</h5>
-                        <h1 class="black-color">App Development</h1>
+                        <h5 class="subtitle"></h5>
+                        <h1 class="black-color">T Shirt Designing</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>All the contestants will get a white T-Shirt  And painting colors. The contestants have to make the best design on there t-shirt.
+                            <a href="../contest-details/CSE-Data/T-Shirt-Designing.pdf" target="_blank">more.....</a>
+                        </p>
+                        <p>
+                                Faculty-In-Charge:- Sudhansu Lenka (Asst. Prof Computer Science And Engineering  Dept)
+                                9937245866
+                                <br>
+                                Event Coordinator:-Suchismita Ratha (4th Year)8763308144
+                                <br>
+                                Madhusmita Biswal(4th  Year)96582319722
+                                <br>
+                                Bishnu Prasad(3rd Year)8260122477
+                                <br>
+                                Gopal Kumar(3rd Year)9583022935
+                                <br>
+                                Prize:-
+                                <br>
+                                1st :-3000
+                                <br>
+                                2nd:-1500
+                                <br>
+
+                        </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
                 <div class="ms-section ms-3" id="c3">
                     <div class="ms-padding">
-                        <h5 class="subtitle">IoE Club</h5>
-                        <h1 class="black-color">Thingy thing</h1>
+                        <h5 class="subtitle"></h5>
+                        <h1 class="black-color">Cruz-O-Mania</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>
+                                This is a technical event . The contestants will get the boat making equipments. They have to make a boat. 
+                                <a href="../contest-details/CSE-Data/Cruz-O-Mania.pdf" target="_blank">more....</a>
+                        </p>
+                        <p>
+                                Faculty-In-Charge:- Sasibhusan Parida (Asst. Prof Computer Science And Engineering  Dept)
+                                7894996832
+                                <br>
+                                Event Coordinator:-Adhikari Santosh Das (4th Year)8984757899
+                                <br>
+                                 Abhinas Sahoo(4th  Year)89088656086
+                                <br>
+                                Bhabani Sekhar(4th  Year)7008134250
+                                <br>
+                                Prize:-
+                                <br>
+                                1st :-2000
+                                <br>
+                                2nd:-1500
+                                <br>
+                        </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
               
                <div class="ms-section ms-4" id="c4">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Data Science Club</h5>
-                        <h1 class="black-color">Da Vinci Code</h1>
+                        <h5 class="subtitle"></h5>
+                        <h1 class="black-color">Minimilitia</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>
+                                This is a technical event with some fun activities . This is a one round game . The contestants have to make their own  team.                                <a href="../contest-details/CSE-Data/Da-Vini-Code.pdf" target="_blank"></a>
+                                <a href="../contest-details/CSE-Data/Minimilitia.pdf" target="_blank">more...</a>
+                        </p>
+                        <p>
+                                Faculty-In-Charge:- Manas Ranjan Choudhary  (Asst. Prof Computer Science And Engineering  Dept)9437630008
+                                <br>
+                                Event Coordinator:-Mousam Patel (4th Year)7684061621
+                                <br>
+                                Suman Kumar Maharana(4th Year)9777232866
+                                <br>
+                                Alekh Mohan(4th  Year)7008321326
+                                <br>
+                                Prize:-
+                                <br>
+                                1st :-2500
+                                <br>
+                                2nd:-1500
+                                <br>
+                        </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
                 <div class="ms-section ms-5" id="c5">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Data Science Club</h5>
-                        <h1 class="black-color">T-Shirt Painting</h1>
+                        <h5 class="subtitle"></h5>
+                        <h1 class="black-color">Angry Bird</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>
+                                The contestants have to install a specified version of angry bird . who will finish the game in less time will win the match.                                <a href="../contest-details/CSE-Data/Da-Vini-Code.pdf" target="_blank"></a>
+                                <a href="../contest-details/CSE-Data/Angry-Bird.pdf" target="_blank">more....</a>
+                        </p>
+                        <p>
+                                Faculty-In-Charge:- Jhalak Hota (Asst. Prof Computer Science And Engineering  Dept)9437280375
+                                <br>
+                                Event Coordinator:-Suresh Sahoo (4th Year)7809290930
+                                <br>
+                                Suchismita Sethy(4th Year)8763127665
+                                <br>
+                                Neha Verma(4th Year)7077114249
+                                <br>
+                                Aliva Panigraghy(4th Year)7978460995
+                                <br>
+                                Lipsa Mallik(4th Year)8984845783
+                                <br>
+                                Prize:-
+                                <br>
+                                1st :-1500
+                                <br>
+                                2nd:-800
+                                <br>
+                        </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
                 <div class="ms-section ms-6" id="c6">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Data Science Club</h5>
-                        <h1 class="black-color">Face Canvas</h1>
+                        <h5 class="subtitle"></h5>
+                        <h1 class="black-color">Counter Strike</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>
+                                This is a technical event with fun activities . The contestants will be provided a system pre installed with counterstrike game.
+                            <a href="../contest-details/CSE-Data/Counter-Strike.pdf" target="_balnk">more..</a>
+                        </p>
+                        <p>
+                                Faculty-In-Charge:- Biswa Ranjan Nayak (Asst. Prof Computer Science And Engineering  Dept)
+                                7978410210
+                                <br>
+                                Event Coordinator:-Akash Jyoti Dora (4th Year)955657856
+                                <br>
+                                Chandrakanta Haransingh(4th Year)9853460434
+                                <br>
+                                Vasudev Rao(4th  Year)7504111988
+                                <br>
+                                Prize:-
+                                <br>
+                                1st :-6500
+                                <br>
+                                2nd:-4500
+                                <br>
+                        </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
                 <div class="ms-section ms-7" id="c7">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Data Science Club</h5>
-                        <h1 class="black-color">Cruz-o-Mania</h1>
+                        <h5 class="subtitle"></h5>
+                        <h1 class="black-color">NFS</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details </p>
+                        <p>This is a technical event with fun activities . The contestants will be provided a system pre installed with NFS.
+                            <a href="../contest-details/CSE-Data/NFS.pdf" target="_blank">more...</a>
+                        </p>
+                        <p>
+                                Faculty-In-Charge:- Aditya Narayan Das (Asst. Prof Computer Science And Engineering  Dept)
+                                9439177066
+                                <br>
+                                Event Coordinator:-Rajat Behera (4th Year)9556820815
+                                <br>
+                                Shiva Kumar Sahoo(4th  Year)9658178242
+                                <br>
+                                Neeraj Kumar(4th Year)9853436685
+                                <br>
+                                Prize:-
+                                <br>
+                                1st :-3000
+                                <br>
+                                2nd:-1500
+                                <br>
+                        </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
                 <div class="ms-section ms-8" id="c8">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Data Science Club</h5>
-                        <h1 class="black-color">Web Villa</h1>
+                        <h5 class="subtitle"></h5>
+                        <h1 class="black-color">Class Of Clans</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details <br>1st prize-: 1500<br>2nd prize-: 1000
-</p>
+                       <p>
+                            The contestants have to install a game on there android mobile phones . Then they have  to join a specified clan.
+                            <a href="../contest-details/CSE-Data/Class-Of-Clans.pdf" target="_blank">more...</a>
+                       </p>
+                       <p>
+                            Faculty-In-Charge:- Padmavati Chand (Asst. Prof Computer Science And Engineering  Dept)
+                            9437961032
+                            <br>
+                             Event Coordinator:-Akash Chandra Sahoo (4th Year)7381496064
+                             <br>
+                             Amit Kumar Das(4th  Year)9040673560
+                             <br>
+                          Manish Lohra(4th Year)7873776066
+                          <br>
+                          Prize:-
+                          <br>
+                            1st :-2500
+                            <br>
+                            2nd:-1500
+                            <br>
+                       </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
 
-                <div class="ms-section ms-8" id="c9">
-                    <div class="ms-padding">
-                        <h5 class="subtitle">Data Science Club</h5>
-                        <h1 class="black-color">Death Match</h1>
-                        <div class="h-20"></div>
-                        <p>Contest Details <br>1st prize-: 1500<br>2nd prize-: 1000
-</p>
-                        <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
-                    </div>
+                <div class="ms-section ms-9" id="c9">
+                        <div class="ms-padding">
+                                <h5 class="subtitle"></h5>
+                                <h1 class="black-color">Web Designing</h1>
+                                <div class="h-20"></div>
+                                <p>
+                                        This a  technical event . The contestants have to design a web page individually . The designs will be remarked by the faculty in charge. 
+                                        <a href="../contest-details/CSE-Data/Web-Designing.pdf" target="_blank">more...</a>
+                                </p>
+                                <p>
+                                        Faculty-In-Charge:- Sumant Sahoo (Asst. Prof Computer Science And Engineering  Dept)
+                                        9437386374
+                                        <br>
+                                        Event Coordinator:-Soumya Ranjan Bhadra (4th Year)7751090785
+                                        <br>
+                                        Udit N. Sia (3rd   Year)9090914606
+                                        <br>
+                                        Shaktimayee Maharana(4th year) 8908537877
+                                        <br>
+                                        Prize:-
+                                        <br>
+                                        1st :-2000
+                                        <br>
+                                        2nd:-1000
+                                </p>
+                                <div class="h-30"></div>
+                                <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
+                            </div>
                 </div>
 
-                <div class="ms-section ms-8" id="c10">
+                <div class="ms-section ms-10" id="c10">
                     <div class="ms-padding">
-                        <h5 class="subtitle">Data Science Club</h5>
-                        <h1 class="black-color">D.O.T.A 2</h1>
+                        <h5 class="subtitle"></h5>
+                        <h1 class="black-color">Role Of Successful Startup</h1>
                         <div class="h-20"></div>
-                        <p>Contest Details <br>1st prize-: 1500<br>2nd prize-: 1000
-</p>
+                        <p>
+                                <a href="../contest-details/CSE-Data/Role-Of-Successful-Startup.pdf" target="_blank">more...</a>
+                        </p>
+                        <p>
+                                Faculty-In-Charge:- Akshya Das (Asst. Prof Computer Science And Engineering  Dept)
+          8339817400
+                                <br>
+                                Event Coordinator:-Swati Rout (4th Year)7381963404
+                                <br>
+                                Tiyasha Mohanty(4th  Year)8984570739
+                                <br>
+                                Samikshya Samapika Ray (4th  Year)8249588177
+                                <br>
+                                Prize:-
+                                <br>
+                                1st :-2000
+                                <br>
+                                2nd:-1000
+                        </p>
                         <div class="h-30"></div>
-                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" class="btn btn-success" style="font-size: 15px">Register</a>
+                        <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
                     </div>
                 </div>
+                <div class="ms-section ms-11" id="c11">
+                        <div class="ms-padding">
+                            <h5 class="subtitle"></h5>
+                            <h1 class="black-color">Face Canvas</h1>
+                            <div class="h-20"></div>
+                            <p>
+                                    The contestants have to make a team of two members. 
+                                <a href="../contest-details/CSE-Data/Face-Canvas.pdf" target="_blank">more..</a>
+                            </p>
+                            <p>
+                                    Faculty-In-Charge:- Dayal Behera (Asst. Prof Computer Science And Engineering  Dept)
+                                    9853334495
+                                    <br>
+                                    Event Coordinator:-Pratiksmith Sahoo (4th Year)9937093080
+                                    <br>
+                                    Urmi Priyadarshini Swain(4th  Year)8327734400
+                                    <br>
+                                    Swati Rout (4th  Year)7381963404
+                                    <br>
+                                    Jotirmayee Parimanik(4th Year)7381950689
+                                    <br>
+                                    Prize:-
+                                    <br>
+                                    1st :-2000
+                                    <br>
+                                    2nd:-1000
+                            </p>
+                            <div class="h-30"></div>
+                            <a href="https://goo.gl/forms/5S4N3s1b6IICdy9e2" target="_blank" class="btn btn-success" style="font-size: 15px">Register</a>
+                        </div>
+                    </div>
+
+                        </div>
+        
             </div>
             <div class="ms-right">
                 <div class="ms-section ms-1" id="c1img" style="background: url(img/);">
@@ -300,6 +518,9 @@
                     <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
                 </div>
                 <div class="ms-section ms-10" id="c8img" style="background: url(img/);">
+                    <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
+                </div>
+                <div class="ms-section ms-11" id="c8img" style="background: url(img/);">
                     <div class="img" style="background:url(../../assets/temporary/events/puzzle.gif) no-repeat; background-size: cover;background-position: center;"></div>
                 </div>
 
@@ -385,7 +606,7 @@
     </script>
     <!-- navbar js-->
     <script>
-    	/*Nav menu start*/
+      /*Nav menu start*/
 var navWidth;
 var navFlag = false;
 function init() {
@@ -433,6 +654,36 @@ function navHandelClick() {
     $('.ms-right').css("top",right);
    }
     </script>
+    <script>
+
+  $(window).load(function(){
+        
+         $(".swipearea").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="right") {
+                           showNav();
+                           return false;
+                      }
+                      
+                  }
+          }); 
+         $(".closeswipearea").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="left") {
+                           showNav();
+                           return false;
+                      }
+                      
+                  }
+          }); 
+
+      });
+  //Set some options later
+  
+
+</script>
 </body>
 
 </html>
