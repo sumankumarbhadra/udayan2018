@@ -176,53 +176,17 @@
         </div>
 
 
-        <!--Nav start-->
-   <!-- <img id="bgImage" src="../assets/mobile/mobilebg.png" width="100%" height="100%">-->
-        <i id="mNavBtn"  onclick="showNav();" class="mNavbtn"><img src="../assets/mobile/resize/navbar.png" width="80px" height="80px"></i>
-        <i id="mNavBtn2"  onclick="showNav();" class="mNavbtn"><img src="../assets/mobile/resize/navbarclose.png" width="80px" height="80px"></i>
-
-
-
-
-
-        <nav id="mainNav">
-        	<ul>
-             <li id="navContainer">
-                <a href="#"><li class="navElement" onclick="showNav();">Home</li></a>
-                 <li class="navElement">
-                <details>
-                  <summary>Committee</summary>
-                <a href="committee/coreIndex.html"><li class="navElement">Core Committee</li></a>
-                <a href="committee/students.html"><li class="navElement">Students Committee</li></a>
-              </details>
-             </li>
-            <li class="navElement">
-                 <details>
-                  <summary>Events</summary>
-                     <details>
-                        <summary style="margin-top: 5px">Events&nbsp;-&nbsp;CSE/IT</summary>
-                         <a href="contest/cse/index.html"><li class="menuElement pad1">Club Events</li></a>
-                        <a href="#"><li class="menuElement pad1">Independent Events</li></a>
-
-                </details>
-                 <a href="./contest/civil/index.html"><li class="navElement">Events&nbsp;-&nbsp;Civil</li></a>
-                 <a href="./contest/ee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EE</li></a>
-                 <a href="./contest/eee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EEE</li></a>
-                <details>
-                    <summary>Events&nbsp;-&nbsp;ETC</summary>
-                    <a href="../contest/etc/clubetc.html"><li class="menuElement pad1">Club Events</li></a>
-                    <a href="../mobile-site/contest/etc/index.html"><li class="menuElement pad1">Independent Events</li></a>
-                </details>
-                  <a href="./contest/mech/index.html"><li class="navElement">Events&nbsp;-&nbsp;Mechanical</li></a>
-                </details>
-            </li>
-            <!-- <a href="../webteam/about-crowd/"><li class="navElement">Meet The Developer</li></a> -->
-            <a target="_blank" href="https://goo.gl/forms/5S4N3s1b6IICdy9e2"><li class="navElement">Register Now</li></a>
-    
-        </ul>
-            <div class="closeswipearea"></div>
-        </nav>
+       <!--Nav start-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <div id="nav_space">
+     
+      </div>
         <!--Nav end-->
+        <script>
+        $(function(){
+              $("#nav_space").load("http://udayan2k18.com/nav/navmobile.html"); 
+           });
+        </script>
 
 
 
