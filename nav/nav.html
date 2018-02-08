@@ -1,0 +1,194 @@
+<html>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+        </head>
+    <body onload="init()">
+<style>
+
+    @font-face {
+        font-family: hojas;
+        src: url(hojas.otf);
+    }
+    video{
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: -1;
+      object-fit: fill;
+    }
+    table{
+        border-collapse: collapse;
+        background-color: rgba(255, 255, 255, 0.56);;
+        display: block;
+        width: 92% !important;
+        padding: 14px;
+    }
+    .heading{
+      color: #1fff1f;
+      font-family: hojas;
+      font-size: 4em;
+    }
+    body{
+      margin:0;
+    }
+    /* mouse cursor */
+    *{
+        cursor: url(http://udayan2k18.com/assets/images/cursor2.png),auto ;
+    }
+    
+    nav a{
+      text-decoration: none;
+    }
+    /*Nav menu start*/
+    #navMenu
+     {
+         height: 100%;
+         width: 17%;
+         background-color:  rgba(255,255,255,0.6);
+         position: fixed;
+         overflow-x: hidden;
+         z-index: 2;
+         transition: all 1.5s;
+         box-shadow: -20px 0px 0px 0px grey;
+     }
+    #navContainer
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    summary
+    {
+        padding: 15px;
+    }
+    .pad1
+    {
+        padding: 15px;
+    }
+    .menuElement
+    {
+        border: 1px solid floralwhite;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+    
+    .navBtn
+    {
+        height: 100%;
+        min-width: 2%;
+        background: linear-gradient(to bottom, rgba(76,76,76,0.4) 0%,rgba(89,89,89,0.4) 12%,rgba(102,102,102,0.4) 25%,rgba(71,71,71,0.4) 39%,rgba(44,44,44,0.4) 50%,rgba(0,0,0,0.4) 51%,rgba(17,17,17,0.4) 60%,rgba(43,43,43,0.4) 76%,rgba(28,28,28,0.4) 91%,rgba(19,19,19,0.4) 100%);
+        position: fixed;
+        margin-left: 17%;
+        /*mix-blend-mode:difference;*/
+        color: #d7dc07;
+        padding-top: 22%;
+        padding-left: 2px;
+        z-index: 2;
+        transition: all 1.5s;
+        box-shadow: 1px -1px 12px 0px grey;
+    }
+    .navBtn #navBtnIcn{
+        transition: all 1.5s;
+    
+    }
+    /*nav menu end*/
+    
+    
+    </style>
+    <script>
+      
+    /*Nav menu start*/
+    var navWidth;
+    var navFlag = true;
+    function init() {
+        document.getElementById("navDivBtn").addEventListener("click", navHandelClick);
+    }
+    
+    function navHandelClick() {
+        navWidth = document.getElementById("navMenu");
+        if(navFlag === true){
+            navWidth.style.width = "0";
+            document.getElementById("navDivBtn").style.marginLeft="0%";
+            document.getElementById("navBtnIcn").style.transform="rotate(180deg)";
+            return navFlag = false;
+        }else if(navFlag === false){
+            navWidth.style.width = "17%";
+            document.getElementById("navDivBtn").style.marginLeft="17%";
+            document.getElementById("navBtnIcn").style.transform="rotate(360deg)";
+            return navFlag = true;
+        }
+        document.getElementById("mainOverlay").addEventListener("touchend", closePop,false);
+    
+    }
+    
+    /*Nav menu end*/
+    </script>
+
+
+<!-- navbar -->
+<nav id="navMenu" class="nav">
+    <ul id="navContainer">
+        <a href="http://udayan2k18.com/index.html"><li class="menuElement">Home</li></a>
+        <li>
+        <details>
+          <summary>Committee</summary>
+          <ul>
+        <a href="http://udayan2k18.com/committee/index.html"><li class="menuElement pad1">Faculty Core Committee</li></a>
+        <a href="http://udayan2k18.com/committee/students.html"><li class="menuElement pad1">Students CoreCommittee</li></a>
+        </ul>
+        </details>
+        </li>
+          <li>
+          <details>
+            <summary>Events</summary>
+            <ul>
+                <details>
+                    <summary>Events</summary>
+                    <details>
+                        <summary>Events&nbsp;-&nbsp;CSE/IT</summary>
+                        <a href="http://udayan2k18.com/contest/cse/index.html"><li class="menuElement pad1">Club Events</li></a>
+                        <a href="http://udayan2k18.com/contest/cse/index.html"><li class="menuElement pad1">Technical Events</li></a>
+
+                    </details>
+                    <details>
+                        <summary>Events&nbsp;-&nbsp;Civil</summary>
+                        <a href="http://udayan2k18.com/contest/civil/club.html"><li class="menuElement pad1">Club Events</li></a>
+                        <a href="http://udayan2k18.com/contest/civil/index.html"><li class="menuElement pad1">Technical Events</li></a>
+                    </details>
+                    <details>
+                        <summary>Events&nbsp;-&nbsp;EE</summary>
+                        <a href="http://udayan2k18.com/contest/ee/club.html"><li class="menuElement pad1">Club Events</li></a>
+                        <a href="http://udayan2k18.com/contest/ee/index.html"><li class="menuElement pad1">Technical Events</li></a>
+                    </details>
+                  <details>
+                        <summary>Events&nbsp;-&nbsp;EEE</summary>
+                        <a href="http://udayan2k18.com/contest/eee/club.html"><li class="menuElement pad1">Club Events</li></a>
+                        <a href="http://udayan2k18.com/contest/eee/index.html"><li class="menuElement pad1">Technical Events</li></a>
+                    </details>
+                    <details>
+                        <summary>Events&nbsp;-&nbsp;ETC</summary>
+                        <a href="http://udayan2k18.com/contest/etc/club.html"><li class="menuElement pad1">Club Events</li></a>
+                        <a href="http://udayan2k18.com/contest/etc/index.html"><li class="menuElement pad1">Technical Events</li></a>
+                    </details>
+                    <details>
+                        <summary>Events&nbsp;-&nbsp;Mechanical</summary>
+                        <a href="http://udayan2k18.com/contest/mech/club.html"><li class="menuElement pad1">Club Events</li></a>
+                        <a href="http://udayan2k18.com/contest/mech/index.html"><li class="menuElement pad1">Technical Events</li></a>
+                    </details>
+        </ul>
+        </details>
+        </li>
+          <!-- <a href="http://udayan2k18.com/webteam/about-crowd/"><li class="menuElement pad1">Meet The Developer</li></a> -->
+          <a target="_blank" href="https://goo.gl/forms/5S4N3s1b6IICdy9e2"><li class="menuElement pad1">Register Now</li></a>
+  
+    </ul>
+</nav>
+<div id="navDivBtn" class="navBtn"><i id="navBtnIcn" class="fas fa-angle-double-left fa-2x"></i></div>
+
+<!-- / navbar -->
+</body>
+</html>
