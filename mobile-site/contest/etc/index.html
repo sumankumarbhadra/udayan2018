@@ -123,41 +123,17 @@
     <!-- ./Preloader -->
 
     <!--Nav start-->
-<!-- <img id="bgImage" src="../assets/mobile/mobilebg.png" width="100%" height="100%">-->
-<i id="mNavBtn"  onclick="showNav();" class="mNavbtn"><img src="../../../assets/mobile/resize/navbar.png" width="40px" height="40px"></i>
-<i id="mNavBtn2"  onclick="showNav();" class="mNavbtn"><img src="../../../assets/mobile/resize/navbarclose.png" width="40px" height="40px"></i>
-
-
-
-
-
-<nav id="mainNav">
-    <ul>
-        <li id="navContainer">
-            <a href="../../index.html"><li class="navElement" onclick="showNav();">Home</li></a>
-        <li class="navElement">
-            <details>
-                <summary>Committee</summary>
-                <a href="../../committee/coreIndex.html"><li class="navElement">Core Committee</li></a>
-        <a href="../../committee/students.html"><li class="navElement">Students Committee</li></a>
-        </details>
-        </li>
-        <li class="navElement">
-            <details>
-                <summary>Events</summary>
-                <a href="../cse/index.html"><li class="navElement">Events&nbsp;-&nbsp;CSE/IT</li></a>
-        <a href="../civil/index.html"><li class="navElement">Events&nbsp;-&nbsp;Civil</li></a>
-        <a href="../ee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EE</li></a>
-        <a href="../eee/index.html"><li class="navElement">Events&nbsp;-&nbsp;EEE</li></a>
-        <a href="../etc/index.html"><li class="navElement">Events&nbsp;-&nbsp;ETC</li></a>
-        <a href="../mech/index.html"><li class="navElement">Events&nbsp;-&nbsp;Mechanical</li></a>
-        </details>
-        </li>
-    </ul>
-    <div class="closeswipearea"></div>
-</nav>
-<!--Nav end-->
-
+<!--Nav start-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="nav_space">
+ 
+  </div>
+    <!--Nav end-->
+    <script>
+    $(function(){
+          $("#nav_space").load("http://udayan2k18.com/nav/navmobile.html"); 
+       });
+    </script>
     <!-- slidre section -->
     <div id="section-0" class="clearfix">
         <div id="multiscroll">
