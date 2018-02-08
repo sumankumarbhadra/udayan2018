@@ -350,8 +350,8 @@ setInterval(function(){
            $("#planeimg").css("width","200px");
         }, 35000);
     }, 35000);
-
-function popup() {
+/*instructions video*/
+/*function popup() {
   if(sessionStorage.getItem("view")!="1"){
     document.querySelector("#mainOverlay").style.height="100%";
     document.querySelector("#subOverlay").style.height="70%";
@@ -371,7 +371,7 @@ function closePop(){
     sessionStorage.setItem("view", "1");
     //auto close menu on loading page
 
-}
+}*/
 /*preloader js*/
 function loadingComplete(){
    $(".preloader").css({"-webkit-animation":"slit-out-horizontal 1s ease-in both","animation":"slit-out-horizontal 1s ease-in both"}); 
