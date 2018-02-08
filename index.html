@@ -206,38 +206,38 @@
         <!--Dustbin start-->
         <div class="DBS">
             <div class="flag flag1">  
-                     <div class="flag-pattern ch">Put Paper Waste To Open <strong>CSE & IT </strong>Events</div>
+                     <div class="flag-pattern ch">Put Paper Waste for surprize.</div>
                          <div class="flag-wave"></div>  
                              </div>
             <div title="Green dustbin" class="dustbin" name="greenDB" id="greenDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/greencap.png" class="dustbinlid" name="greenDB" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/green.png" height="130px" width="85px" name="greenDB"ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
 
            
             <div class="flag flag2">  
-                     <div class="flag-pattern ch2">Put Metal Waste To Open <strong>CIVIL</strong> Events</div>
+                     <div class="flag-pattern ch2">Put Metal Waste for surprize.</div>
                          <div class="flag-wave"></div>  
                              </div>
             <div title="Blue dustbin" class="dustbin" name="blueDB" id="blueDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/bluecap.png" class="dustbinlid" name="blueDB"  ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/blue.png" height="130px" width="85px"  name="blueDB" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
                 
                 <div class="flag flag3">  
-                     <div class="flag-pattern ch3">Put Organic Waste To Open <strong>EE</strong> Events</div>
+                     <div class="flag-pattern ch3">Put Organic Waste for surprize.</div>
                          <div class="flag-wave"></div>  
                              </div>
             <div title="Yellow dustbin" class="dustbin" name="yellowDB" id="yellowDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/yellowcap.png" class="dustbinlid" name="yellowDB" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/yellow.png" height="130px" width="85px" name="yellowDB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                     <div class="flag flag4">  
-                     <div class="flag-pattern ch4">Put Battery Waste To Open <strong>EEE</strong> Events</div>
+                     <div class="flag-pattern ch4">Put Battery Waste  for surprize.</div>
                          <div class="flag-wave"></div>  
                              </div>
-            <div title="Black dustbin" class="dustbin" name="blackDB" id="blackDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/greycap.png" class="dustbinlid" name="blackDB" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/grey.png" height="130px" width="85px"  name="blackDB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div title="Grey dustbin" class="dustbin" name="blackDB" id="blackDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/greycap.png" class="dustbinlid" name="blackDB" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/grey.png" height="130px" width="85px"  name="blackDB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                     <div class="flag flag5">  
-                     <div class="flag-pattern ch5">Put Plastic Waste To Open <strong>ETC</strong> Events</div>
+                     <div class="flag-pattern ch5">Put Plastic Waste for surprize.</div>
                          <div class="flag-wave"></div>  
                              </div>
             <div title="Red dustbin" class="dustbin" name="redDB" id="redDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/redcap.png" class="dustbinlid" name="redDB" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/red.png" height="130px" width="85px" name="redDB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                    <div class="flag flag6">  
-                     <div class="flag-pattern ch6">Put Glass Waste To Open <strong>Mechanical</strong> Events</div>
+                     <div class="flag-pattern ch6">Put Glass Waste for surprize.</div>
                          <div class="flag-wave"></div>  
                  	</div>
-            <div title="Brown dustbin" class="dustbin" name="brownDB" id="brownDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/darkgreencap.png" class="dustbinlid" name="brownDB" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/darkgreen.png" height="130px" width="85px"  name="brownDB"ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+            <div title="Dark green dustbin" class="dustbin" name="brownDB" id="brownDB" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/images/darkgreencap.png" class="dustbinlid" name="brownDB" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="assets/temporary/Dustbin/darkgreen.png" height="130px" width="85px"  name="brownDB"ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
             <div class="eyes" id="eyes1" name="greenDB" style="animation-delay:0.2s" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/temporary/Dustbin/Eyes.png" height="17px" width="45px"></div>
             <div class="eyes" id="eyes2" name="blueDB" style="animation-delay:0.5s" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/temporary/Dustbin/Eyes.png" height="17px" width="45px"></div>
             <div class="eyes" id="eyes3" name="yellowDB" style="animation-delay:0.3s" ondrop="drop(event)" ondragover="allowDrop(event)" ><img src="assets/temporary/Dustbin/Eyes.png" height="17px" width="45px"></div>
@@ -378,59 +378,65 @@
              }else{
                 //alert("Wrong bin");
                 showInstruct(true,"Wrong bin");
-                showalert("Wrong bin");
+               
                 flagtempmsg="";
                 switch($(this).attr('id')){
                     case "greenDB":
                       $(".flag1").find(".ch").css("color","red");
-                      $(".flag1").find(".ch").html("Wrong Bin");
+                      $(".flag1").find(".ch").html("Wrong Bin! Put paper waste in me.");
+                      showalert("Wrong bin!<br>Put paper waste here.");
                       setTimeout(function(){
                       $(".flag1").find(".ch").css("color","white");
-                      $(".flag1").find(".ch").html("Put Paper Waste To Open CSE Events");
-                      },2000);
+                      $(".flag1").find(".ch").html("Put Paper Waste for surprize.");
+                      },3000);
                       break;
                     case "blueDB":
                       $(".flag2").find(".ch2").css("color","red");
-                      $(".flag2").find(".ch2").html("Wrong Bin");
+                      $(".flag2").find(".ch2").html("Wrong Bin! Put Metal waste in me.");
+                      showalert("Wrong bin!<br>Put Metal waste here.");
                       setTimeout(function(){
                       $(".flag2").find(".ch2").css("color","white");
-                      $(".flag2").find(".ch2").html("Put Metal Waste To Open Civil Events");
-                      },2000);
+                      $(".flag2").find(".ch2").html("Put Metal Waste for surprize.");
+                      },3000);
                       break;
                     case "yellowDB":
                       $(".flag3").find(".ch3").css("color","red");
-                      $(".flag3").find(".ch3").html("Wrong Bin");
+                      $(".flag3").find(".ch3").html("Wrong Bin! Put Organic waste in me.");
+                       showalert("Wrong bin!<br>Put Organic waste here.");
                       setTimeout(function(){
                       $(".flag3").find(".ch3").css("color","white");
-                      $(".flag3").find(".ch3").html("Put Organic Waste To Open EE Events");
-                      },2000);
+                      $(".flag3").find(".ch3").html("Put Organic Waste for surprize.");
+                      },3000);
                       break;
                     case "blackDB":
                       $(".flag4").find(".ch4").css("color","red");
-                      $(".flag4").find(".ch4").html("Wrong Bin");
+                      $(".flag4").find(".ch4").html("Wrong Bin! Put Battery waste in me.");
+                       showalert("Wrong bin!<br>Put Battery waste here.");
                       //alert("call");
                       setTimeout(function(){
                       //alert(flagtempmsg);
                       $(".flag4").find(".ch4").css("color","white");
-                      $(".flag4").find(".ch4").html("Put Battery Waste To Open EEE Events");
-                      },2000);
+                      $(".flag4").find(".ch4").html("Put Battery Waste  for surprize.");
+                      },3000);
                       break;
                     case "redDB":
                       $(".flag5").find(".ch5").css("color","white");
-                      $(".flag5").find(".ch5").html("Wrong Bin");
+                      $(".flag5").find(".ch5").html("Wrong Bin! Put Plastic waste in me.");
+                       showalert("Wrong bin!<br>Put Plastic waste here.");
                       setTimeout(function(){
                       $(".flag5").find(".ch5").css("color","white");
-                      $(".flag5").find(".ch5").html("Put Plastic Waste To Open ETC Events");
-                      },2000);
+                      $(".flag5").find(".ch5").html("Put Plastic Waste for surprize.");
+                      },3000);
                       break;
                     case "brownDB":
                       $(".flag6").find(".ch6").css("color","red");
-                      $(".flag6").find(".ch6").html("Wrong Bin");
+                      $(".flag6").find(".ch6").html("Wrong Bin! Put Glass waste in me.");
+                       showalert("Wrong bin!<br>Put Glass waste here.");
                       setTimeout(function(){
                     //alert(flagtempmsg);
                       $(".flag6").find(".ch6").css("color","white");
-                      $(".flag6").find(".ch6").html("Put Glass Waste To Open Mechanical Events");
-                      },2000);
+                      $(".flag6").find(".ch6").html("Put Glass Waste for surprize.");
+                      },3000);
                       break;
                   }
               
@@ -541,59 +547,66 @@
 	 	}else{
                 //alert("Wrong bin");
                 showInstruct(true,"Wrong bin");
-                showalert("Wrong bin");
+                
+               
                 flagtempmsg="";
                 switch(dropname){
                   case "greenDB":
                   $(".flag1").find(".ch").css("color","red");
-                  $(".flag1").find(".ch").html("Wrong Bin");
+                  $(".flag1").find(".ch").html("Wrong Bin! Put paper waste in me.");
+                   showalert("Wrong bin!<br>Put paper waste here.");
                   setTimeout(function(){
                   $(".flag1").find(".ch").css("color","white");
-                  $(".flag1").find(".ch").html("Put Paper Waste To Open CSE Events");
-                  },2000);
+                  $(".flag1").find(".ch").html("Put Paper Waste for surprise");
+                  },3000);
                   break;
                 case "blueDB":
                   $(".flag2").find(".ch2").css("color","red");
-                  $(".flag2").find(".ch2").html("Wrong Bin");
+                  $(".flag2").find(".ch2").html("Wrong Bin! Put Metal waste in me.");
+                   showalert("Wrong bin!<br>Put Metal waste here.");
                   setTimeout(function(){
                   $(".flag2").find(".ch2").css("color","white");
-                  $(".flag2").find(".ch2").html("Put Metal Waste To Open Civil Events");
-                  },2000);
+                  $(".flag2").find(".ch2").html("Put Metal Waste for surprise");
+                  },3000);
                   break;
                 case "yellowDB":
                   $(".flag3").find(".ch3").css("color","red");
-                  $(".flag3").find(".ch3").html("Wrong Bin");
+                  $(".flag3").find(".ch3").html("Wrong Bin! Put Organic waste in me.");
+                   showalert("Wrong bin!<br>Put Organic waste here.");
                   setTimeout(function(){
                   $(".flag3").find(".ch3").css("color","white");
-                  $(".flag3").find(".ch3").html("Put Organic Waste To Open EE Events");
-                  },2000);
+                  $(".flag3").find(".ch3").html("Put Organic Waste for surprise");
+                  },3000);
                   break;
                 case "blackDB":
                   $(".flag4").find(".ch4").css("color","red");
-                  $(".flag4").find(".ch4").html("Wrong Bin");
+                  $(".flag4").find(".ch4").html("Wrong Bin! Put Battery waste in me.");
+                   showalert("Wrong bin!<br>Put Battery waste here.");
                   //alert("call");
                   setTimeout(function(){
                   //alert(flagtempmsg);
                   $(".flag4").find(".ch4").css("color","white");
-                  $(".flag4").find(".ch4").html("Put Battery Waste To Open EEE Events");
-                  },2000);
+                  $(".flag4").find(".ch4").html("Put Battery Waste for surprise");
+                  },3000);
                   break;
                 case "redDB":
                   $(".flag5").find(".ch5").css("color","white");
-                  $(".flag5").find(".ch5").html("Wrong Bin");
+                  $(".flag5").find(".ch5").html("Wrong Bin! Put Plastic waste in me.");
+                   showalert("Wrong bin!<br>Put Plastic waste here.");
                   setTimeout(function(){
                   $(".flag5").find(".ch5").css("color","white");
-                  $(".flag5").find(".ch5").html("Put Plastic Waste To Open ETC Events");
-                  },2000);
+                  $(".flag5").find(".ch5").html("Put Plastic Waste for surprise");
+                  },3000);
                   break;
                 case "brownDB":
                   $(".flag6").find(".ch6").css("color","red");
-                  $(".flag6").find(".ch6").html("Wrong Bin");
+                  $(".flag6").find(".ch6").html("Wrong Bin! Put Glass waste in me.");
+                   showalert("Wrong bin!<br>Put Glass waste here.");
                   setTimeout(function(){
                 //alert(flagtempmsg);
                   $(".flag6").find(".ch6").css("color","white");
-                  $(".flag6").find(".ch6").html("Put Glass Waste To Open Mechanical Events");
-                  },2000);
+                  $(".flag6").find(".ch6").html("Put Glass Waste for surprise");
+                  },3000);
                   break;
               }
             }
