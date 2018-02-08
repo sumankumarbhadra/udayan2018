@@ -1,7 +1,10 @@
 
 <head>
 <link rel=Stylesheet href=stylesheet.css>
+
+<link href="../fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
 <style>
+
 @font-face {
     font-family: hojas;
     src: url(hojas.otf);
@@ -15,24 +18,154 @@ video{
 }
 table{
     border-collapse: collapse;
-    background-color: #ffffff85;
+    background-color: rgba(255, 255, 255, 0.56);;
     display: block;
     width: 92% !important;
+    padding: 14px;
 }
 .heading{
-  color: #6aff00d6;
+  color: #1fff1f;
   font-family: hojas;
   font-size: 4em;
+}
+body{
+  margin:0;
 }
 /* mouse cursor */
 *{
     cursor: url(../assets/images/cursor2.png),auto ;
 }
-</style>
 
+nav a{
+  text-decoration: none;
+}
+/*Nav menu start*/
+#navMenu
+ {
+     height: 100%;
+     width: 17%;
+     background-color:  rgba(255,255,255,0.6);
+     position: fixed;
+     overflow: hidden;
+     z-index: 2;
+     transition: all 1.5s;
+     box-shadow: -20px 0px 0px 0px grey;
+ }
+#navContainer
+{
+    padding: 0px;
+    margin: 0px;
+}
+summary
+{
+    padding: 15px;
+}
+.pad1
+{
+    padding: 15px;
+}
+.menuElement
+{
+    border: 1px solid floralwhite;
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.navBtn
+{
+    height: 100%;
+    min-width: 2%;
+    background: linear-gradient(to bottom, rgba(76,76,76,0.4) 0%,rgba(89,89,89,0.4) 12%,rgba(102,102,102,0.4) 25%,rgba(71,71,71,0.4) 39%,rgba(44,44,44,0.4) 50%,rgba(0,0,0,0.4) 51%,rgba(17,17,17,0.4) 60%,rgba(43,43,43,0.4) 76%,rgba(28,28,28,0.4) 91%,rgba(19,19,19,0.4) 100%);
+    position: fixed;
+    margin-left: 17%;
+    /*mix-blend-mode:difference;*/
+    color: #d7dc07;
+    padding-top: 22%;
+    padding-left: 2px;
+    z-index: 2;
+    transition: all 1.5s;
+    box-shadow: 1px -1px 12px 0px grey;
+}
+.navBtn #navBtnIcn{
+    transition: all 1.5s;
+
+}
+/*nav menu end*/
+
+
+</style>
+<script>
+  
+/*Nav menu start*/
+var navWidth;
+var navFlag = true;
+function init() {
+    document.getElementById("navDivBtn").addEventListener("click", navHandelClick);
+}
+
+function navHandelClick() {
+    navWidth = document.getElementById("navMenu");
+    if(navFlag === true){
+        navWidth.style.width = "0";
+        document.getElementById("navDivBtn").style.marginLeft="0%";
+        document.getElementById("navBtnIcn").style.transform="rotate(180deg)";
+        return navFlag = false;
+    }else if(navFlag === false){
+        navWidth.style.width = "17%";
+        document.getElementById("navDivBtn").style.marginLeft="17%";
+        document.getElementById("navBtnIcn").style.transform="rotate(360deg)";
+        return navFlag = true;
+    }
+    document.getElementById("mainOverlay").addEventListener("touchend", closePop,false);
+
+}
+
+/*Nav menu end*/
+</script>
 </head>
 
-<body link="#0563C1" vlink="#954F72">
+<body link="#0563C1" vlink="#954F72" onload="init(); navHandelClick();">
+  <!--Nav start-->
+             <nav id="navMenu" class="nav">
+
+            <ul id="navContainer">
+                <a href="../"><li class="menuElement pad1">Home</li></a>
+                 <li class="menuElement">
+                <details>
+                  <summary>Committee</summary>
+                <a href="#"><li class="menuElement pad1">Core Committee</li></a>
+                <a href="./students.html"><li class="menuElement pad1">Students Committee</li></a>
+              </details>
+                 </li>
+                <li class="menuElement">
+                <details>
+                  <summary>Events</summary>
+                    <details>
+                        <summary style="font-size:17px;">Events&nbsp;-&nbsp;CSE/IT</summary>
+                        <a href="../contest/cse/index.html"><li class="menuElement pad1">Club Events</li></a>
+                <a href="../contest/cse/index.html"><li class="menuElement pad1">Technical Events</li></a>
+
+                </details>
+                 <a href="../contest/civil/index.html"><li class="menuElement pad1">Events&nbsp;-&nbsp;Civil</li></a>
+                 <a href="../contest/ee/index.html"><li class="menuElement pad1">Events&nbsp;-&nbsp;EE</li></a>
+                 <a href="../contest/eee/index.html"><li class="menuElement pad1">Events&nbsp;-&nbsp;EEE</li></a>
+                <details>
+                    <summary style="font-size:17px;">Events&nbsp;-&nbsp;ETC</summary>
+                    <a href="../contest/etc/clubetc.html"><li class="menuElement pad1">Club Events</li></a>
+                    <a href="../contest/etc/"><li class="menuElement pad1">Technaical Events</li></a>
+                </details>
+                  <a href="../contest/mech/index.html"><li class="menuElement pad1">Events&nbsp;-&nbsp;Mechanical</li></a>
+                </details>
+              </li>
+              <!-- <a href="../webteam/about-crowd/"><li class="menuElement pad1">Meet The Developer</li></a>           -->
+              <a target="_blank" href="https://goo.gl/forms/5S4N3s1b6IICdy9e2"><li class="menuElement pad1">Register Now</li></a>
+            </ul>
+        </nav>
+
+        <div id="navDivBtn" class="navBtn"><i id="navBtnIcn" class="fas fa-angle-double-left fa-2x"></i></div>
+<!--Nav end-->
   <video autoplay muted loop id="myVideo">
   <source src="techfest.mp4" type="video/mp4">
 </video> 
