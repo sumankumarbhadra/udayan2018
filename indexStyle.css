@@ -417,6 +417,170 @@ summary
     top: 50%;
     left: 50%;
 }
+/*Trash indicator start*/
+#leftIndicator {
+    position: fixed;
+    font-size: 50px;
+    color: darkslategrey;
+    margin: 44% 0 0 5%;
+    z-index: 5;
+}
+.leftSet1
+ {
+     animation: lSet1 infinite;
+     animation-delay: 2s;
+     animation-duration: 2s;
+     color: yellow;
+ }
+@keyframes lSet1 {
+    0%{color: yellow; transform: scale(1.2);}
+    100%{color: darkslategrey}
+}
+.leftSet2
+{
+    animation: lSet2 infinite;
+    animation-delay: 1.8s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes lSet2 {
+    0%{color: darkslategrey}
+    50%{color: yellow; transform: scale(1.2);}
+}
+.leftSet3
+{
+    animation: lSet3 infinite;
+    animation-delay: 1.7s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes lSet3 {
+    0%{color: darkslategrey}
+    50%{color: darkslategrey; transform: scale(1.2);}
+    70%{color: yellow; }
+}
+.leftSet4
+{
+    animation: lSet4 infinite;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes lSet4 {
+    0%{color: darkslategrey}
+    50%{color: darkslategrey; transform: scale(1.2);}
+    60%{color: yellow; }
+}
+.leftSet5
+{
+    animation: lSet5 infinite;
+    animation-delay: 2.2s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes lSet5 {
+    0%{color: darkslategrey}
+    50%{color: darkslategrey; transform: scale(1.2);}
+    60%{color: yellow; }
+}
+.leftSet6
+{
+    animation: lSet6 infinite;
+    animation-delay: 2.4s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes lSet6 {
+    0%{color: darkslategrey}
+    50%{color: darkslategrey; transform: scale(1.2);}
+    60%{color: yellow; }
+}
+
+
+#rightIndicator
+{
+    position: fixed;
+    font-size: 50px;
+    color: red;
+    margin: 44% 0 0 79%;
+    z-index: 5;
+}
+
+.rightSet6
+{
+    animation: rSet6 infinite;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    color: yellow;
+}
+@keyframes rSet6 {
+    0%{color: yellow}
+    100%{color: darkslategrey; transform: scale(1.2);}
+}
+.rightSet5
+{
+    animation: rSet5 infinite;
+    animation-delay: 1.8s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes rSet5 {
+    0%{color: darkslategrey}
+    50%{color: yellow; transform: scale(1.2);}
+}
+.rightSet4
+{
+    animation: rSet4 infinite;
+    animation-delay: 1.7s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes rSet4 {
+    0%{color: darkslategrey}
+    50%{color: darkslategrey; transform: scale(1.2);}
+    70%{color: yellow}
+}
+.rightSet3
+{
+    animation: rSet3 infinite;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes rSet3 {
+    0%{color: darkslategrey}
+    50%{color: darkslategrey; transform: scale(1.2);}
+    60%{color: yellow}
+}
+.rightSet2
+{
+    animation: rSet2 infinite;
+    animation-delay: 2.2s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes rSet2 {
+    0%{color: darkslategrey}
+    50%{color: darkslategrey; transform: scale(1.2);}
+    60%{color: yellow}
+}
+.rightSet1
+{
+    animation: rSet1 infinite;
+    animation-delay: 2.4s;
+    animation-duration: 2s;
+    color: darkslategrey;
+}
+@keyframes rSet1 {
+    0%{color: darkslategrey}
+    50%{color: darkslategrey; transform: scale(1.2);}
+    60%{color: yellow}
+}
+
+
+
+
+/*Trash indicator End*/
 
 
 
