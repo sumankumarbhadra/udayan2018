@@ -6,67 +6,6 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>	
 	<link rel="stylesheet" href="committeStyle.css">
 	<style>
-	/*Preloader*/
-		.preloader {
-		 font: 400 1em/1.5 "voice";
-		 background: #090d00;
-		 color: rgba(255, 255, 255, 0.25);
-		 text-align: center;
-		 margin: 0;
-		 z-index: 8;
-		 height: 105%;
-		 position: fixed;
-		 width: 100%;
-		}
-    @font-face {
-    font-family: "hojas";
-    src: url("assets/temporary/Backgrounds/hojas.otf");
-    }
-    @font-face {
-    font-family: "voice";
-    src: url("assets/temporary/Backgrounds/voice.otf");
-    }
-		.loaderUpperText {
-		 text-transform: uppercase;
-		 letter-spacing: .5em;
-		 display: inline-block;
-		 border: 4px double rgba(255, 255, 255, 0.25);
-		 border-width: 4px 0;
-		 padding: 1.5em 0em;
-		 position: absolute;
-		 top: 36%;
-		 left: 50%;
-		 width: 40em;
-		 margin: 0 0 0 -20em;
-		}
-		.loaderUdayan {
-		 font: 700 4em/1 "hojas", sans-serif;
-		 letter-spacing: 0;
-		 padding: .25em 0 .325em;
-		 display: block;
-		 margin: 0 auto;
-		 text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-		 /* Clip Background Image */
-		 background: url(./assets/temporary/loader.png) repeat-y;
-		 -webkit-background-clip: text;
-		 background-clip: text;
-		 /* Animate Background Image */
-		 -webkit-text-fill-color: transparent;
-		 -webkit-animation: aitf 80s linear infinite;
-		 /* Activate hardware acceleration for smoother animations */
-		 -webkit-transform: translate3d(0, 0, 0);
-		 -webkit-backface-visibility: hidden;
-		}
-
-		/* Animate Background Image */
-		@-webkit-keyframes aitf {
-		 0% {
-		   background-position: 0% 50%;
-		 }
-		 100% {
-		   background-position: 100% 50%;
-		 }
-		}
 		a{
 			color: #090d00 !important;
 		}
@@ -95,17 +34,7 @@
 	  </script>
 </head>
 <body onload="init(); loadingComplete();" style="background:transparent;">
-	<!-- Preloader -->
-	<div class="preloader">
-		<p class="loaderUpperText">
-		 Trident Group Of Institutions Presents
-		 <span class="loaderUdayan">
-		   Udayan 2k18
-		 </span>
-		 &mdash; THE TECHFEST &mdash;
-		</p>
-	</div>
-	<!-- Preloader ends -->
+	
 	<!--Nav start-->
 	<div id="nav_space">
        
@@ -117,7 +46,7 @@
    		});
 		</script>
 <video autoplay muted loop id="myVideo">
-  <source src="techfest.mp4" type="video/mp4">
+  <source src="../assets/video/new3.mp4" type="video/mp4">
 </video> 
 		<div id="draggable"> Core Committee</div>
 		<div id="draggable1" class="mem1 mem "><img src = "..\assets\images\students\2.jpg" style="    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;"><div class="details-node1"><div class="panel">Yogesh Parashar</div></div></div>

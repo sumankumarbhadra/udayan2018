@@ -3,9 +3,39 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-
+            <script>
+                   
+              
+                  /*Nav menu start*/
+                  var navWidth;
+                  var navFlag = true;
+                  function init() {
+                      document.getElementById("navDivBtn").addEventListener("click", navHandelClick);
+                  }
+                  
+                  function navHandelClick() {
+                      navWidth = document.getElementById("navMenu");
+                      if(navFlag === true){
+                          navWidth.style.width = "0";
+                          document.getElementById("navDivBtn").style.marginLeft="0%";
+                          document.getElementById("navBtnIcn").style.transform="rotate(180deg)";
+                          return navFlag = false;
+                      }else if(navFlag === false){
+                          navWidth.style.width = "17%";
+                          document.getElementById("navDivBtn").style.marginLeft="17%";
+                          document.getElementById("navBtnIcn").style.transform="rotate(360deg)";
+                          return navFlag = true;
+                      }
+                      document.getElementById("mainOverlay").addEventListener("touchend", closePop,false);
+                  
+                  }
+                  
+                  /*Nav menu end*/
+                  </script>
+              
+              
         </head>
-    <body onload="init()">
+    <body onload="init(); navHandelClick();">
 <style>
 
     @font-face {
@@ -49,7 +79,7 @@
          width: 17%;
          background-color:  rgba(255,255,255,0.6);
          position: fixed;
-         overflow-x: hidden;
+         overflow: auto;
          z-index: 2;
          transition: all 1.5s;
          box-shadow: -20px 0px 0px 0px grey;
@@ -100,36 +130,7 @@
     
     
     </style>
-    <script>
-      
-    /*Nav menu start*/
-    var navWidth;
-    var navFlag = true;
-    function init() {
-        document.getElementById("navDivBtn").addEventListener("click", navHandelClick);
-    }
     
-    function navHandelClick() {
-        navWidth = document.getElementById("navMenu");
-        if(navFlag === true){
-            navWidth.style.width = "0";
-            document.getElementById("navDivBtn").style.marginLeft="0%";
-            document.getElementById("navBtnIcn").style.transform="rotate(180deg)";
-            return navFlag = false;
-        }else if(navFlag === false){
-            navWidth.style.width = "17%";
-            document.getElementById("navDivBtn").style.marginLeft="17%";
-            document.getElementById("navBtnIcn").style.transform="rotate(360deg)";
-            return navFlag = true;
-        }
-        document.getElementById("mainOverlay").addEventListener("touchend", closePop,false);
-    
-    }
-    
-    /*Nav menu end*/
-    </script>
-
-
 <!-- navbar -->
 <nav id="navMenu" class="nav">
     <ul id="navContainer">

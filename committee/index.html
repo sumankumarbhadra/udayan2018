@@ -4,10 +4,8 @@
   <title>Udayan Committee</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="stylesheet" type="text/css" href="../indexStyle.css">
 <link href="../fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
   <script src="../jquery.min.js"></script>
-  <script src="../indexjs.js"></script>
   <script type="text/javascript">
     $(window).scroll(function(){         
   $('.container div ').each(function(){
@@ -49,9 +47,19 @@
     background-position-y: 0px;
     position: relative;
     }
+    video{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  object-fit: fill;
+}
   </style>
 </head>
 <body onload="init(); navHandelClick();" style=" overflow: auto; overflow-x: hidden;">
+    <video autoplay muted loop id="myVideo">
+        <source src="../assets/video/new1.mp4" type="video/mp4">
+      </video> 
   <!--Nav start-->
 	<div id="nav_space">
        
