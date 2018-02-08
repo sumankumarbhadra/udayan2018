@@ -3,8 +3,7 @@
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>	 <script src="../indexjs.js"></script>
-  <link rel="stylesheet" href="../indexStyle.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>	
 	<link rel="stylesheet" href="committeStyle.css">
 	<style>
 	/*Preloader*/
@@ -108,41 +107,15 @@
 	</div>
 	<!-- Preloader ends -->
 	<!--Nav start-->
-	<div>
-        <nav id="navMenu" class="nav">
-            <ul id="navContainer">
-                 <a href="../index.html"><li class="menuElement">Home</li></a>
-                <details>
-                <summary style="font-size:20px;">Committee</summary>
-                <a href="./index.html"><li class="menuElement">Core Committee</li></a>
-                <a href="./students.html"><li class="menuElement">Students Committee</li></a>
-                </details>
-                <details>
-                <summary style="font-size:20px;" >Events</summary>
-					<details>
-						<summary style="font-size:16px;">Events&nbsp;-&nbsp;CSE/IT</summary>
-						<a href="../contest/cse/index.html"><li class="menuElement pad1">Club Events</li></a>
-						<a href="#"><li class="menuElement pad1">Independent Events</li></a>
-
-					</details>
-                 <a href="../contest/civil/index.html"><li class="menuElement">Events&nbsp;-&nbsp;Civil</li></a>
-                 <a href="../contest/ee/index.html"><li class="menuElement">Events&nbsp;-&nbsp;EE</li></a>
-                 <a href="../contest/eee/index.html"><li class="menuElement">Events&nbsp;-&nbsp;EEE</li></a>
-					<details>
-						<summary style="font-size:16px;">Events&nbsp;-&nbsp;ETC</summary>
-						<a href="../contest/etc/clubetc.html"><li class="menuElement pad1">Club Events</li></a>
-						<a href="#"><li class="menuElement pad1">Independent Events</li></a>
-					</details>
-                  <a href="../contest/mech/index.html"><li class="menuElement">Events&nbsp;-&nbsp;Mechanical</li></a>
-				 </details>
-				 <!-- <a href="../webteam/about-crowd/"><li class="menuElement pad1">Meet The Developer</li></a>           -->
-				 <a target="_blank" href="https://goo.gl/forms/5S4N3s1b6IICdy9e2"><li class="menuElement pad1">Register Now</li></a>
-
-            </ul>
-        </nav>
-        <div id="navDivBtn" class="navBtn"><i id="navBtnIcn" class="fas fa-angle-double-left fa-2x"></i></div>
+	<div id="nav_space">
+       
 	</div>
 		<!--Nav end-->
+		<script>
+		$(function(){
+      		$("#nav_space").load("http://udayan2k18.com/nav/nav.html"); 
+   		});
+		</script>
 <video autoplay muted loop id="myVideo">
   <source src="techfest.mp4" type="video/mp4">
 </video> 
