@@ -185,6 +185,14 @@ function closeiframe(){
         document.getElementById("afteriFrame").style.width = "0%";
         document.getElementById("afteriFrame").style.height = "0%";
         document.getElementById("iframeclose").style.display = "none";
+        $(".afterContainer").css("top","67%");
+        document.getElementById("afterContainerGreen").style.left="33%";
+        document.getElementById("afterContainerBlue").style.left="38.7%";
+        document.getElementById("afterContainerYellow").style.left="44.6%";
+        document.getElementById("afterContainerGray").style.left="50.3%";
+        document.getElementById("afterContainerRed").style.left="56.1%";
+         document.getElementById("afterContainerDGreen").style.left="61.8%";
+         $(".afterContainer").css("transform","rotateX(90deg)");
 }
 function openAfterCon(value) {
     if (value === 0) {
