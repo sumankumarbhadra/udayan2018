@@ -91,7 +91,7 @@
     </style>
 </head>
 
-<body onload="init(); begin();">
+<body onload="init(); ">
 
 
 
@@ -608,6 +608,7 @@ function navHandelClick() {
            temp = params[i].split("=");
            if ( [temp[0]] == sname ) { sval = temp[1]; }
          }
+         
       scrollto(sval);
     }
     function scrollto(eventid){
@@ -619,6 +620,7 @@ function navHandelClick() {
 
     $('.ms-right').css("top",right);
    }
+   $("window").ready(begin);
     </script>
 </body>
 
