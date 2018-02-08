@@ -2,13 +2,24 @@
 <html>
 <head>
 	<title>EE Events</title>
-	<link rel="stylesheet" type="text/css" href="Event_Style.css">
+    <link rel="stylesheet" type="text/css" href="Event_Style.css">
+    <style>
+            video{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: -1;
+            object-fit: fill;
+            }
+        </style>
 </head>
-<body style="background: url(images/bg3.jpg) repeat;
-    background-size: cover; background-attachment: fixed;">
+<body >
+        <video autoplay muted loop id="myVideo">
+                <source src="../assets/video/new3.mp4" type="video/mp4">
+                </video> 
     <h1 class="tracking-in-contract-bck" style="color:#bd1642;">Electrical&nbsp;Engineering</h1>
 
-	<h2 class="focus-in-expand">Be the change you want to see in the world.</h2>
+	<h2 class="focus-in-expand top_quot">Be the change you want to see in the world.</h2>
 	<div id="flex-container" class="flexBox">
     	<div class="object one" onclick="movenext('c1')">TECHNOBLAST<br><span >Coordinator:<br>Chinmaya Ku. Ghodei<br>+91-7978612152<br>Sub-coordinator:<br>Rashmita Kumari Sahu<br>Samesh Kumar Rath <br>+91-8342088385</span></div>
         <div class="object one" onclick="movenext('c2')">ELECTRAPHILIA<br><span >Coordinator:<br>Rakesh Behera <br>+91-7008684012<br>Sub-coordinator:<br>Bijaylaxmi Nayak<br>Kriti Ranjan Swain<br> +91-9777581272</span></div>

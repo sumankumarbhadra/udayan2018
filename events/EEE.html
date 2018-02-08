@@ -2,13 +2,24 @@
 <html>
 <head>
 	<title>EEE Events</title>
-	<link rel="stylesheet" type="text/css" href="Event_Style.css">
+        <link rel="stylesheet" type="text/css" href="Event_Style.css">
+        <style>
+                        video{
+                        height: 100%;
+                        width: 100%;
+                        position: fixed;
+                        z-index: -1;
+                        object-fit: fill;
+                        }
+                    </style>
 </head>
-<body style="background: url(images/bg1.jpg) repeat;
-    background-size: cover; background-attachment: fixed; ">
+<body>
+                <video autoplay muted loop id="myVideo">
+                                <source src="../assets/video/new2.mp4" type="video/mp4">
+                                </video> 
     <h1 class="tracking-in-contract-bck" style="color:#105163;">Electrical&nbsp;&&nbsp;Electronics&nbsp;Engineering</h1>
 
-	 <h2 class="focus-in-expand">Everyone must be one's own scavenger.</h2>
+	 <h2 class="focus-in-expand top_quot">Everyone must be one's own scavenger.</h2>
 	<div id="flex-container" class="flexBox">
         <div class="object one" onclick="movenext('c1')" >BEST OUT OF WASTE<br><span >Coordinator:<br>Yashmin Sultan<br>+91-8249818211<br>Sub-coordinator:<br>Ankit Bansal<br>Priyadarshini Das<br>+91-7064557595</span></div>
         <div class="object four" onclick="movenext('c2')" >THE SURVIVORS<br><span >Coordinator:<br>Uttamkumar Dash<br>+91-9776296519<br>Swarupananda Behera<br>Swansis Sudipta<br>Abhipsa Dwibedy <br>+91-8249573328</span></div>

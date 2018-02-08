@@ -3,22 +3,33 @@
 <html>
 <head>
 	<title>Mechanical Events</title>
-	<link rel="stylesheet" type="text/css" href="Event_Style.css">
+        <link rel="stylesheet" type="text/css" href="Event_Style.css">
+        <style>
+                        video{
+                        height: 100%;
+                        width: 100%;
+                        position: fixed;
+                        z-index: -1;
+                        object-fit: fill;
+                        }
+                    </style>
 </head>
-<body style="background: url(images/bg6.jpg) repeat;
-    background-size: cover; background-attachment: fixed;">
+<body>
+                <video autoplay muted loop id="myVideo">
+                                <source src="../assets/video/new3.mp4" type="video/mp4">
+                                </video> 
     <h1 class="tracking-in-contract-bck" style="color:#435847;">Mechanical&nbsp;Engineering</h1>
 
-	 <h2 class="focus-in-expand">Cleanliness starts from your home.</h2>
+	 <h2 class="focus-in-expand top_quot">Cleanliness starts from your home.</h2>
 	<div id="flex-container" class="flexBox">
-                <div class="object one" onclick="movenext('c1')" >MECH-O-MANIA<br><span >Coordinator:<br>SAGAR RATNA PANDAB +91-7788864196<br>Sub-coordinator:<br>RASHMI RANJAN SAHOO +91-9439424294<br>RASHMI RANJAN SAHU +91-9937209157</span></div>
-                <div class="object four" onclick="movenext('c2')" >MECH-O-IGNITION<br><span >Coordinator:<br>GANESH CH. SAHOO<br>+91-8658438463<br>Sub-coordinator:<br>SANDEEP KUMAR DAS<br>+91-7008459440 </span></div>
-                <div class="object four" onclick="movenext('c3')" >MECH-O-CHALLENGE<br><span >Coordinator:<br>TAPASUNDAR ROUT<br>+91-7855962323<br>Sub-coordinator:<br>DIBYASOURAV DAS<br>+91-7077383474</span></div>
-                <div class="object four" onclick="movenext('c4')" >MECH-O-BRAIN<br><span >Coordinator:<br>DINESH BEHERA<br>+91-7681041063 <br>Sub-coordinator:<br>BISWANATH BAISAKH <br>+91-7540800741<br>SAILESH MOHAPATRA <br>+91-7537924779 </span></div>
-                <div class="object four" onclick="movenext('c5')" >MECH-O-MARVEL<br><span >Coordinator:<br>SATYA PRAKASH MOHANTY<br>+91-8018810738<br>Sub-coordinator:<br>JITESH KUMAR DORA<br>+91-8093708313</span></div>
-                <div class="object one" onclick="movenext('c6')" >MECH-O-ENGINEERING<br><span >Coordinator:<br>RAJIB LOCHAN DAS<br>+91-9178688704<br>Sub-coordinator:<br>DEBASHIS LENKA<br>+91-768976341<br>MLAYA KUMAR RAI<br>+91-7437005496</span></div>
-                <div class="object four" onclick="movenext('c7')" >TRUSS-O-BRIDGE<br><span >Coordinator:<br>AKSHYA KUMAR SAHOO<br>+91-8598828787<br>Sub-coordinator:<br>SIDDHARTH SAMAL<br>+91-8280114514</span></div>
-                <div class="object four" onclick="movenext1('c1')" >CAD CRAZE<br><span >Coordinator:<br>SIVANANDA MOHANTY MOHANTY <br>+91-9853793251<br>Sub-coordinator:<br>SUJIT MISHRA<br>+91-7008771245</span></div>
+                <div class="object one" onclick="movenext('c1')" ><h3>MECH-O-MANIA</h3><br><span >Coordinator:<br>SAGAR RATNA PANDAB +91-7788864196<br>Sub-coordinator:<br>RASHMI RANJAN SAHOO +91-9439424294<br>RASHMI RANJAN SAHU +91-9937209157</span></div>
+                <div class="object four" onclick="movenext('c2')" ><h3>MECH-O-IGNITION</h3><br><span >Coordinator:<br>GANESH CH. SAHOO<br>+91-8658438463<br>Sub-coordinator:<br>SANDEEP KUMAR DAS<br>+91-7008459440 </span></div>
+                <div class="object four" onclick="movenext('c3')" ><h3>MECH-O-CHALLENGE</h3><br><span >Coordinator:<br>TAPASUNDAR ROUT<br>+91-7855962323<br>Sub-coordinator:<br>DIBYASOURAV DAS<br>+91-7077383474</span></div>
+                <div class="object four" onclick="movenext('c4')" ><h3>MECH-O-BRAIN</h3><br><span >Coordinator:<br>DINESH BEHERA<br>+91-7681041063 <br>Sub-coordinator:<br>BISWANATH BAISAKH <br>+91-7540800741<br>SAILESH MOHAPATRA <br>+91-7537924779 </span></div>
+                <div class="object four" onclick="movenext('c5')" ><h3>MECH-O-MARVEL</h3><br><span >Coordinator:<br>SATYA PRAKASH MOHANTY<br>+91-8018810738<br>Sub-coordinator:<br>JITESH KUMAR DORA<br>+91-8093708313</span></div>
+                <div class="object one" onclick="movenext('c6')" ><h3>MECH-O-ENGINEERING</h3><br><span >Coordinator:<br>RAJIB LOCHAN DAS<br>+91-9178688704<br>Sub-coordinator:<br>DEBASHIS LENKA<br>+91-768976341<br>MLAYA KUMAR RAI<br>+91-7437005496</span></div>
+                <div class="object four" onclick="movenext('c7')" ><h3>TRUSS-O-BRIDGE</h3><br><span >Coordinator:<br>AKSHYA KUMAR SAHOO<br>+91-8598828787<br>Sub-coordinator:<br>SIDDHARTH SAMAL<br>+91-8280114514</span></div>
+                <div class="object four" onclick="movenext1('c1')" ><h3>CAD CRAZE</h3><br><span >Coordinator:<br>SIVANANDA MOHANTY MOHANTY <br>+91-9853793251<br>Sub-coordinator:<br>SUJIT MISHRA<br>+91-7008771245</span></div>
     </div>
 	<script type="text/javascript">
         	function movenext(event)
