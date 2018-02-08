@@ -4594,6 +4594,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a.btn {
     padding: 0px;
     margin: 0px;
 }
+summary
+{
+    padding: 15px;
+}
+.pad1
+{
+    padding: 15px;
+}
 .menuElement
 {
     padding: 15px;
