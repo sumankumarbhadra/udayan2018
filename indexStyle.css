@@ -422,7 +422,7 @@ summary
     position: fixed;
     font-size: 50px;
     color: darkslategrey;
-    margin: 44% 0 0 5%;
+    margin: 45% 0 0 2%;
     z-index: 5;
 }
 .leftSet1
@@ -502,7 +502,7 @@ summary
     position: fixed;
     font-size: 50px;
     color: darkslategrey;
-    margin: 44% 0 0 79%;
+    margin: 45% 0 0 82%;
     z-index: 5;
 }
 
@@ -582,7 +582,7 @@ summary
     position: fixed;
     font-size: 30px;
     color: darkslategrey;
-    margin: 42% 0 0 8%;
+    margin: 43% 0 0 5%;
     z-index: 6;
 }
 #rightTrashIndicatorText
@@ -590,7 +590,7 @@ summary
     position: fixed;
     font-size: 30px;
     color: darkslategrey;
-    margin: 42% 0 0 82%;
+    margin: 43% 0 0 85%;
     z-index: 6;
 }
 
