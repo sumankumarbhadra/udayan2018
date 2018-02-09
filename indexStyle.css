@@ -501,7 +501,7 @@ summary
 {
     position: fixed;
     font-size: 50px;
-    color: red;
+    color: darkslategrey;
     margin: 44% 0 0 79%;
     z-index: 5;
 }
@@ -577,6 +577,22 @@ summary
     60%{color: yellow}
 }
 
+#leftTrashIndicatorText
+{
+    position: fixed;
+    font-size: 30px;
+    color: darkslategrey;
+    margin: 42% 0 0 8%;
+    z-index: 6;
+}
+#rightTrashIndicatorText
+{
+    position: fixed;
+    font-size: 30px;
+    color: darkslategrey;
+    margin: 42% 0 0 82%;
+    z-index: 6;
+}
 
 
 
