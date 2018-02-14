@@ -90,6 +90,6 @@ img:hover
 }
 .m1
 {
-    border: none;
+    border: 0px solid rgba(255,255,255,0.5);
 }
 
