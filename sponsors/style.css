@@ -1,0 +1,65 @@
+body
+{
+    margin: 0;
+}
+video
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: fill;
+}
+section
+{
+    position: fixed;
+}
+#mainContainer h1
+{
+    margin: auto;
+    color: white;
+    font-size: 40px;
+}
+
+#mainContainer
+{
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.sponsor
+{
+    background-color: rgba(255,255,255,0.5);
+    margin:0 20% 0 20% ;
+}
+h2
+{
+    text-decoration: underline;
+    color: white;
+    margin: 10px;
+}
+#coSponsors
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    height: 30%;
+    background-color: rgba(255,255,255,0.5);
+    margin:0 20% 0 20% ;
+    justify-content: space-around;
+}
+#eventSponsors
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    height: 50%;
+    background-color: rgba(255,255,255,0.5);
+    margin:0 20% 0 20% ;
+    justify-content: space-around;
+}
