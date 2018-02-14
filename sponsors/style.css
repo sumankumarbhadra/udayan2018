@@ -33,10 +33,11 @@ section
     height: 100%;
     text-align: center;
 }
-.sponsor
+#mainSponsors
 {
     background-color: rgba(255,255,255,0.5);
     margin:0 20% 0 20% ;
+    transition: all 0.6s ease-in-out;
 }
 h2
 {
@@ -49,10 +50,11 @@ h2
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    height: 30%;
+    height: 35%;
     background-color: rgba(255,255,255,0.5);
     margin:0 20% 0 20% ;
     justify-content: space-around;
+    transition: all 0.6s ease-in-out;
 }
 #eventSponsors
 {
@@ -63,4 +65,31 @@ h2
     background-color: rgba(255,255,255,0.5);
     margin:0 20% 0 20% ;
     justify-content: space-around;
+    transition: all 0.6s ease-in-out;
 }
+#mainSponsors:hover {
+    margin: 0;
+}
+#coSponsors:hover
+{
+    margin: 0;
+}
+#eventSponsors:hover
+{
+    margin: 0;
+}
+img
+{
+    transition: all 0.6s ease-in-out;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+img:hover
+{
+    transform: scale(1.2);
+    border: 5px solid rgba(180,255,255,0.5);
+}
+.m1
+{
+    border: none;
+}
+
