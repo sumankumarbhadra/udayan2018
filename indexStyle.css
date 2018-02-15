@@ -828,7 +828,7 @@ summary
     text-align: center;
     transition: all 1s;
     margin: 0px;
-    font-family: "bebas";
+    /* font-family: "bebas"; */
     color: white;
     font-size: small;
     word-spacing: 8px;

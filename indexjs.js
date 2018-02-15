@@ -341,12 +341,12 @@ function showInstruct(needInstruct,textInstruct) {
     }
 
 }
-quotes=["Cleanliness is next to goldiness.","Be the change you want to see in the world.","Everyone must be his own scavenger.","Live life cleaner,make earth greener.","Cleanliness starts from your home.","Green city,clean city,my dream city."]
+// quotes=["Cleanliness is next to goldiness.","Be the change you want to see in the world.","Everyone must be his own scavenger.","Live life cleaner,make earth greener.","Cleanliness starts from your home.","Green city,clean city,my dream city."]
 
-setInterval(function(){
-    //showInstruct(false,quotes[Math.floor(Math.random()*6)]);
-    showInstruct(false,"<a href='http://tat.trident.ac.in/'>TRIDENT ACADEMY OF TECHNOLOGY</a>");
-}, 10000);
+// setInterval(function(){
+//     //showInstruct(false,quotes[Math.floor(Math.random()*6)]);
+//     showInstruct(false,"<a href='http://tat.trident.ac.in/'>TRIDENT ACADEMY OF TECHNOLOGY</a>");
+// }, 10000);
 /* Hot! Instructions 🔥  end*/
 //plane change
     setInterval(function(){ 
